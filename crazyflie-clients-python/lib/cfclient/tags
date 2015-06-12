@@ -1,0 +1,909 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	utils/inputinterfaces/wiimote.py	/^A = 8$/;"	v
+AboutDialog	ui/dialogs/about.py	/^class AboutDialog(QtGui.QWidget, about_widget_class):$/;"	c
+AttitudeIndicator	ui/widgets/ai.py	/^class AttitudeIndicator(QtGui.QWidget):$/;"	c
+B	utils/inputinterfaces/wiimote.py	/^B = 4$/;"	v
+BootloaderDialog	ui/dialogs/bootloader.py	/^class BootloaderDialog(QtGui.QWidget, service_dialog_class):$/;"	c
+COLD_CONNECT	ui/dialogs/bootloader.py	/^    COLD_CONNECT = 2$/;"	v	class:UIState
+COLD_CONNECT	ui/dialogs/cf1config.py	/^    COLD_CONNECT = 2$/;"	v	class:UIState
+CONNECTED	ui/main.py	/^    CONNECTED = 2$/;"	v	class:UIState
+CONNECTING	ui/dialogs/bootloader.py	/^    CONNECTING = 5$/;"	v	class:UIState
+CONNECTING	ui/dialogs/cf1config.py	/^    CONNECTING = 5$/;"	v	class:UIState
+CONNECTING	ui/main.py	/^    CONNECTING = 1$/;"	v	class:UIState
+CONNECT_FAILED	ui/dialogs/bootloader.py	/^    CONNECT_FAILED = 1$/;"	v	class:UIState
+CONNECT_FAILED	ui/dialogs/cf1config.py	/^    CONNECT_FAILED = 1$/;"	v	class:UIState
+CTYPE_FIELD	ui/dialogs/logconfigdialogue.py	/^CTYPE_FIELD = 3$/;"	v
+Cf1ConfigDialog	ui/dialogs/cf1config.py	/^class Cf1ConfigDialog(QtGui.QWidget, service_dialog_class):$/;"	c
+Cf2ConfigDialog	ui/dialogs/cf2config.py	/^class Cf2ConfigDialog(QtGui.QWidget, service_dialog_class):$/;"	c
+CheckboxDelegate	ui/tabs/LogBlockTab.py	/^class CheckboxDelegate(QStyledItemDelegate):$/;"	c
+Config	utils/config.py	/^class Config():$/;"	c
+ConfigManager	utils/config_manager.py	/^class ConfigManager():$/;"	c
+ConnectDialogue	ui/dialogs/connectiondialogue.py	/^class ConnectDialogue(QtGui.QWidget, connect_widget_class):$/;"	c
+ConsoleTab	ui/tabs/ConsoleTab.py	/^class ConsoleTab(Tab, console_tab_class):$/;"	c
+ConsoleToolbox	ui/toolboxes/ConsoleToolbox.py	/^class ConsoleToolbox(QtGui.QWidget, console_class):$/;"	c
+CrazyloadThread	ui/dialogs/bootloader.py	/^class CrazyloadThread(QThread):$/;"	c
+CrazyloadThread	ui/dialogs/cf1config.py	/^class CrazyloadThread(QThread):$/;"	c
+CrtpSharkToolbox	ui/toolboxes/CrtpSharkToolbox.py	/^class CrtpSharkToolbox(QtGui.QWidget, param_tab_class):$/;"	c
+DEVICE_FORMAT	ui/dialogs/about.py	/^DEVICE_FORMAT = "{}: ({}) {}<br>"$/;"	v
+DISCONNECTED	ui/dialogs/bootloader.py	/^    DISCONNECTED = 0$/;"	v	class:UIState
+DISCONNECTED	ui/dialogs/cf1config.py	/^    DISCONNECTED = 0$/;"	v	class:UIState
+DISCONNECTED	ui/main.py	/^    DISCONNECTED = 0$/;"	v	class:UIState
+DOWN	utils/inputinterfaces/wiimote.py	/^DOWN = 1024$/;"	v
+DebugDriverToolbox	ui/toolboxes/DebugDriverToolbox.py	/^class DebugDriverToolbox(QtGui.QWidget, debugdriver_tab_class):$/;"	c
+DeviceReader	ui/dialogs/inputconfigdialogue.py	/^class DeviceReader(QThread):$/;"	c
+Example	ui/widgets/ai.py	/^    class Example(QtGui.QWidget):$/;"	c	class:AttitudeIndicator
+ExampleTab	ui/tabs/ExampleTab.py	/^class ExampleTab(Tab, example_tab_class):$/;"	c
+FIRMWARE_FORMAT	ui/dialogs/about.py	/^FIRMWARE_FORMAT = "{:x}{:x} ({})"$/;"	v
+FLASHING	ui/dialogs/bootloader.py	/^    FLASHING = 3$/;"	v	class:UIState
+FLASHING	ui/dialogs/cf1config.py	/^    FLASHING = 3$/;"	v	class:UIState
+FancyMarbleWidget	ui/tabs/GpsTab.py	/^    class FancyMarbleWidget(Marble.MarbleWidget):$/;"	c	class:GpsTab
+FlightTab	ui/tabs/FlightTab.py	/^class FlightTab(Tab, flight_tab_class):$/;"	c
+GpsTab	ui/tabs/GpsTab.py	/^class GpsTab(Tab, gps_tab_class):$/;"	c
+HOME	utils/inputinterfaces/wiimote.py	/^HOME = 128$/;"	v
+HandleWiimote	utils/inputinterfaces/wiimote.py	/^class HandleWiimote(Thread):$/;"	c
+HexSpinBox	ui/widgets/hexspinbox.py	/^class HexSpinBox(QAbstractSpinBox):$/;"	c
+ID_FIELD	ui/dialogs/logconfigdialogue.py	/^ID_FIELD = 1$/;"	v
+IMU_SENSORS_FORMAT	ui/dialogs/about.py	/^IMU_SENSORS_FORMAT = "{}: {}<br>"$/;"	v
+INPUT_READER_FORMAT	ui/dialogs/about.py	/^INPUT_READER_FORMAT = "{} ({} devices connected)<br>"$/;"	v
+INTERFACE_FORMAT	ui/dialogs/about.py	/^INTERFACE_FORMAT = "{}: {}<br>"$/;"	v
+InputConfigDialogue	ui/dialogs/inputconfigdialogue.py	/^class InputConfigDialogue(QtGui.QWidget, inputconfig_widget_class):$/;"	c
+InputDevice	utils/inputreaders/__init__.py	/^class InputDevice(InputReaderInterface):$/;"	c
+InputInterface	utils/inputinterfaces/__init__.py	/^class InputInterface(InputReaderInterface):$/;"	c
+InputMux	utils/mux/__init__.py	/^class InputMux(object):$/;"	c
+InputReaderInterface	utils/inputreaderinterface.py	/^class InputReaderInterface(object):$/;"	c
+JE_NUMBER	utils/inputreaders/linuxjsdev.py	/^JE_NUMBER = 3$/;"	v
+JE_TIME	utils/inputreaders/linuxjsdev.py	/^JE_TIME = 0$/;"	v
+JE_TYPE	utils/inputreaders/linuxjsdev.py	/^JE_TYPE = 2$/;"	v
+JE_VALUE	utils/inputreaders/linuxjsdev.py	/^JE_VALUE = 1$/;"	v
+JEvent	utils/inputreaders/linuxjsdev.py	/^class JEvent(object):$/;"	c
+JSIOCGAXES	utils/inputreaders/linuxjsdev.py	/^JSIOCGAXES = 0x80016a11$/;"	v
+JSIOCGBUTTONS	utils/inputreaders/linuxjsdev.py	/^JSIOCGBUTTONS = 0x80016a12$/;"	v
+JS_EVENT_AXIS	utils/inputreaders/linuxjsdev.py	/^JS_EVENT_AXIS = 0x002$/;"	v
+JS_EVENT_BUTTON	utils/inputreaders/linuxjsdev.py	/^JS_EVENT_BUTTON = 0x001$/;"	v
+JS_EVENT_FMT	utils/inputreaders/linuxjsdev.py	/^JS_EVENT_FMT = "@IhBB"$/;"	v
+JS_EVENT_INIT	utils/inputreaders/linuxjsdev.py	/^JS_EVENT_INIT = 0x080$/;"	v
+Joystick	utils/inputreaders/linuxjsdev.py	/^class Joystick():$/;"	c
+JoystickReader	utils/input.py	/^class JoystickReader:$/;"	c
+LEFT	utils/inputinterfaces/wiimote.py	/^LEFT = 256$/;"	v
+LeapListener	utils/inputinterfaces/leapmotion.py	/^class LeapListener(Leap.Listener):$/;"	c
+LeapmotionReader	utils/inputinterfaces/leapmotion.py	/^class LeapmotionReader:$/;"	c
+LogBlockChildItem	ui/tabs/LogBlockTab.py	/^class LogBlockChildItem(object):$/;"	c
+LogBlockDebugTab	ui/tabs/LogBlockDebugTab.py	/^class LogBlockDebugTab(Tab, logblock_tab_class):$/;"	c
+LogBlockItem	ui/tabs/LogBlockTab.py	/^class LogBlockItem(object):$/;"	c
+LogBlockModel	ui/tabs/LogBlockTab.py	/^class LogBlockModel(QAbstractItemModel):$/;"	c
+LogBlockTab	ui/tabs/LogBlockTab.py	/^class LogBlockTab(Tab, logblock_tab_class):$/;"	c
+LogConfigDialogue	ui/dialogs/logconfigdialogue.py	/^class LogConfigDialogue(QtGui.QWidget, logconfig_widget_class):$/;"	c
+LogConfigModel	ui/tabs/PlotTab.py	/^class LogConfigModel(QAbstractItemModel):$/;"	c
+LogConfigReader	utils/logconfigreader.py	/^class LogConfigReader():$/;"	c
+LogTab	ui/tabs/LogTab.py	/^class LogTab(Tab, param_tab_class):$/;"	c
+LogWriter	utils/logdatawriter.py	/^class LogWriter():$/;"	c
+MAX_THRUST	ui/tabs/FlightTab.py	/^MAX_THRUST = 65365.0$/;"	v
+MAX_THRUST	utils/input.py	/^MAX_THRUST = 65000$/;"	v
+MAX_THRUST	utils/mux/__init__.py	/^MAX_THRUST = 65000$/;"	v
+MINUS	utils/inputinterfaces/wiimote.py	/^MINUS = 16$/;"	v
+MODULE_MAIN	utils/inputinterfaces/leapmotion.py	/^MODULE_MAIN = "LeapmotionReader"$/;"	v
+MODULE_MAIN	utils/inputinterfaces/wiimote.py	/^MODULE_MAIN = "WiimoteReader"$/;"	v
+MODULE_MAIN	utils/inputinterfaces/zmqpull.py	/^MODULE_MAIN = "ZMQReader"$/;"	v
+MODULE_MAIN	utils/inputreaders/linuxjsdev.py	/^MODULE_MAIN = "Joystick"$/;"	v
+MODULE_MAIN	utils/inputreaders/pysdl2.py	/^MODULE_MAIN = "PySDL2Reader"$/;"	v
+MODULE_NAME	utils/inputinterfaces/leapmotion.py	/^MODULE_NAME = "Leap Motion"$/;"	v
+MODULE_NAME	utils/inputinterfaces/wiimote.py	/^MODULE_NAME = "WII"$/;"	v
+MODULE_NAME	utils/inputinterfaces/zmqpull.py	/^MODULE_NAME = "ZMQ"$/;"	v
+MODULE_NAME	utils/inputreaders/linuxjsdev.py	/^MODULE_NAME = "linuxjsdev"$/;"	v
+MODULE_NAME	utils/inputreaders/pysdl2.py	/^MODULE_NAME = "PySDL2"$/;"	v
+MainUI	ui/main.py	/^class MainUI(QtGui.QMainWindow, main_window_class):$/;"	c
+MixMux	utils/mux/mixmux.py	/^class MixMux(InputMux):$/;"	c
+MyDockWidget	ui/main.py	/^class MyDockWidget(QtGui.QDockWidget):$/;"	c
+NAME_FIELD	ui/dialogs/logconfigdialogue.py	/^NAME_FIELD = 0$/;"	v
+NoMux	utils/mux/nomux.py	/^class NoMux(InputMux):$/;"	c
+ONE	utils/inputinterfaces/wiimote.py	/^ONE = 2$/;"	v
+PLUS	utils/inputinterfaces/wiimote.py	/^PLUS = 4096$/;"	v
+PTYPE_FIELD	ui/dialogs/logconfigdialogue.py	/^PTYPE_FIELD = 2$/;"	v
+ParamBlockModel	ui/tabs/ParamTab.py	/^class ParamBlockModel(QAbstractItemModel):$/;"	c
+ParamChildItem	ui/tabs/ParamTab.py	/^class ParamChildItem(object):$/;"	c
+ParamGroupItem	ui/tabs/ParamTab.py	/^class ParamGroupItem(object):$/;"	c
+ParamTab	ui/tabs/ParamTab.py	/^class ParamTab(Tab, param_tab_class):$/;"	c
+PeriodicTimer	utils/periodictimer.py	/^class PeriodicTimer:$/;"	c
+PlotItemWrapper	ui/widgets/plotwidget.py	/^class PlotItemWrapper:$/;"	c
+PlotTab	ui/tabs/PlotTab.py	/^class PlotTab(Tab, plot_tab_class):$/;"	c
+PlotWidget	ui/widgets/plotwidget.py	/^class PlotWidget(QtGui.QWidget, plot_widget_class):$/;"	c
+PluginHelper	ui/pluginhelper.py	/^class PluginHelper():$/;"	c
+PySDL2Reader	utils/inputreaders/pysdl2.py	/^class PySDL2Reader():$/;"	c
+RESET	ui/dialogs/bootloader.py	/^    RESET = 4$/;"	v	class:UIState
+RESET	ui/dialogs/cf1config.py	/^    RESET = 4$/;"	v	class:UIState
+RIGHT	utils/inputinterfaces/wiimote.py	/^RIGHT = 512$/;"	v
+SENSOR_TESTS_FORMAT	ui/dialogs/about.py	/^SENSOR_TESTS_FORMAT = "{}: {}<br>"$/;"	v
+ScannerThread	ui/dialogs/connectiondialogue.py	/^class ScannerThread(QThread):$/;"	c
+SelectiveMux	utils/mux/selectivemux.py	/^class SelectiveMux(InputMux):$/;"	c
+Singleton	utils/singleton.py	/^class Singleton(type):$/;"	c
+TWO	utils/inputinterfaces/wiimote.py	/^TWO = 1$/;"	v
+TYPE_AXIS	utils/inputreaders/linuxjsdev.py	/^TYPE_AXIS = 2$/;"	v
+TYPE_BUTTON	utils/inputreaders/linuxjsdev.py	/^TYPE_BUTTON = 1$/;"	v
+Tab	ui/tab.py	/^class Tab(QtGui.QWidget):$/;"	c
+TakeOverMux	utils/mux/takeovermux.py	/^class TakeOverMux(InputMux):$/;"	c
+TakeOverSelectiveMux	utils/mux/takeoverselectivemux.py	/^class TakeOverSelectiveMux(InputMux):$/;"	c
+UIState	ui/dialogs/bootloader.py	/^class UIState:$/;"	c
+UIState	ui/dialogs/cf1config.py	/^class UIState:$/;"	c
+UIState	ui/main.py	/^class UIState:$/;"	c
+UP	utils/inputinterfaces/wiimote.py	/^UP = 2048$/;"	v
+VERSION	__init__.py	/^        VERSION = "dev"$/;"	v
+VERSION	__init__.py	/^        VERSION = subprocess.check_output(["git", "describe"])$/;"	v
+WiimoteReader	utils/inputinterfaces/wiimote.py	/^class WiimoteReader(_Reader):$/;"	c
+ZMQReader	utils/inputinterfaces/zmqpull.py	/^class ZMQReader:$/;"	c
+ZMQ_PULL_PORT	utils/inputinterfaces/zmqpull.py	/^ZMQ_PULL_PORT = 1024 + 188$/;"	v
+_JS	utils/inputreaders/linuxjsdev.py	/^class _JS():$/;"	c
+_JS	utils/inputreaders/pysdl2.py	/^class _JS():$/;"	c
+_PeriodicTimerThread	utils/periodictimer.py	/^class _PeriodicTimerThread(Thread):$/;"	c
+_PullReader	utils/inputinterfaces/zmqpull.py	/^class _PullReader(Thread):$/;"	c
+_Reader	utils/inputinterfaces/wiimote.py	/^class _Reader(object):$/;"	c
+__all__	cfclient.py	/^__all__ = ['']$/;"	v
+__all__	ui/__init__.py	/^__all__ = []$/;"	v
+__all__	ui/dialogs/about.py	/^__all__ = ['AboutDialog']$/;"	v
+__all__	ui/dialogs/bootloader.py	/^__all__ = ['BootloaderDialog']$/;"	v
+__all__	ui/dialogs/cf1config.py	/^__all__ = ['Cf1ConfigDialog']$/;"	v
+__all__	ui/dialogs/cf2config.py	/^__all__ = ['CfConfig']$/;"	v
+__all__	ui/dialogs/connectiondialogue.py	/^__all__ = ['ConnectionDialogue']$/;"	v
+__all__	ui/dialogs/inputconfigdialogue.py	/^__all__ = ['InputConfigDialogue']$/;"	v
+__all__	ui/dialogs/logconfigdialogue.py	/^__all__ = ['LogConfigDialogue']$/;"	v
+__all__	ui/main.py	/^__all__ = ['MainUI']$/;"	v
+__all__	ui/pluginhelper.py	/^__all__ = ['PluginHelper']$/;"	v
+__all__	ui/tab.py	/^__all__ = ['Tab']$/;"	v
+__all__	ui/tabs/ConsoleTab.py	/^__all__ = ['ConsoleTab']$/;"	v
+__all__	ui/tabs/ExampleTab.py	/^__all__ = ['ExampleTab']$/;"	v
+__all__	ui/tabs/FlightTab.py	/^__all__ = ['FlightTab']$/;"	v
+__all__	ui/tabs/GpsTab.py	/^__all__ = ['GpsTab']$/;"	v
+__all__	ui/tabs/LogBlockDebugTab.py	/^__all__ = ['LogBlockTab']$/;"	v
+__all__	ui/tabs/LogBlockTab.py	/^__all__ = ['LogBlockTab']$/;"	v
+__all__	ui/tabs/LogTab.py	/^__all__ = ['LogTab']$/;"	v
+__all__	ui/tabs/ParamTab.py	/^__all__ = ['ParamTab']$/;"	v
+__all__	ui/tabs/PlotTab.py	/^__all__ = ['PlotTab']$/;"	v
+__all__	ui/tabs/__init__.py	/^__all__ = []$/;"	v
+__all__	ui/toolboxes/ConsoleToolbox.py	/^__all__ = ['ConsoleToolbox']$/;"	v
+__all__	ui/toolboxes/CrtpSharkToolbox.py	/^__all__ = ['CrtpSharkBoolbox']$/;"	v
+__all__	ui/toolboxes/DebugDriverToolbox.py	/^__all__ = ['DebugDriverToolbox']$/;"	v
+__all__	ui/toolboxes/__init__.py	/^__all__ = []$/;"	v
+__all__	ui/widgets/ai.py	/^__all__ = ['AttitudeIndicator']$/;"	v
+__all__	ui/widgets/hexspinbox.py	/^__all__ = ['HexSpinBox']$/;"	v
+__all__	ui/widgets/plotwidget.py	/^__all__ = ['PlotWidget']$/;"	v
+__all__	utils/config.py	/^__all__ = ['Config']$/;"	v
+__all__	utils/config_manager.py	/^__all__ = ['ConfigManager']$/;"	v
+__all__	utils/input.py	/^__all__ = ['JoystickReader']$/;"	v
+__all__	utils/inputinterfaces/__init__.py	/^__all__ = ['InputInterface']$/;"	v
+__all__	utils/inputinterfaces/leapmotion.py	/^__all__ = ['LeapmotionReader']$/;"	v
+__all__	utils/inputinterfaces/zmqpull.py	/^__all__ = ['ZMQReader']$/;"	v
+__all__	utils/inputreaders/__init__.py	/^__all__ = ['InputDevice']$/;"	v
+__all__	utils/inputreaders/linuxjsdev.py	/^__all__ = ['Joystick']$/;"	v
+__all__	utils/inputreaders/pysdl2.py	/^__all__ = ['PySDL2Reader']$/;"	v
+__all__	utils/logconfigreader.py	/^__all__ = ['LogVariable', 'LogConfigReader', 'LogConfigRemoveThis']$/;"	v
+__all__	utils/logdatawriter.py	/^__all__ = ['LogWriter']$/;"	v
+__all__	utils/mux/__init__.py	/^__all__ = ['InputMux']$/;"	v
+__all__	utils/mux/mixmux.py	/^__all__ = ['MixMux']$/;"	v
+__all__	utils/mux/nomux.py	/^__all__ = ['NoMux']$/;"	v
+__all__	utils/mux/selectivemux.py	/^__all__ = ['SelectiveMux']$/;"	v
+__all__	utils/mux/takeovermux.py	/^__all__ = ['SelectiveMux']$/;"	v
+__all__	utils/mux/takeoverselectivemux.py	/^__all__ = ['TakeOverSelectiveMux']$/;"	v
+__all__	utils/periodictimer.py	/^__all__ = ['PeriodicTimer']$/;"	v
+__all__	utils/singleton.py	/^__all__ = ['Singleton']$/;"	v
+__author__	cfclient.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/about.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/bootloader.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/cf1config.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/cf2config.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/connectiondialogue.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/inputconfigdialogue.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/dialogs/logconfigdialogue.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/main.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/pluginhelper.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/ConsoleTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/ExampleTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/FlightTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/GpsTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/LogBlockDebugTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/LogBlockTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/LogTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/ParamTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/PlotTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/tabs/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/toolboxes/ConsoleToolbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/toolboxes/CrtpSharkToolbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/toolboxes/DebugDriverToolbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/toolboxes/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/widgets/ai.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/widgets/hexspinbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	ui/widgets/plotwidget.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/config.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/config_manager.py	/^__author__ = 'Bitcraze AB\/Allyn Bauer'$/;"	v
+__author__	utils/input.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/inputinterfaces/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/inputinterfaces/leapmotion.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/inputinterfaces/zmqpull.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/inputreaders/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/inputreaders/linuxjsdev.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/inputreaders/pysdl2.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/logconfigreader.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/logdatawriter.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/mux/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/mux/mixmux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/mux/nomux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/mux/selectivemux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/mux/takeovermux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/mux/takeoverselectivemux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/periodictimer.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	utils/singleton.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__call__	utils/singleton.py	/^    def __call__(cls, *args, **kwargs):$/;"	m	class:Singleton	file:
+__decode_event	utils/inputreaders/linuxjsdev.py	/^    def __decode_event(self, jsdata):$/;"	m	class:_JS	file:
+__del__	ui/dialogs/bootloader.py	/^    def __del__(self):$/;"	m	class:CrazyloadThread	file:
+__del__	ui/dialogs/cf1config.py	/^    def __del__(self):$/;"	m	class:CrazyloadThread	file:
+__init__	ui/dialogs/about.py	/^    def __init__(self, helper, *args):$/;"	m	class:AboutDialog
+__init__	ui/dialogs/bootloader.py	/^    def __init__(self):$/;"	m	class:CrazyloadThread
+__init__	ui/dialogs/bootloader.py	/^    def __init__(self, helper, *args):$/;"	m	class:BootloaderDialog
+__init__	ui/dialogs/cf1config.py	/^    def __init__(self):$/;"	m	class:CrazyloadThread
+__init__	ui/dialogs/cf1config.py	/^    def __init__(self, helper, *args):$/;"	m	class:Cf1ConfigDialog
+__init__	ui/dialogs/cf2config.py	/^    def __init__(self, helper, *args):$/;"	m	class:Cf2ConfigDialog
+__init__	ui/dialogs/connectiondialogue.py	/^    def __init__(self):$/;"	m	class:ScannerThread
+__init__	ui/dialogs/connectiondialogue.py	/^    def __init__(self, *args):$/;"	m	class:ConnectDialogue
+__init__	ui/dialogs/inputconfigdialogue.py	/^    def __init__(self, input):$/;"	m	class:DeviceReader
+__init__	ui/dialogs/inputconfigdialogue.py	/^    def __init__(self, joystickReader, *args):$/;"	m	class:InputConfigDialogue
+__init__	ui/dialogs/logconfigdialogue.py	/^    def __init__(self, helper, *args):$/;"	m	class:LogConfigDialogue
+__init__	ui/main.py	/^    def __init__(self, *args):$/;"	m	class:MainUI
+__init__	ui/pluginhelper.py	/^    def __init__(self):$/;"	m	class:PluginHelper
+__init__	ui/tab.py	/^    def __init__(self):$/;"	m	class:Tab
+__init__	ui/tabs/ConsoleTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:ConsoleTab
+__init__	ui/tabs/ExampleTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:ExampleTab
+__init__	ui/tabs/FlightTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:FlightTab
+__init__	ui/tabs/GpsTab.py	/^        def __init__(self):$/;"	m	class:GpsTab.FancyMarbleWidget
+__init__	ui/tabs/GpsTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:GpsTab
+__init__	ui/tabs/LogBlockDebugTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:LogBlockDebugTab
+__init__	ui/tabs/LogBlockTab.py	/^    def __init__(self, block, model, connected_ts):$/;"	m	class:LogBlockItem
+__init__	ui/tabs/LogBlockTab.py	/^    def __init__(self, parent, name):$/;"	m	class:LogBlockChildItem
+__init__	ui/tabs/LogBlockTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:LogBlockTab
+__init__	ui/tabs/LogBlockTab.py	/^    def __init__(self, view, parent=None):$/;"	m	class:LogBlockModel
+__init__	ui/tabs/LogTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:LogTab
+__init__	ui/tabs/ParamTab.py	/^    def __init__(self, name, model):$/;"	m	class:ParamGroupItem
+__init__	ui/tabs/ParamTab.py	/^    def __init__(self, parent):$/;"	m	class:ParamBlockModel
+__init__	ui/tabs/ParamTab.py	/^    def __init__(self, parent, name, crazyflie):$/;"	m	class:ParamChildItem
+__init__	ui/tabs/ParamTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:ParamTab
+__init__	ui/tabs/PlotTab.py	/^    def __init__(self, parent=None):$/;"	m	class:LogConfigModel
+__init__	ui/tabs/PlotTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:PlotTab
+__init__	ui/toolboxes/ConsoleToolbox.py	/^    def __init__(self, helper, *args):$/;"	m	class:ConsoleToolbox
+__init__	ui/toolboxes/CrtpSharkToolbox.py	/^    def __init__(self, helper, *args):$/;"	m	class:CrtpSharkToolbox
+__init__	ui/toolboxes/DebugDriverToolbox.py	/^    def __init__(self, helper, *args):$/;"	m	class:DebugDriverToolbox
+__init__	ui/widgets/ai.py	/^        def __init__(self):$/;"	m	class:AttitudeIndicator.Example
+__init__	ui/widgets/ai.py	/^    def __init__(self):$/;"	m	class:AttitudeIndicator
+__init__	ui/widgets/hexspinbox.py	/^    def __init__(self, *args):$/;"	m	class:HexSpinBox
+__init__	ui/widgets/plotwidget.py	/^    def __init__(self, curve):$/;"	m	class:PlotItemWrapper
+__init__	ui/widgets/plotwidget.py	/^    def __init__(self, parent=None, fps=100, title="", *args):$/;"	m	class:PlotWidget
+__init__	utils/config.py	/^    def __init__(self):$/;"	m	class:Config
+__init__	utils/config_manager.py	/^    def __init__(self):$/;"	m	class:ConfigManager
+__init__	utils/input.py	/^    def __init__(self, do_device_discovery=True):$/;"	m	class:JoystickReader
+__init__	utils/inputinterfaces/__init__.py	/^    def __init__(self, dev_name, dev_id, dev_reader):$/;"	m	class:InputInterface
+__init__	utils/inputinterfaces/leapmotion.py	/^    def __init__(self):$/;"	m	class:LeapmotionReader
+__init__	utils/inputinterfaces/wiimote.py	/^    def __init__(self):$/;"	m	class:WiimoteReader
+__init__	utils/inputinterfaces/wiimote.py	/^    def __init__(self, reader, wii, *args):$/;"	m	class:HandleWiimote
+__init__	utils/inputinterfaces/zmqpull.py	/^    def __init__(self):$/;"	m	class:ZMQReader
+__init__	utils/inputinterfaces/zmqpull.py	/^    def __init__(self, receiver, callback, *args):$/;"	m	class:_PullReader
+__init__	utils/inputreaderinterface.py	/^    def __init__(self, dev_name, dev_id, dev_reader):$/;"	m	class:InputReaderInterface
+__init__	utils/inputreaders/__init__.py	/^    def __init__(self, dev_name, dev_id, dev_reader):$/;"	m	class:InputDevice
+__init__	utils/inputreaders/linuxjsdev.py	/^    def __init__(self):$/;"	m	class:Joystick
+__init__	utils/inputreaders/linuxjsdev.py	/^    def __init__(self, evt_type, number, value):$/;"	m	class:JEvent
+__init__	utils/inputreaders/linuxjsdev.py	/^    def __init__(self, num, name):$/;"	m	class:_JS
+__init__	utils/inputreaders/pysdl2.py	/^    def __init__(self):$/;"	m	class:PySDL2Reader
+__init__	utils/inputreaders/pysdl2.py	/^    def __init__(self, num, name):$/;"	m	class:_JS
+__init__	utils/logconfigreader.py	/^    def __init__(self, crazyflie):$/;"	m	class:LogConfigReader
+__init__	utils/logdatawriter.py	/^    def __init__(self, logblock, connected_ts=None, directory=None):$/;"	m	class:LogWriter
+__init__	utils/mux/__init__.py	/^    def __init__(self, input):$/;"	m	class:InputMux
+__init__	utils/mux/mixmux.py	/^    def __init__(self, *args):$/;"	m	class:MixMux
+__init__	utils/mux/nomux.py	/^    def __init__(self, *args):$/;"	m	class:NoMux
+__init__	utils/mux/selectivemux.py	/^    def __init__(self, *args):$/;"	m	class:SelectiveMux
+__init__	utils/mux/takeovermux.py	/^    def __init__(self, *args):$/;"	m	class:TakeOverMux
+__init__	utils/mux/takeoverselectivemux.py	/^    def __init__(self, *args):$/;"	m	class:TakeOverSelectiveMux
+__init__	utils/periodictimer.py	/^    def __init__(self, period, callback):$/;"	m	class:PeriodicTimer
+__init__	utils/periodictimer.py	/^    def __init__(self, period, caller):$/;"	m	class:_PeriodicTimerThread
+__initvalues	utils/inputreaders/linuxjsdev.py	/^    def __initvalues(self):$/;"	m	class:_JS	file:
+__metaclass__	utils/config.py	/^    __metaclass__ = Singleton$/;"	v	class:Config
+__metaclass__	utils/config_manager.py	/^    __metaclass__ = Singleton$/;"	v	class:ConfigManager
+__repr__	utils/inputreaders/linuxjsdev.py	/^    def __repr__(self):$/;"	m	class:JEvent	file:
+__updatestate	utils/inputreaders/linuxjsdev.py	/^    def __updatestate(self, jsdata):$/;"	m	class:_JS	file:
+_adjust_nbr_of_selected_devices	ui/main.py	/^    def _adjust_nbr_of_selected_devices(self):$/;"	m	class:MainUI
+_althold_data_received	ui/tabs/FlightTab.py	/^    def _althold_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_althold_data_signal	ui/tabs/FlightTab.py	/^    _althold_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_auto_reconnect_changed	ui/main.py	/^    def _auto_reconnect_changed(self, checked):$/;"	m	class:MainUI
+_auto_redraw_change	ui/widgets/plotwidget.py	/^    def _auto_redraw_change(self, state):$/;"	m	class:PlotWidget
+_axis_detect	ui/dialogs/inputconfigdialogue.py	/^    def _axis_detect(self, varname, caption, message, directions=[]):$/;"	m	class:InputConfigDialogue
+_baro_data_received	ui/tabs/FlightTab.py	/^    def _baro_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_baro_data_signal	ui/tabs/FlightTab.py	/^    _baro_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_block_added	ui/tabs/LogBlockDebugTab.py	/^    def _block_added(self, block):$/;"	m	class:LogBlockDebugTab
+_block_added	ui/tabs/LogBlockTab.py	/^    def _block_added(self, block):$/;"	m	class:LogBlockTab
+_blocks_updated_signal	ui/tabs/LogBlockDebugTab.py	/^    _blocks_updated_signal = pyqtSignal(object, bool)$/;"	v	class:LogBlockDebugTab
+_blocks_updated_signal	ui/tabs/LogBlockTab.py	/^    _blocks_updated_signal = pyqtSignal(bool)$/;"	v	class:LogBlockTab
+_button_detect	ui/dialogs/inputconfigdialogue.py	/^    def _button_detect(self, varname, caption, message):$/;"	m	class:InputConfigDialogue
+_calc_rp_trim	utils/input.py	/^    def _calc_rp_trim(self, key_neg, key_pos, data):$/;"	m	class:JoystickReader
+_cancel_config_popup	ui/dialogs/inputconfigdialogue.py	/^    def _cancel_config_popup(self, button):$/;"	m	class:InputConfigDialogue
+_cap_rp	utils/mux/__init__.py	/^    def _cap_rp(self, rp):$/;"	m	class:InputMux
+_check_and_enable_saving	ui/dialogs/inputconfigdialogue.py	/^    def _check_and_enable_saving(self):$/;"	m	class:InputConfigDialogue
+_check_toggle	utils/input.py	/^    def _check_toggle(self, key, data):$/;"	m	class:JoystickReader
+_check_toggle	utils/mux/__init__.py	/^    def _check_toggle(self, key, data):$/;"	m	class:InputMux
+_cmd_callback	utils/inputinterfaces/zmqpull.py	/^    def _cmd_callback(self, cmd):$/;"	m	class:ZMQReader
+_config_added	ui/tabs/PlotTab.py	/^    def _config_added(self, logconfig):$/;"	m	class:PlotTab
+_connect	ui/main.py	/^    def _connect(self):$/;"	m	class:MainUI
+_connected	ui/dialogs/about.py	/^    def _connected(self, uri):$/;"	m	class:AboutDialog
+_connected	ui/main.py	/^    def _connected(self, linkURI):$/;"	m	class:MainUI
+_connected	ui/tabs/ExampleTab.py	/^    def _connected(self, link_uri):$/;"	m	class:ExampleTab
+_connected	ui/tabs/GpsTab.py	/^    def _connected(self, link_uri):$/;"	m	class:GpsTab
+_connected	ui/tabs/ParamTab.py	/^    def _connected(self, link_uri):$/;"	m	class:ParamTab
+_connected	ui/tabs/PlotTab.py	/^    def _connected(self, link_uri):$/;"	m	class:PlotTab
+_connected	utils/logconfigreader.py	/^    def _connected(self, link_uri):$/;"	m	class:LogConfigReader
+_connected_signal	ui/tabs/ExampleTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:ExampleTab
+_connected_signal	ui/tabs/GpsTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:GpsTab
+_connected_signal	ui/tabs/ParamTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:ParamTab
+_connected_signal	ui/tabs/PlotTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:PlotTab
+_connection_failed	ui/main.py	/^    def _connection_failed(self, linkURI, error):$/;"	m	class:MainUI
+_connection_lost	ui/main.py	/^    def _connection_lost(self, linkURI, msg):$/;"	m	class:MainUI
+_console_signal	ui/tabs/GpsTab.py	/^    _console_signal = pyqtSignal(str)$/;"	v	class:GpsTab
+_data_updated	ui/dialogs/cf2config.py	/^    def _data_updated(self, mem):$/;"	m	class:Cf2ConfigDialog
+_delete_configuration	ui/dialogs/inputconfigdialogue.py	/^    def _delete_configuration(self):$/;"	m	class:InputConfigDialogue
+_detect_axis	ui/dialogs/inputconfigdialogue.py	/^    def _detect_axis(self, data):$/;"	m	class:InputConfigDialogue
+_detect_button	ui/dialogs/inputconfigdialogue.py	/^    def _detect_button(self, data):$/;"	m	class:InputConfigDialogue
+_disconnected	ui/dialogs/about.py	/^    def _disconnected(self, uri):$/;"	m	class:AboutDialog
+_disconnected	ui/tabs/ExampleTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:ExampleTab
+_disconnected	ui/tabs/GpsTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:GpsTab
+_disconnected	ui/tabs/LogBlockDebugTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:LogBlockDebugTab
+_disconnected	ui/tabs/LogBlockTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:LogBlockTab
+_disconnected	ui/tabs/ParamTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:ParamTab
+_disconnected	ui/tabs/PlotTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:PlotTab
+_disconnected_signal	ui/dialogs/about.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:AboutDialog
+_disconnected_signal	ui/tabs/ExampleTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:ExampleTab
+_disconnected_signal	ui/tabs/GpsTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:GpsTab
+_disconnected_signal	ui/tabs/LogBlockDebugTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:LogBlockDebugTab
+_disconnected_signal	ui/tabs/LogBlockTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:LogBlockTab
+_disconnected_signal	ui/tabs/ParamTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:ParamTab
+_disconnected_signal	ui/tabs/PlotTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:PlotTab
+_display_input_device_error	ui/main.py	/^    def _display_input_device_error(self, error):$/;"	m	class:MainUI
+_do_device_discovery	utils/input.py	/^    def _do_device_discovery(self):$/;"	m	class:JoystickReader
+_emergency_stop_updated_signal	ui/tabs/FlightTab.py	/^    _emergency_stop_updated_signal = pyqtSignal(bool)$/;"	v	class:FlightTab
+_estop_callback	utils/mux/mixmux.py	/^    def _estop_callback(self, state):$/;"	m	class:MixMux
+_estop_callback	utils/mux/takeovermux.py	/^    def _estop_callback(self, state):$/;"	m	class:TakeOverMux
+_expand_all_signal	ui/tabs/ParamTab.py	/^    _expand_all_signal = pyqtSignal()$/;"	v	class:ParamTab
+_firmware_update	ui/dialogs/about.py	/^    def _firmware_update(self, name, value):$/;"	m	class:AboutDialog
+_get_saved_device_mapping	ui/main.py	/^    def _get_saved_device_mapping(self, device_name):$/;"	m	class:MainUI
+_imu_data_received	ui/tabs/FlightTab.py	/^    def _imu_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_imu_data_signal	ui/tabs/FlightTab.py	/^    _imu_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_imu_sensor_tests_update	ui/dialogs/about.py	/^    def _imu_sensor_tests_update(self, name, value):$/;"	m	class:AboutDialog
+_imu_sensors_update	ui/dialogs/about.py	/^    def _imu_sensors_update(self, name, value):$/;"	m	class:AboutDialog
+_incoming_packet_signal	ui/toolboxes/CrtpSharkToolbox.py	/^    _incoming_packet_signal = pyqtSignal(object)$/;"	v	class:CrtpSharkToolbox
+_input_device_error_signal	ui/main.py	/^    _input_device_error_signal = pyqtSignal(str)$/;"	v	class:MainUI
+_input_discovery_signal	ui/main.py	/^    _input_discovery_signal = pyqtSignal(object)$/;"	v	class:MainUI
+_input_updated_signal	ui/tabs/FlightTab.py	/^    _input_updated_signal = pyqtSignal(float, float, float, float)$/;"	v	class:FlightTab
+_inputconfig_selected	ui/main.py	/^    def _inputconfig_selected(self, checked):$/;"	m	class:MainUI
+_inputdevice_selected	ui/main.py	/^    def _inputdevice_selected(self, checked):$/;"	m	class:MainUI
+_instances	utils/singleton.py	/^    _instances = {}$/;"	v	class:Singleton
+_limit_thrust	utils/mux/__init__.py	/^    def _limit_thrust(self, thrust, althold, emergency_stop):$/;"	m	class:InputMux
+_limiting_updated	ui/tabs/FlightTab.py	/^    _limiting_updated = pyqtSignal(bool, bool, bool)$/;"	v	class:FlightTab
+_load_config_from_file	ui/dialogs/inputconfigdialogue.py	/^    def _load_config_from_file(self):$/;"	m	class:InputConfigDialogue
+_load_input_data	ui/main.py	/^    def _load_input_data(self):$/;"	m	class:MainUI
+_log_data_received	ui/tabs/ExampleTab.py	/^    def _log_data_received(self, timestamp, data, log_conf):$/;"	m	class:ExampleTab
+_log_data_received	ui/tabs/GpsTab.py	/^    def _log_data_received(self, timestamp, data, logconf):$/;"	m	class:GpsTab
+_log_data_received	ui/tabs/PlotTab.py	/^    def _log_data_received(self, timestamp, data, logconf):$/;"	m	class:PlotTab
+_log_data_signal	ui/tabs/ExampleTab.py	/^    _log_data_signal = pyqtSignal(int, object, object)$/;"	v	class:ExampleTab
+_log_data_signal	ui/tabs/GpsTab.py	/^    _log_data_signal = pyqtSignal(int, object, object)$/;"	v	class:GpsTab
+_log_data_signal	ui/tabs/PlotTab.py	/^    _log_data_signal = pyqtSignal(int, object, object)$/;"	v	class:PlotTab
+_log_data_signal_wrapper	ui/tabs/PlotTab.py	/^    def _log_data_signal_wrapper(self, ts, data, logconf):$/;"	m	class:PlotTab
+_log_error	ui/tabs/LogBlockTab.py	/^    def _log_error(self, logconfig, msg):$/;"	m	class:LogBlockItem
+_log_error_signal	ui/main.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:MainUI
+_log_error_signal	ui/tabs/ExampleTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:ExampleTab
+_log_error_signal	ui/tabs/FlightTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:FlightTab
+_log_error_signal	ui/tabs/GpsTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:GpsTab
+_log_error_signal	ui/tabs/PlotTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:PlotTab
+_log_error_signal_wrapper	ui/tabs/PlotTab.py	/^    def _log_error_signal_wrapper(self, config, msg):$/;"	m	class:PlotTab
+_logging_error	ui/main.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:MainUI
+_logging_error	ui/tabs/ExampleTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:ExampleTab
+_logging_error	ui/tabs/FlightTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:FlightTab
+_logging_error	ui/tabs/GpsTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:GpsTab
+_logging_error	ui/tabs/PlotTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:PlotTab
+_manual_range_change	ui/widgets/plotwidget.py	/^    def _manual_range_change(self, obj):$/;"	m	class:PlotWidget
+_map_axis	ui/dialogs/inputconfigdialogue.py	/^    def _map_axis(self, function, key_id, scale):$/;"	m	class:InputConfigDialogue
+_map_button	ui/dialogs/inputconfigdialogue.py	/^    def _map_button(self, function, key_id):$/;"	m	class:InputConfigDialogue
+_motor_data_received	ui/tabs/FlightTab.py	/^    def _motor_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_motor_data_signal	ui/tabs/FlightTab.py	/^    _motor_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_mux_selected	ui/main.py	/^    def _mux_selected(self, checked):$/;"	m	class:MainUI
+_nbr_samples_changed	ui/widgets/plotwidget.py	/^    def _nbr_samples_changed(self, val):$/;"	m	class:PlotWidget
+_new_data	utils/logdatawriter.py	/^    def _new_data(self, timestamp, data, logconf):$/;"	m	class:LogWriter
+_open_config_folder	ui/main.py	/^    def _open_config_folder(self):$/;"	m	class:MainUI
+_outgoing_packet_signal	ui/toolboxes/CrtpSharkToolbox.py	/^    _outgoing_packet_signal = pyqtSignal(object)$/;"	v	class:CrtpSharkToolbox
+_packet	ui/toolboxes/CrtpSharkToolbox.py	/^    def _packet(self, dir, pk):$/;"	m	class:CrtpSharkToolbox
+_param_updated	ui/tabs/ExampleTab.py	/^    def _param_updated(self, name, value):$/;"	m	class:ExampleTab
+_param_updated_signal	ui/tabs/ExampleTab.py	/^    _param_updated_signal = pyqtSignal(str, str)$/;"	v	class:ExampleTab
+_populate_config_dropdown	ui/dialogs/inputconfigdialogue.py	/^    def _populate_config_dropdown(self):$/;"	m	class:InputConfigDialogue
+_pyqtgraph_found	ui/widgets/plotwidget.py	/^    _pyqtgraph_found = False$/;"	v
+_pyqtgraph_found	ui/widgets/plotwidget.py	/^    _pyqtgraph_found = True$/;"	v
+_quick_connect	ui/main.py	/^    def _quick_connect(self):$/;"	m	class:MainUI
+_read_all_events	utils/inputreaders/linuxjsdev.py	/^    def _read_all_events(self):$/;"	m	class:_JS
+_read_config	utils/config.py	/^    def _read_config(self):$/;"	m	class:Config
+_read_config_files	utils/logconfigreader.py	/^    def _read_config_files(self):$/;"	m	class:LogConfigReader
+_read_distfile	utils/config.py	/^    def _read_distfile(self):$/;"	m	class:Config
+_read_input	ui/dialogs/inputconfigdialogue.py	/^    def _read_input(self):$/;"	m	class:DeviceReader
+_reload_configs	ui/main.py	/^    def _reload_configs(self, newConfigName):$/;"	m	class:MainUI
+_rescan_devices	ui/main.py	/^    def _rescan_devices(self):$/;"	m	class:MainUI
+_reset_mapping	ui/dialogs/inputconfigdialogue.py	/^    def _reset_mapping(self):$/;"	m	class:InputConfigDialogue
+_reset_max	ui/tabs/GpsTab.py	/^    def _reset_max(self):$/;"	m	class:GpsTab
+_ring_effect_changed	ui/tabs/FlightTab.py	/^    def _ring_effect_changed(self, index):$/;"	m	class:FlightTab
+_ring_effect_updated	ui/tabs/FlightTab.py	/^    def _ring_effect_updated(self, name, value):$/;"	m	class:FlightTab
+_ring_populate_dropdown	ui/tabs/FlightTab.py	/^    def _ring_populate_dropdown(self):$/;"	m	class:FlightTab
+_rp_trim_updated_signal	ui/tabs/FlightTab.py	/^    _rp_trim_updated_signal = pyqtSignal(float, float)$/;"	v	class:FlightTab
+_save_config	ui/dialogs/inputconfigdialogue.py	/^    def _save_config(self):$/;"	m	class:InputConfigDialogue
+_save_data	ui/toolboxes/CrtpSharkToolbox.py	/^    def _save_data(self):$/;"	m	class:CrtpSharkToolbox
+_scale_and_deadband_yaw	utils/mux/__init__.py	/^    def _scale_and_deadband_yaw(self, yaw):$/;"	m	class:InputMux
+_scale_rp	utils/mux/__init__.py	/^    def _scale_rp(self, roll, pitch):$/;"	m	class:InputMux
+_selection_changed	ui/tabs/PlotTab.py	/^    def _selection_changed(self, i):$/;"	m	class:PlotTab
+_set_added	ui/tabs/LogBlockTab.py	/^    def _set_added(self, conf, started):$/;"	m	class:LogBlockItem
+_set_available_sensors	ui/tabs/FlightTab.py	/^    def _set_available_sensors(self, name, available):$/;"	m	class:FlightTab
+_set_fake_hat_button	utils/inputreaders/pysdl2.py	/^    def _set_fake_hat_button(self, btn=None):$/;"	m	class:_JS
+_set_limiting_enabled	ui/tabs/FlightTab.py	/^    def _set_limiting_enabled(self, rp_limiting_enabled,$/;"	m	class:FlightTab
+_set_neffect	ui/tabs/FlightTab.py	/^    def _set_neffect(self, n):$/;"	m	class:FlightTab
+_set_started	ui/tabs/LogBlockTab.py	/^    def _set_started(self, conf, started):$/;"	m	class:LogBlockItem
+_set_ui_connected	ui/dialogs/cf2config.py	/^    def _set_ui_connected(self, link_uri):$/;"	m	class:Cf2ConfigDialog
+_set_ui_disconnected	ui/dialogs/cf2config.py	/^    def _set_ui_disconnected(self, link_uri):$/;"	m	class:Cf2ConfigDialog
+_show_config_popup	ui/dialogs/inputconfigdialogue.py	/^    def _show_config_popup(self, caption, message, directions=[]):$/;"	m	class:InputConfigDialogue
+_show_connect_dialog	ui/main.py	/^    def _show_connect_dialog(self):$/;"	m	class:MainUI
+_show_error	ui/dialogs/inputconfigdialogue.py	/^    def _show_error(self, caption, message):$/;"	m	class:InputConfigDialogue
+_show_input_device_config_dialog	ui/main.py	/^    def _show_input_device_config_dialog(self):$/;"	m	class:MainUI
+_start_configuration	ui/dialogs/inputconfigdialogue.py	/^    def _start_configuration(self):$/;"	m	class:InputConfigDialogue
+_trim_pitch_changed	ui/tabs/FlightTab.py	/^    def _trim_pitch_changed(self, value):$/;"	m	class:FlightTab
+_trim_roll_changed	ui/tabs/FlightTab.py	/^    def _trim_roll_changed(self, value):$/;"	m	class:FlightTab
+_trim_rp	utils/mux/__init__.py	/^    def _trim_rp(self, roll, pitch):$/;"	m	class:InputMux
+_ui_connection_fail	ui/dialogs/bootloader.py	/^    def _ui_connection_fail(self, message):$/;"	m	class:BootloaderDialog
+_ui_connection_fail	ui/dialogs/cf1config.py	/^    def _ui_connection_fail(self, message):$/;"	m	class:Cf1ConfigDialog
+_update_alt1	utils/mux/__init__.py	/^    def _update_alt1(self, value):$/;"	m	class:InputMux
+_update_alt2	utils/mux/__init__.py	/^    def _update_alt2(self, value):$/;"	m	class:InputMux
+_update_alt_hold	utils/mux/__init__.py	/^    def _update_alt_hold(self, value):$/;"	m	class:InputMux
+_update_em_stop	utils/mux/__init__.py	/^    def _update_em_stop(self, value):$/;"	m	class:InputMux
+_update_input	ui/main.py	/^    def _update_input(self, device="", config=""):$/;"	m	class:MainUI
+_update_input_device_footer	ui/main.py	/^    def _update_input_device_footer(self, device_name=None, mapping_name=None):$/;"	m	class:MainUI
+_update_mapped_values	ui/dialogs/inputconfigdialogue.py	/^    def _update_mapped_values(self, values):$/;"	m	class:InputConfigDialogue
+_update_tree	ui/tabs/LogBlockDebugTab.py	/^    def _update_tree(self, conf, value):$/;"	m	class:LogBlockDebugTab
+_update_ui_state	ui/main.py	/^    def _update_ui_state(self, newState, linkURI=""):$/;"	m	class:MainUI
+_update_vbatt	ui/main.py	/^    def _update_vbatt(self, timestamp, data, logconf):$/;"	m	class:MainUI
+_write_data	ui/dialogs/cf2config.py	/^    def _write_data(self):$/;"	m	class:Cf2ConfigDialog
+_write_done	ui/dialogs/cf2config.py	/^    def _write_done(self, mem, addr):$/;"	m	class:Cf2ConfigDialog
+_write_header	utils/logdatawriter.py	/^    def _write_header(self):$/;"	m	class:LogWriter
+_x_mode_change	ui/widgets/plotwidget.py	/^    def _x_mode_change(self, box):$/;"	m	class:PlotWidget
+_y_mode_change	ui/widgets/plotwidget.py	/^    def _y_mode_change(self, box):$/;"	m	class:PlotWidget
+_y_range_changed	ui/widgets/plotwidget.py	/^    def _y_range_changed(self, val):$/;"	m	class:PlotWidget
+_zero_all_buttons	utils/inputreaders/__init__.py	/^    def _zero_all_buttons(self):$/;"	m	class:InputDevice
+addNewVar	ui/dialogs/logconfigdialogue.py	/^    def addNewVar(self, logTreeItem, target):$/;"	m	class:LogConfigDialogue
+add_block	ui/tabs/LogBlockTab.py	/^    def add_block(self, block, connected_ts):$/;"	m	class:LogBlockModel
+add_block	ui/tabs/PlotTab.py	/^    def add_block(self, block):$/;"	m	class:LogConfigModel
+add_curve	ui/widgets/plotwidget.py	/^    def add_curve(self, title, pen='r'):$/;"	m	class:PlotWidget
+add_data	ui/tabs/GpsTab.py	/^        def add_data(self, long, lat, height, accu, locked):$/;"	m	class:GpsTab.FancyMarbleWidget
+add_data	ui/widgets/plotwidget.py	/^    def add_data(self, data, ts):$/;"	m	class:PlotWidget
+add_device	utils/mux/__init__.py	/^    def add_device(self, dev, parameters):$/;"	m	class:InputMux
+add_device	utils/mux/mixmux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:MixMux
+add_device	utils/mux/nomux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:NoMux
+add_device	utils/mux/selectivemux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:SelectiveMux
+add_device	utils/mux/takeovermux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:TakeOverMux
+add_device	utils/mux/takeoverselectivemux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:TakeOverSelectiveMux
+add_point	ui/widgets/plotwidget.py	/^    def add_point(self, p, ts):$/;"	m	class:PlotItemWrapper
+adjust	utils/inputinterfaces/wiimote.py	/^    def adjust(self):$/;"	m	class:HandleWiimote
+alt1_updated	ui/tabs/FlightTab.py	/^    def alt1_updated(self, state):$/;"	m	class:FlightTab
+alt2_updated	ui/tabs/FlightTab.py	/^    def alt2_updated(self, state):$/;"	m	class:FlightTab
+available	ui/tabs/__init__.py	/^available = []$/;"	v
+available_devices	utils/input.py	/^    def available_devices(self):$/;"	m	class:JoystickReader
+available_devices	utils/inputreaders/__init__.py	/^available_devices = []$/;"	v
+available_interfaces	utils/inputinterfaces/__init__.py	/^available_interfaces = []$/;"	v
+available_mux	utils/input.py	/^    def available_mux(self):$/;"	m	class:JoystickReader
+batteryUpdatedSignal	ui/main.py	/^    batteryUpdatedSignal = pyqtSignal(int, object, object)$/;"	v	class:MainUI
+calUpdateFromInput	ui/tabs/FlightTab.py	/^    def calUpdateFromInput(self, rollCal, pitchCal):$/;"	m	class:FlightTab
+cancel	ui/dialogs/connectiondialogue.py	/^    def cancel(self):$/;"	m	class:ConnectDialogue
+changeValue	ui/widgets/ai.py	/^        def changeValue(self, value):$/;"	m	class:AttitudeIndicator.Example
+changeXmode	ui/tabs/FlightTab.py	/^    def changeXmode(self, checked):$/;"	m	class:FlightTab
+checkAndEnableSaveButton	ui/dialogs/logconfigdialogue.py	/^    def checkAndEnableSaveButton(self):$/;"	m	class:LogConfigDialogue
+checksum256	ui/dialogs/cf1config.py	/^    def checksum256(self, st):$/;"	m	class:CrazyloadThread
+child_count	ui/tabs/LogBlockTab.py	/^    def child_count(self):$/;"	m	class:LogBlockChildItem
+child_count	ui/tabs/LogBlockTab.py	/^    def child_count(self):$/;"	m	class:LogBlockItem
+child_count	ui/tabs/ParamTab.py	/^    def child_count(self):$/;"	m	class:ParamChildItem
+child_count	ui/tabs/ParamTab.py	/^    def child_count(self):$/;"	m	class:ParamGroupItem
+clearLog	ui/toolboxes/CrtpSharkToolbox.py	/^    def clearLog(self):$/;"	m	class:CrtpSharkToolbox
+clear_data	ui/tabs/GpsTab.py	/^        def clear_data(self):$/;"	m	class:GpsTab.FancyMarbleWidget
+clicked	ui/tabs/LogBlockTab.py	/^    def clicked(self, index):$/;"	m	class:LogBlockModel
+close	utils/inputinterfaces/__init__.py	/^    def close(self):$/;"	m	class:InputInterface
+close	utils/inputinterfaces/leapmotion.py	/^    def close(self, id):$/;"	m	class:LeapmotionReader
+close	utils/inputinterfaces/wiimote.py	/^    def close(self, device_id):$/;"	m	class:_Reader
+close	utils/inputinterfaces/zmqpull.py	/^    def close(self, device_id):$/;"	m	class:ZMQReader
+close	utils/inputreaderinterface.py	/^    def close(self, device_id):$/;"	m	class:InputReaderInterface
+close	utils/inputreaders/__init__.py	/^    def close(self):$/;"	m	class:InputDevice
+close	utils/inputreaders/linuxjsdev.py	/^    def close(self):$/;"	m	class:_JS
+close	utils/inputreaders/linuxjsdev.py	/^    def close(self, device_id):$/;"	m	class:Joystick
+close	utils/inputreaders/pysdl2.py	/^    def close(self):$/;"	m	class:_JS
+close	utils/inputreaders/pysdl2.py	/^    def close(self, device_id):$/;"	m	class:PySDL2Reader
+close	utils/mux/__init__.py	/^    def close(self):$/;"	m	class:InputMux
+closeAppRequest	ui/main.py	/^    def closeAppRequest(self):$/;"	m	class:MainUI
+closeEvent	ui/dialogs/bootloader.py	/^    def closeEvent(self, event):$/;"	m	class:BootloaderDialog
+closeEvent	ui/dialogs/cf1config.py	/^    def closeEvent(self, event):$/;"	m	class:Cf1ConfigDialog
+closeEvent	ui/dialogs/inputconfigdialogue.py	/^    def closeEvent(self, event):$/;"	m	class:InputConfigDialogue
+closeEvent	ui/main.py	/^    def closeEvent(self, event):$/;"	m	class:MainUI
+closeEvent	ui/main.py	/^    def closeEvent(self, event):$/;"	m	class:MyDockWidget
+closed	ui/main.py	/^    closed = pyqtSignal()$/;"	v	class:MyDockWidget
+colors	ui/tabs/PlotTab.py	/^    colors = ['g', 'b', 'm', 'r', 'y', 'c']$/;"	v	class:PlotTab
+columnCount	ui/tabs/LogBlockTab.py	/^    def columnCount(self, parent):$/;"	m	class:LogBlockModel
+columnCount	ui/tabs/ParamTab.py	/^    def columnCount(self, parent):$/;"	m	class:ParamBlockModel
+columnCount	ui/tabs/PlotTab.py	/^    def columnCount(self, parent):$/;"	m	class:LogConfigModel
+conf_needs_reload	utils/config_manager.py	/^    conf_needs_reload = Caller()$/;"	v	class:ConfigManager
+configs_dir	utils/config_manager.py	/^    configs_dir = sys.path[1] + "\/input"$/;"	v	class:ConfigManager
+connected	ui/dialogs/bootloader.py	/^    def connected(self):$/;"	m	class:BootloaderDialog
+connected	ui/dialogs/cf1config.py	/^    def connected(self):$/;"	m	class:Cf1ConfigDialog
+connected	ui/tabs/FlightTab.py	/^    def connected(self, linkURI):$/;"	m	class:FlightTab
+connected	ui/tabs/LogTab.py	/^    def connected(self, linkURI):$/;"	m	class:LogTab
+connectedSignal	ui/dialogs/bootloader.py	/^    connectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectedSignal	ui/dialogs/cf1config.py	/^    connectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectedSignal	ui/tabs/LogTab.py	/^    connectedSignal = pyqtSignal(str)$/;"	v	class:LogTab
+connected_signal	ui/dialogs/cf2config.py	/^    connected_signal = pyqtSignal(str)$/;"	v	class:Cf2ConfigDialog
+connectingSignal	ui/dialogs/bootloader.py	/^    connectingSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectingSignal	ui/dialogs/cf1config.py	/^    connectingSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectionDone	ui/toolboxes/DebugDriverToolbox.py	/^    def connectionDone(self, linkURI):$/;"	m	class:DebugDriverToolbox
+connectionDoneSignal	ui/main.py	/^    connectionDoneSignal = pyqtSignal(str)$/;"	v	class:MainUI
+connectionDoneSignal	ui/toolboxes/DebugDriverToolbox.py	/^    connectionDoneSignal = pyqtSignal(str)$/;"	v	class:DebugDriverToolbox
+connectionFailed	ui/dialogs/bootloader.py	/^    def connectionFailed(self):$/;"	m	class:BootloaderDialog
+connectionFailed	ui/dialogs/cf1config.py	/^    def connectionFailed(self):$/;"	m	class:Cf1ConfigDialog
+connectionFailedSignal	ui/main.py	/^    connectionFailedSignal = pyqtSignal(str, str)$/;"	v	class:MainUI
+connectionFinishedSignal	ui/tabs/FlightTab.py	/^    connectionFinishedSignal = pyqtSignal(str)$/;"	v	class:FlightTab
+connectionInitiatedSignal	ui/main.py	/^    connectionInitiatedSignal = pyqtSignal(str)$/;"	v	class:MainUI
+connectionLostSignal	ui/main.py	/^    connectionLostSignal = pyqtSignal(str, str)$/;"	v	class:MainUI
+console_class	ui/toolboxes/ConsoleToolbox.py	/^console_class = uic.loadUiType(sys.path[0] + "\/cfclient\/ui\/toolboxes\/consoleToolbox.ui")[0]$/;"	v
+console_tab_class	ui/tabs/ConsoleTab.py	/^console_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+createConfigFromSelection	ui/dialogs/logconfigdialogue.py	/^    def createConfigFromSelection(self):$/;"	m	class:LogConfigDialogue
+customPaint	ui/tabs/GpsTab.py	/^        def customPaint(self, painter):$/;"	m	class:GpsTab.FancyMarbleWidget
+data	ui/tabs/LogBlockTab.py	/^    def data(self, index, role):$/;"	m	class:LogBlockModel
+data	ui/tabs/ParamTab.py	/^    def data(self, index, role):$/;"	m	class:ParamBlockModel
+data	ui/tabs/PlotTab.py	/^    def data(self, index, role):$/;"	m	class:LogConfigModel
+deadband	utils/input.py	/^    def deadband(value, threshold):$/;"	m	class:JoystickReader
+deadband	utils/mux/__init__.py	/^    def deadband(value, threshold):$/;"	m	class:InputMux
+debugdriver_tab_class	ui/toolboxes/DebugDriverToolbox.py	/^debugdriver_tab_class = uic.loadUiType($/;"	v
+decodeSize	ui/dialogs/logconfigdialogue.py	/^    def decodeSize(self, s):$/;"	m	class:LogConfigDialogue
+device_discovery	ui/main.py	/^    def device_discovery(self, devs):$/;"	m	class:MainUI
+devices	utils/inputinterfaces/__init__.py	/^def devices():$/;"	f
+devices	utils/inputinterfaces/leapmotion.py	/^    def devices(self):$/;"	m	class:LeapmotionReader
+devices	utils/inputinterfaces/wiimote.py	/^    def devices(self):$/;"	m	class:WiimoteReader
+devices	utils/inputinterfaces/wiimote.py	/^    def devices(self):$/;"	m	class:_Reader
+devices	utils/inputinterfaces/zmqpull.py	/^    def devices(self):$/;"	m	class:ZMQReader
+devices	utils/inputreaderinterface.py	/^    def devices(self):$/;"	m	class:InputReaderInterface
+devices	utils/inputreaders/__init__.py	/^def devices():$/;"	f
+devices	utils/inputreaders/linuxjsdev.py	/^    def devices(self):$/;"	m	class:Joystick
+devices	utils/inputreaders/pysdl2.py	/^    def devices(self):$/;"	m	class:PySDL2Reader
+disable	ui/toolboxes/ConsoleToolbox.py	/^    def disable(self):$/;"	m	class:ConsoleToolbox
+disable	ui/toolboxes/CrtpSharkToolbox.py	/^    def disable(self):$/;"	m	class:CrtpSharkToolbox
+disable	ui/toolboxes/DebugDriverToolbox.py	/^    def disable(self):$/;"	m	class:DebugDriverToolbox
+disconnected	ui/tabs/FlightTab.py	/^    def disconnected(self, linkURI):$/;"	m	class:FlightTab
+disconnected	ui/tabs/LogTab.py	/^    def disconnected(self, linkname):$/;"	m	class:LogTab
+disconnected	ui/toolboxes/DebugDriverToolbox.py	/^    def disconnected(self, linkURI):$/;"	m	class:DebugDriverToolbox
+disconnectedSignal	ui/dialogs/bootloader.py	/^    disconnectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+disconnectedSignal	ui/dialogs/cf1config.py	/^    disconnectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+disconnectedSignal	ui/main.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:MainUI
+disconnectedSignal	ui/tabs/FlightTab.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:FlightTab
+disconnectedSignal	ui/tabs/LogTab.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:LogTab
+disconnectedSignal	ui/toolboxes/DebugDriverToolbox.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:DebugDriverToolbox
+disconnected_signal	ui/dialogs/cf2config.py	/^    disconnected_signal = pyqtSignal(str)$/;"	v	class:Cf2ConfigDialog
+doing_transaction	ui/tabs/LogBlockTab.py	/^    def doing_transaction(self):$/;"	m	class:LogBlockItem
+drawWidget	ui/widgets/ai.py	/^    def drawWidget(self, qp):$/;"	m	class:AttitudeIndicator
+emergencyStopStringWithText	ui/tabs/FlightTab.py	/^    def emergencyStopStringWithText(self, text):$/;"	m	class:FlightTab
+enable	ui/toolboxes/ConsoleToolbox.py	/^    def enable(self):$/;"	m	class:ConsoleToolbox
+enable	ui/toolboxes/CrtpSharkToolbox.py	/^    def enable(self):$/;"	m	class:CrtpSharkToolbox
+enable	ui/toolboxes/DebugDriverToolbox.py	/^    def enable(self):$/;"	m	class:DebugDriverToolbox
+enableRawReading	utils/input.py	/^    def enableRawReading(self, device_name):$/;"	m	class:JoystickReader
+enable_alt_hold	utils/input.py	/^    def enable_alt_hold(self, althold):$/;"	m	class:JoystickReader
+enable_alt_hold	utils/mux/__init__.py	/^    def enable_alt_hold(self, althold):$/;"	m	class:InputMux
+example_tab_class	ui/tabs/ExampleTab.py	/^example_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+failed_signal	ui/dialogs/bootloader.py	/^    failed_signal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+failed_signal	ui/dialogs/cf1config.py	/^    failed_signal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+flags	ui/tabs/ParamTab.py	/^    def flags(self, index):$/;"	m	class:ParamBlockModel
+flight_tab_class	ui/tabs/FlightTab.py	/^flight_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+flightmodeChange	ui/tabs/FlightTab.py	/^    def flightmodeChange(self, item):$/;"	m	class:FlightTab
+forceDisconnecPressed	ui/toolboxes/DebugDriverToolbox.py	/^    def forceDisconnecPressed(self):$/;"	m	class:DebugDriverToolbox
+foundInterfaces	ui/dialogs/connectiondialogue.py	/^    def foundInterfaces(self, interfaces):$/;"	m	class:ConnectDialogue
+foundToolboxes	ui/toolboxes/__init__.py	/^    foundToolboxes = [os.path.splitext(os.path.basename(f))[0] for f in$/;"	v
+foundToolboxes	ui/toolboxes/__init__.py	/^foundToolboxes = [os.path.splitext(os.path.basename(f))[0] for f in$/;"	v
+found_interfaces	utils/inputinterfaces/__init__.py	/^found_interfaces = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_readers	utils/inputinterfaces/__init__.py	/^    found_readers = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_readers	utils/inputreaders/__init__.py	/^    found_readers = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_readers	utils/inputreaders/__init__.py	/^found_readers = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_tabs	ui/tabs/__init__.py	/^    found_tabs = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_tabs	ui/tabs/__init__.py	/^found_tabs = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+get	utils/config.py	/^    def get(self, key):$/;"	m	class:Config
+getLogConfigs	utils/logconfigreader.py	/^    def getLogConfigs(self):$/;"	m	class:LogConfigReader
+getMenuName	ui/tab.py	/^    def getMenuName(self):$/;"	m	class:Tab
+getName	ui/toolboxes/ConsoleToolbox.py	/^    def getName(self):$/;"	m	class:ConsoleToolbox
+getName	ui/toolboxes/CrtpSharkToolbox.py	/^    def getName(self):$/;"	m	class:CrtpSharkToolbox
+getName	ui/toolboxes/DebugDriverToolbox.py	/^    def getName(self):$/;"	m	class:DebugDriverToolbox
+getNodeChildren	ui/dialogs/logconfigdialogue.py	/^    def getNodeChildren(self, treeNode):$/;"	m	class:LogConfigDialogue
+getTabName	ui/tab.py	/^    def getTabName(self):$/;"	m	class:Tab
+getTabName	ui/toolboxes/CrtpSharkToolbox.py	/^    def getTabName(self):$/;"	m	class:CrtpSharkToolbox
+getTabName	ui/toolboxes/DebugDriverToolbox.py	/^    def getTabName(self):$/;"	m	class:DebugDriverToolbox
+get_child	ui/tabs/LogBlockTab.py	/^    def get_child(self, index):$/;"	m	class:LogBlockItem
+get_config	ui/tabs/PlotTab.py	/^    def get_config(self, i):$/;"	m	class:LogConfigModel
+get_config	utils/config_manager.py	/^    def get_config(self, config_name):$/;"	m	class:ConfigManager
+get_device_name	utils/input.py	/^    def get_device_name(self):$/;"	m	class:JoystickReader
+get_list_of_configs	utils/config_manager.py	/^    def get_list_of_configs(self):$/;"	m	class:ConfigManager
+get_mux_supported_dev_count	utils/input.py	/^    def get_mux_supported_dev_count(self):$/;"	m	class:JoystickReader
+get_saved_device_mapping	utils/input.py	/^    def get_saved_device_mapping(self, device_name):$/;"	m	class:JoystickReader
+get_settings	utils/config_manager.py	/^    def get_settings(self, config_name):$/;"	m	class:ConfigManager
+get_supported_dev_count	utils/mux/__init__.py	/^    def get_supported_dev_count(self):$/;"	m	class:InputMux
+get_supported_dev_count	utils/mux/mixmux.py	/^    def get_supported_dev_count(self):$/;"	m	class:MixMux
+get_supported_dev_count	utils/mux/selectivemux.py	/^    def get_supported_dev_count(self):$/;"	m	class:SelectiveMux
+get_supported_dev_count	utils/mux/takeovermux.py	/^    def get_supported_dev_count(self):$/;"	m	class:TakeOverMux
+get_supported_dev_count	utils/mux/takeoverselectivemux.py	/^    def get_supported_dev_count(self):$/;"	m	class:TakeOverSelectiveMux
+gps_tab_class	ui/tabs/GpsTab.py	/^gps_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+headerData	ui/tabs/LogBlockTab.py	/^    def headerData(self, section, orientation, role):$/;"	m	class:LogBlockModel
+headerData	ui/tabs/ParamTab.py	/^    def headerData(self, section, orientation, role):$/;"	m	class:ParamBlockModel
+index	ui/tabs/LogBlockTab.py	/^    def index(self, row, column, parent):$/;"	m	class:LogBlockModel
+index	ui/tabs/ParamTab.py	/^    def index(self, row, column, parent):$/;"	m	class:ParamBlockModel
+index	ui/tabs/PlotTab.py	/^    def index(self, row, column, parent):$/;"	m	class:LogConfigModel
+initUI	ui/widgets/ai.py	/^        def initUI(self):$/;"	m	class:AttitudeIndicator.Example
+initialized_interfaces	utils/inputinterfaces/__init__.py	/^initialized_interfaces = []$/;"	v
+initialized_readers	utils/inputreaders/__init__.py	/^initialized_readers = []$/;"	v
+initiateColdBoot	ui/dialogs/bootloader.py	/^    def initiateColdBoot(self, linkURI):$/;"	m	class:CrazyloadThread
+initiateColdBoot	ui/dialogs/cf1config.py	/^    def initiateColdBoot(self, linkURI):$/;"	m	class:CrazyloadThread
+initiateColdBootSignal	ui/dialogs/bootloader.py	/^    initiateColdBootSignal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+initiateColdBootSignal	ui/dialogs/cf1config.py	/^    initiateColdBootSignal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+initiateColdboot	ui/dialogs/bootloader.py	/^    def initiateColdboot(self):$/;"	m	class:BootloaderDialog
+initiateColdboot	ui/dialogs/cf1config.py	/^    def initiateColdboot(self):$/;"	m	class:Cf1ConfigDialog
+inputConfig	utils/input.py	/^    inputConfig = []$/;"	v	class:JoystickReader
+interfaceFoundSignal	ui/dialogs/connectiondialogue.py	/^    interfaceFoundSignal = pyqtSignal(object)$/;"	v	class:ScannerThread
+interfaceSelected	ui/dialogs/connectiondialogue.py	/^    def interfaceSelected(self, listItem):$/;"	m	class:ConnectDialogue
+leap_callback	utils/inputinterfaces/leapmotion.py	/^    def leap_callback(self, data):$/;"	m	class:LeapmotionReader
+linkQualityChanged	ui/toolboxes/DebugDriverToolbox.py	/^    def linkQualityChanged(self, value):$/;"	m	class:DebugDriverToolbox
+linkQualitySignal	ui/main.py	/^    linkQualitySignal = pyqtSignal(int)$/;"	v	class:MainUI
+loadConfig	ui/dialogs/logconfigdialogue.py	/^    def loadConfig(self):$/;"	m	class:LogConfigDialogue
+logblock_tab_class	ui/tabs/LogBlockDebugTab.py	/^logblock_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+logblock_tab_class	ui/tabs/LogBlockTab.py	/^logblock_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+logger	ui/dialogs/bootloader.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/dialogs/cf1config.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/dialogs/cf2config.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/dialogs/inputconfigdialogue.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/dialogs/logconfigdialogue.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/main.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/ConsoleTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/ExampleTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/FlightTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/GpsTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/LogBlockTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/ParamTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/PlotTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/tabs/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/toolboxes/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	ui/widgets/plotwidget.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/config.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/config_manager.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/input.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputinterfaces/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputinterfaces/leapmotion.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputinterfaces/wiimote.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputinterfaces/zmqpull.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputreaders/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputreaders/linuxjsdev.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/inputreaders/pysdl2.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/logconfigreader.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/logdatawriter.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/mux/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/mux/mixmux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/mux/nomux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/mux/selectivemux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/mux/takeovermux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/mux/takeoverselectivemux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	utils/periodictimer.py	/^logger = logging.getLogger(__name__)$/;"	v
+logging_started	ui/tabs/LogBlockTab.py	/^    def logging_started(self):$/;"	m	class:LogBlockItem
+main	cfclient.py	/^def main():$/;"	f
+main	ui/widgets/ai.py	/^    def main():$/;"	m	class:AttitudeIndicator
+main_name	utils/inputinterfaces/__init__.py	/^        main_name = getattr(module, "MODULE_MAIN")$/;"	v
+main_name	utils/inputreaders/__init__.py	/^        main_name = getattr(module, "MODULE_MAIN")$/;"	v
+mapped_values_signal	ui/dialogs/inputconfigdialogue.py	/^    mapped_values_signal = pyqtSignal(object)$/;"	v	class:DeviceReader
+maxAngleChanged	ui/tabs/FlightTab.py	/^    def maxAngleChanged(self):$/;"	m	class:FlightTab
+maxYawRateChanged	ui/tabs/FlightTab.py	/^    def maxYawRateChanged(self):$/;"	m	class:FlightTab
+minMaxThrustChanged	ui/tabs/FlightTab.py	/^    def minMaxThrustChanged(self):$/;"	m	class:FlightTab
+module	utils/inputinterfaces/__init__.py	/^        module = __import__(interface, globals(), locals(), [interface], -1)$/;"	v
+module	utils/inputreaders/__init__.py	/^        module = __import__(reader, globals(), locals(), [reader], -1)$/;"	v
+moveNode	ui/dialogs/logconfigdialogue.py	/^    def moveNode(self, source, target):$/;"	m	class:LogConfigDialogue
+moveNodeByName	ui/dialogs/logconfigdialogue.py	/^    def moveNodeByName(self, source, target, parentName, itemName):$/;"	m	class:LogConfigDialogue
+moveNodeItem	ui/dialogs/logconfigdialogue.py	/^    def moveNodeItem(self, source, target, item):$/;"	m	class:LogConfigDialogue
+name	utils/inputinterfaces/wiimote.py	/^    name = MODULE_NAME$/;"	v	class:WiimoteReader
+nameModified	ui/toolboxes/CrtpSharkToolbox.py	/^    nameModified = pyqtSignal()$/;"	v	class:CrtpSharkToolbox
+nbr_of_fingers	utils/inputinterfaces/leapmotion.py	/^    def nbr_of_fingers(self):$/;"	m	class:LeapListener
+on_connect	utils/inputinterfaces/leapmotion.py	/^    def on_connect(self, controller):$/;"	m	class:LeapListener
+on_disconnect	utils/inputinterfaces/leapmotion.py	/^    def on_disconnect(self, controller):$/;"	m	class:LeapListener
+on_exit	utils/inputinterfaces/leapmotion.py	/^    def on_exit(self, controller):$/;"	m	class:LeapListener
+on_frame	utils/inputinterfaces/leapmotion.py	/^    def on_frame(self, controller):$/;"	m	class:LeapListener
+on_init	utils/inputinterfaces/leapmotion.py	/^    def on_init(self, controller):$/;"	m	class:LeapListener
+open	utils/inputinterfaces/__init__.py	/^    def open(self):$/;"	m	class:InputInterface
+open	utils/inputinterfaces/leapmotion.py	/^    def open(self, deviceId):$/;"	m	class:LeapmotionReader
+open	utils/inputinterfaces/wiimote.py	/^    def open(self, device_id):$/;"	m	class:_Reader
+open	utils/inputinterfaces/zmqpull.py	/^    def open(self, device_id):$/;"	m	class:ZMQReader
+open	utils/inputreaderinterface.py	/^    def open(self, device_id):$/;"	m	class:InputReaderInterface
+open	utils/inputreaders/__init__.py	/^    def open(self):$/;"	m	class:InputDevice
+open	utils/inputreaders/linuxjsdev.py	/^    def open(self):$/;"	m	class:_JS
+open	utils/inputreaders/linuxjsdev.py	/^    def open(self, device_id):$/;"	m	class:Joystick
+open	utils/inputreaders/pysdl2.py	/^    def open(self):$/;"	m	class:_JS
+open	utils/inputreaders/pysdl2.py	/^    def open(self, device_id):$/;"	m	class:PySDL2Reader
+openConnection	ui/dialogs/connectiondialogue.py	/^    def openConnection(self):$/;"	m	class:ConnectDialogue
+p2t	utils/input.py	/^    def p2t(percentage):$/;"	m	class:JoystickReader
+p2t	utils/mux/__init__.py	/^    def p2t(percentage):$/;"	m	class:InputMux
+paint	ui/tabs/LogBlockTab.py	/^    def paint(self, painter, option, index):$/;"	m	class:CheckboxDelegate
+paintEvent	ui/widgets/ai.py	/^    def paintEvent(self, e):$/;"	m	class:AttitudeIndicator
+param_tab_class	ui/tabs/LogTab.py	/^param_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+param_tab_class	ui/tabs/ParamTab.py	/^param_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+param_tab_class	ui/toolboxes/CrtpSharkToolbox.py	/^param_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+parent	ui/tabs/LogBlockTab.py	/^    def parent(self, index):$/;"	m	class:LogBlockModel
+parent	ui/tabs/ParamTab.py	/^    def parent(self, index):$/;"	m	class:ParamBlockModel
+parent	ui/tabs/PlotTab.py	/^    def parent(self, index):$/;"	m	class:LogConfigModel
+pathBrowse	ui/dialogs/bootloader.py	/^    def pathBrowse(self):$/;"	m	class:BootloaderDialog
+periodChanged	ui/dialogs/logconfigdialogue.py	/^    def periodChanged(self, value):$/;"	m	class:LogConfigDialogue
+plot_tab_class	ui/tabs/PlotTab.py	/^plot_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+pluginhelper	ui/__init__.py	/^pluginhelper = PluginHelper()$/;"	v
+populateDropDown	ui/dialogs/logconfigdialogue.py	/^    def populateDropDown(self):$/;"	m	class:LogConfigDialogue
+preferedDockArea	ui/toolboxes/ConsoleToolbox.py	/^    def preferedDockArea(self):$/;"	m	class:ConsoleToolbox
+preferedDockArea	ui/toolboxes/CrtpSharkToolbox.py	/^    def preferedDockArea(self):$/;"	m	class:CrtpSharkToolbox
+preferedDockArea	ui/toolboxes/DebugDriverToolbox.py	/^    def preferedDockArea(self):$/;"	m	class:DebugDriverToolbox
+printText	ui/tabs/ConsoleTab.py	/^    def printText(self, text):$/;"	m	class:ConsoleTab
+program	ui/dialogs/bootloader.py	/^    program = pyqtSignal(str, bool)$/;"	v	class:CrazyloadThread
+programAction	ui/dialogs/bootloader.py	/^    def programAction(self):$/;"	m	class:BootloaderDialog
+programAction	ui/dialogs/bootloader.py	/^    def programAction(self, filename, verify):$/;"	m	class:CrazyloadThread
+programDone	ui/dialogs/bootloader.py	/^    def programDone(self, success):$/;"	m	class:BootloaderDialog
+programmed	ui/dialogs/bootloader.py	/^    programmed = pyqtSignal(bool)$/;"	v	class:CrazyloadThread
+radioSpeedPos	ui/dialogs/bootloader.py	/^    radioSpeedPos = 2$/;"	v	class:CrazyloadThread
+raw_axis_data_signal	ui/dialogs/inputconfigdialogue.py	/^    raw_axis_data_signal = pyqtSignal(object)$/;"	v	class:DeviceReader
+raw_button_data_signal	ui/dialogs/inputconfigdialogue.py	/^    raw_button_data_signal = pyqtSignal(object)$/;"	v	class:DeviceReader
+read	utils/inputinterfaces/__init__.py	/^    def read(self, include_raw=False):$/;"	m	class:InputInterface
+read	utils/inputinterfaces/leapmotion.py	/^    def read(self, id):$/;"	m	class:LeapmotionReader
+read	utils/inputinterfaces/wiimote.py	/^    def read(self, dev_id):$/;"	m	class:WiimoteReader
+read	utils/inputinterfaces/wiimote.py	/^    def read(self, device_id):$/;"	m	class:_Reader
+read	utils/inputinterfaces/zmqpull.py	/^    def read(self, device_id):$/;"	m	class:ZMQReader
+read	utils/inputreaderinterface.py	/^    def read(self, device_id):$/;"	m	class:InputReaderInterface
+read	utils/inputreaders/__init__.py	/^    def read(self, include_raw=False):$/;"	m	class:InputDevice
+read	utils/inputreaders/linuxjsdev.py	/^    def read(self):$/;"	m	class:_JS
+read	utils/inputreaders/linuxjsdev.py	/^    def read(self, device_id):$/;"	m	class:Joystick
+read	utils/inputreaders/pysdl2.py	/^    def read(self):$/;"	m	class:_JS
+read	utils/inputreaders/pysdl2.py	/^    def read(self, device_id):$/;"	m	class:PySDL2Reader
+read	utils/mux/__init__.py	/^    def read(self):$/;"	m	class:InputMux
+read	utils/mux/mixmux.py	/^    def read(self):$/;"	m	class:MixMux
+read	utils/mux/nomux.py	/^    def read(self):$/;"	m	class:NoMux
+read	utils/mux/selectivemux.py	/^    def read(self):$/;"	m	class:SelectiveMux
+read	utils/mux/takeovermux.py	/^    def read(self):$/;"	m	class:TakeOverMux
+read	utils/mux/takeoverselectivemux.py	/^    def read(self):$/;"	m	class:TakeOverSelectiveMux
+readConfigAction	ui/dialogs/cf1config.py	/^    def readConfigAction(self):$/;"	m	class:CrazyloadThread
+read_input	utils/input.py	/^    def read_input(self):$/;"	m	class:JoystickReader
+read_raw_values	utils/input.py	/^    def read_raw_values(self):$/;"	m	class:JoystickReader
+refresh	ui/tabs/LogBlockTab.py	/^    def refresh(self):$/;"	m	class:LogBlockModel
+refresh	ui/tabs/ParamTab.py	/^    def refresh(self):$/;"	m	class:ParamBlockModel
+removeAllDatasets	ui/widgets/plotwidget.py	/^    def removeAllDatasets(self):$/;"	m	class:PlotWidget
+remove_block	ui/tabs/LogBlockTab.py	/^    def remove_block(self, block):$/;"	m	class:LogBlockModel
+remove_block	ui/tabs/PlotTab.py	/^    def remove_block(self, block):$/;"	m	class:LogConfigModel
+remove_device	utils/mux/__init__.py	/^    def remove_device(self, dev):$/;"	m	class:InputMux
+requestConnectionSignal	ui/dialogs/connectiondialogue.py	/^    requestConnectionSignal = pyqtSignal(str)$/;"	v	class:ConnectDialogue
+rescan	ui/dialogs/connectiondialogue.py	/^    def rescan(self):$/;"	m	class:ConnectDialogue
+reset	ui/tabs/LogBlockTab.py	/^    def reset(self):$/;"	m	class:LogBlockModel
+reset	ui/tabs/ParamTab.py	/^    def reset(self):$/;"	m	class:ParamBlockModel
+reset	ui/tabs/PlotTab.py	/^    def reset(self):$/;"	m	class:LogConfigModel
+resetCopter	ui/dialogs/bootloader.py	/^    def resetCopter(self):$/;"	m	class:BootloaderDialog
+resetCopter	ui/dialogs/bootloader.py	/^    def resetCopter(self):$/;"	m	class:CrazyloadThread
+resetCopter	ui/dialogs/cf1config.py	/^    def resetCopter(self):$/;"	m	class:Cf1ConfigDialog
+resetCopter	ui/dialogs/cf1config.py	/^    def resetCopter(self):$/;"	m	class:CrazyloadThread
+resetCopterSignal	ui/dialogs/bootloader.py	/^    resetCopterSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+resetCopterSignal	ui/dialogs/cf1config.py	/^    resetCopterSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+resetTrees	ui/dialogs/logconfigdialogue.py	/^    def resetTrees(self):$/;"	m	class:LogConfigDialogue
+ret	__init__.py	/^        ret = subprocess.call(["git", "diff", "--quiet", "HEAD"])$/;"	v
+rowCount	ui/tabs/LogBlockTab.py	/^    def rowCount(self, parent):$/;"	m	class:LogBlockModel
+rowCount	ui/tabs/ParamTab.py	/^    def rowCount(self, parent):$/;"	m	class:ParamBlockModel
+rowCount	ui/tabs/PlotTab.py	/^    def rowCount(self, parent):$/;"	m	class:LogConfigModel
+run	utils/inputinterfaces/wiimote.py	/^    def run(self):$/;"	m	class:HandleWiimote
+run	utils/inputinterfaces/zmqpull.py	/^    def run(self):$/;"	m	class:_PullReader
+run	utils/periodictimer.py	/^    def run(self):$/;"	m	class:_PeriodicTimerThread
+saveConfig	ui/dialogs/logconfigdialogue.py	/^    def saveConfig(self):$/;"	m	class:LogConfigDialogue
+saveLogConfigFile	utils/logconfigreader.py	/^    def saveLogConfigFile(self, logconfig):$/;"	m	class:LogConfigReader
+save_file	utils/config.py	/^    def save_file(self):$/;"	m	class:Config
+scan	ui/dialogs/connectiondialogue.py	/^    def scan(self, address):$/;"	m	class:ScannerThread
+scanSignal	ui/dialogs/connectiondialogue.py	/^    scanSignal = pyqtSignal(object)$/;"	v	class:ScannerThread
+service_dialog_class	ui/dialogs/bootloader.py	/^service_dialog_class = uic.loadUiType(sys.path[0] +$/;"	v
+service_dialog_class	ui/dialogs/cf1config.py	/^service_dialog_class = uic.loadUiType(sys.path[0] +$/;"	v
+service_dialog_class	ui/dialogs/cf2config.py	/^service_dialog_class = uic.loadUiType(sys.path[0] +$/;"	v
+set	utils/config.py	/^    def set(self, key, value):$/;"	m	class:Config
+setBaro	ui/widgets/ai.py	/^    def setBaro(self, asl):$/;"	m	class:AttitudeIndicator
+setData	ui/tabs/ParamTab.py	/^    def setData(self, index, value, role):$/;"	m	class:ParamBlockModel
+setHover	ui/widgets/ai.py	/^    def setHover(self, target):        $/;"	m	class:AttitudeIndicator
+setMotorLabelsEnabled	ui/tabs/FlightTab.py	/^    def setMotorLabelsEnabled(self, enabled):$/;"	m	class:FlightTab
+setPitch	ui/widgets/ai.py	/^    def setPitch(self, pitch):$/;"	m	class:AttitudeIndicator
+setRoll	ui/widgets/ai.py	/^    def setRoll(self, roll):$/;"	m	class:AttitudeIndicator
+setRollPitch	ui/widgets/ai.py	/^    def setRollPitch(self, roll, pitch):$/;"	m	class:AttitudeIndicator
+setStatusLabel	ui/dialogs/bootloader.py	/^    def setStatusLabel(self, text):$/;"	m	class:BootloaderDialog
+setStatusLabel	ui/dialogs/cf1config.py	/^    def setStatusLabel(self, text):$/;"	m	class:Cf1ConfigDialog
+setUiState	ui/dialogs/bootloader.py	/^    def setUiState(self, state):$/;"	m	class:BootloaderDialog
+setUiState	ui/dialogs/cf1config.py	/^    def setUiState(self, state):$/;"	m	class:Cf1ConfigDialog
+setValue	ui/widgets/hexspinbox.py	/^    def setValue(self, value):$/;"	m	class:HexSpinBox
+set_alt_hold_available	utils/input.py	/^    def set_alt_hold_available(self, available):$/;"	m	class:JoystickReader
+set_alt_hold_available	utils/mux/__init__.py	/^    def set_alt_hold_available(self, available):$/;"	m	class:InputMux
+set_data_callback	utils/inputinterfaces/leapmotion.py	/^    def set_data_callback(self, callback):$/;"	m	class:LeapListener
+set_input_map	utils/input.py	/^    def set_input_map(self, device_name, input_map_name):$/;"	m	class:JoystickReader
+set_mux	utils/input.py	/^    def set_mux(self, name=None, mux=None):$/;"	m	class:JoystickReader
+set_raw_input_map	utils/input.py	/^    def set_raw_input_map(self, input_map):$/;"	m	class:JoystickReader
+set_rp_limit	utils/input.py	/^    def set_rp_limit(self, max_rp_angle):$/;"	m	class:JoystickReader
+set_thrust_limits	utils/input.py	/^    def set_thrust_limits(self, min_thrust, max_thrust):$/;"	m	class:JoystickReader
+set_thrust_slew_limiting	utils/input.py	/^    def set_thrust_slew_limiting(self, thrust_slew_rate, thrust_slew_limit):$/;"	m	class:JoystickReader
+set_title	ui/widgets/plotwidget.py	/^    def set_title(self, title):$/;"	m	class:PlotWidget
+set_toc	ui/tabs/ParamTab.py	/^    def set_toc(self, toc, crazyflie):$/;"	m	class:ParamBlockModel
+set_trim_pitch	utils/input.py	/^    def set_trim_pitch(self, trim_pitch):$/;"	m	class:JoystickReader
+set_trim_roll	utils/input.py	/^    def set_trim_roll(self, trim_roll):$/;"	m	class:JoystickReader
+set_value	ui/tabs/ParamTab.py	/^    def set_value(self, value):$/;"	m	class:ParamChildItem
+set_yaw_limit	utils/input.py	/^    def set_yaw_limit(self, max_yaw_rate):$/;"	m	class:JoystickReader
+should_enable_tab	ui/tabs/GpsTab.py	/^    should_enable_tab = False$/;"	v
+should_enable_tab	ui/tabs/GpsTab.py	/^    should_enable_tab = True$/;"	v
+showErrorPopup	ui/dialogs/logconfigdialogue.py	/^    def showErrorPopup(self, caption, message):$/;"	m	class:LogConfigDialogue
+showEvent	ui/dialogs/about.py	/^    def showEvent(self, event):$/;"	m	class:AboutDialog
+showEvent	ui/dialogs/connectiondialogue.py	/^    def showEvent(self, ev):$/;"	m	class:ConnectDialogue
+showEvent	ui/dialogs/inputconfigdialogue.py	/^    def showEvent(self, event):$/;"	m	class:InputConfigDialogue
+showEvent	ui/dialogs/logconfigdialogue.py	/^    def showEvent(self, event):$/;"	m	class:LogConfigDialogue
+show_data	ui/widgets/plotwidget.py	/^    def show_data(self, start, stop):$/;"	m	class:PlotItemWrapper
+sortTrees	ui/dialogs/logconfigdialogue.py	/^    def sortTrees(self):$/;"	m	class:LogConfigDialogue
+start	ui/tabs/LogBlockTab.py	/^    def start(self):$/;"	m	class:LogBlockItem
+start	utils/logdatawriter.py	/^    def start(self):$/;"	m	class:LogWriter
+start	utils/periodictimer.py	/^    def start(self):$/;"	m	class:PeriodicTimer
+start_input	utils/input.py	/^    def start_input(self, device_name, config_name=None):$/;"	m	class:JoystickReader
+start_reading	ui/dialogs/inputconfigdialogue.py	/^    def start_reading(self):$/;"	m	class:DeviceReader
+start_writing_to_file	ui/tabs/LogBlockTab.py	/^    def start_writing_to_file(self):$/;"	m	class:LogBlockItem
+statusChanged	ui/dialogs/bootloader.py	/^    statusChanged = pyqtSignal(str, int)$/;"	v	class:CrazyloadThread
+statusChanged	ui/dialogs/cf1config.py	/^    statusChanged = pyqtSignal(str, int)$/;"	v	class:CrazyloadThread
+statusUpdate	ui/dialogs/bootloader.py	/^    def statusUpdate(self, status, progress):$/;"	m	class:BootloaderDialog
+statusUpdate	ui/dialogs/cf1config.py	/^    def statusUpdate(self, status, progress):$/;"	m	class:Cf1ConfigDialog
+stepBy	ui/widgets/hexspinbox.py	/^    def stepBy(self, steps):$/;"	m	class:HexSpinBox
+stepEnabled	ui/widgets/hexspinbox.py	/^    def stepEnabled(self):$/;"	m	class:HexSpinBox
+stop	ui/tabs/LogBlockTab.py	/^    def stop(self):$/;"	m	class:LogBlockItem
+stop	utils/logdatawriter.py	/^    def stop(self):$/;"	m	class:LogWriter
+stop	utils/periodictimer.py	/^    def stop(self):$/;"	m	class:PeriodicTimer
+stop	utils/periodictimer.py	/^    def stop(self):$/;"	m	class:_PeriodicTimerThread
+stop_input	utils/input.py	/^    def stop_input(self, device_name = None):$/;"	m	class:JoystickReader
+stop_raw_reading	utils/input.py	/^    def stop_raw_reading(self):$/;"	m	class:JoystickReader
+stop_reading	ui/dialogs/inputconfigdialogue.py	/^    def stop_reading(self):$/;"	m	class:DeviceReader
+stop_writing_to_file	ui/tabs/LogBlockTab.py	/^    def stop_writing_to_file(self):$/;"	m	class:LogBlockItem
+tabModule	ui/tabs/__init__.py	/^    tabModule = __import__(tab, globals(), locals(), [tab], -1)$/;"	v
+tbModule	ui/toolboxes/__init__.py	/^    tbModule = __import__(tb, globals(), locals(), [tb], -1)$/;"	v
+textFromValue	ui/widgets/hexspinbox.py	/^    def textFromValue(self, value):$/;"	m	class:HexSpinBox
+thrustLoweringSlewRateLimitChanged	ui/tabs/FlightTab.py	/^    def thrustLoweringSlewRateLimitChanged(self):$/;"	m	class:FlightTab
+thrustToPercentage	ui/tabs/FlightTab.py	/^    def thrustToPercentage(self, thrust):$/;"	m	class:FlightTab
+toggleToolbox	ui/main.py	/^    def toggleToolbox(self, display):$/;"	m	class:MainUI
+toggleVisibility	ui/tab.py	/^    def toggleVisibility(self, checked):$/;"	m	class:Tab
+toolboxes	ui/toolboxes/__init__.py	/^toolboxes = []$/;"	v
+uiSetupReady	ui/tabs/FlightTab.py	/^    def uiSetupReady(self):$/;"	m	class:FlightTab
+uiSetupReadySignal	ui/tabs/FlightTab.py	/^    uiSetupReadySignal = pyqtSignal()$/;"	v	class:FlightTab
+update	ui/tabs/ConsoleTab.py	/^    update = pyqtSignal(str)$/;"	v	class:ConsoleTab
+update	ui/toolboxes/ConsoleToolbox.py	/^    update = pyqtSignal(str)$/;"	v	class:ConsoleToolbox
+updateBaro	ui/widgets/ai.py	/^        def updateBaro(self, asl):$/;"	m	class:AttitudeIndicator.Example
+updateConfig	ui/dialogs/bootloader.py	/^    def updateConfig(self, channel, speed, rollTrim, pitchTrim):$/;"	m	class:BootloaderDialog
+updateConfig	ui/dialogs/cf1config.py	/^    def updateConfig(self, channel, speed, rollTrim, pitchTrim):$/;"	m	class:Cf1ConfigDialog
+updateConfigSignal	ui/dialogs/bootloader.py	/^    updateConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+updateConfigSignal	ui/dialogs/cf1config.py	/^    updateConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+updateCpuIdSignal	ui/dialogs/bootloader.py	/^    updateCpuIdSignal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+updateEmergencyStop	ui/tabs/FlightTab.py	/^    def updateEmergencyStop(self, emergencyStop):$/;"	m	class:FlightTab
+updateInputControl	ui/tabs/FlightTab.py	/^    def updateInputControl(self, roll, pitch, yaw, thrust):$/;"	m	class:FlightTab
+updatePacketSizeBar	ui/dialogs/logconfigdialogue.py	/^    def updatePacketSizeBar(self):$/;"	m	class:LogConfigDialogue
+updatePitch	ui/widgets/ai.py	/^        def updatePitch(self, pitch):$/;"	m	class:AttitudeIndicator.Example
+updateRoll	ui/widgets/ai.py	/^        def updateRoll(self, roll):$/;"	m	class:AttitudeIndicator.Example
+updateTarget	ui/widgets/ai.py	/^        def updateTarget(self, target):$/;"	m	class:AttitudeIndicator.Example
+updateToc	ui/dialogs/logconfigdialogue.py	/^    def updateToc(self):$/;"	m	class:LogConfigDialogue
+updated	ui/tabs/ParamTab.py	/^    def updated(self, name, value):$/;"	m	class:ParamChildItem
+validate	ui/widgets/hexspinbox.py	/^    def validate(self, text, pos):$/;"	m	class:HexSpinBox
+value	ui/widgets/hexspinbox.py	/^    def value(self):$/;"	m	class:HexSpinBox
+valueFromText	ui/widgets/hexspinbox.py	/^    def valueFromText(self, text):$/;"	m	class:HexSpinBox
+var_list	ui/tabs/LogBlockTab.py	/^    def var_list(self):$/;"	m	class:LogBlockItem
+verified	ui/dialogs/bootloader.py	/^    verified = pyqtSignal()$/;"	v	class:CrazyloadThread
+verify	ui/dialogs/bootloader.py	/^    verify = pyqtSignal()$/;"	v	class:CrazyloadThread
+verifyAction	ui/dialogs/bootloader.py	/^    def verifyAction(self):$/;"	m	class:BootloaderDialog
+verifyDone	ui/dialogs/bootloader.py	/^    def verifyDone(self):$/;"	m	class:BootloaderDialog
+writeConfig	ui/dialogs/cf1config.py	/^    def writeConfig(self):$/;"	m	class:Cf1ConfigDialog
+writeConfigAction	ui/dialogs/cf1config.py	/^    def writeConfigAction(self, channel, speed, rollTrim, pitchTrim):$/;"	m	class:CrazyloadThread
+writeConfigSignal	ui/dialogs/bootloader.py	/^    writeConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+writeConfigSignal	ui/dialogs/cf1config.py	/^    writeConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+writing	utils/logdatawriter.py	/^    def writing(self):$/;"	m	class:LogWriter
+writing_to_file	ui/tabs/LogBlockTab.py	/^    def writing_to_file(self):$/;"	m	class:LogBlockItem

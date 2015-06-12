@@ -1,0 +1,1582 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	lib/cfclient/utils/inputinterfaces/wiimote.py	/^A = 8$/;"	v
+ACK_ENABLE	lib/cflib/drivers/crazyradio.py	/^ACK_ENABLE = 0x10$/;"	v
+ALL	lib/cflib/crtp/crtpstack.py	/^    ALL = 0xFF$/;"	v	class:CRTPPort
+AboutDialog	lib/cfclient/ui/dialogs/about.py	/^class AboutDialog(QtGui.QWidget, about_widget_class):$/;"	c
+AttitudeIndicator	lib/cfclient/ui/widgets/ai.py	/^class AttitudeIndicator(QtGui.QWidget):$/;"	c
+B	lib/cfclient/utils/inputinterfaces/wiimote.py	/^B = 4$/;"	v
+BINFILE	lib/cfconfig/Makefile	/^BINFILE           := cblock.bin$/;"	m
+BootVersion	lib/cflib/bootloader/boottypes.py	/^class BootVersion:$/;"	c
+Bootloader	lib/cflib/bootloader/__init__.py	/^class Bootloader:$/;"	c
+BootloaderDialog	lib/cfclient/ui/dialogs/bootloader.py	/^class BootloaderDialog(QtGui.QWidget, service_dialog_class):$/;"	c
+CF1_PROTO_VER_0	lib/cflib/bootloader/boottypes.py	/^    CF1_PROTO_VER_0 = 0x00$/;"	v	class:BootVersion
+CF1_PROTO_VER_1	lib/cflib/bootloader/boottypes.py	/^    CF1_PROTO_VER_1 = 0x01$/;"	v	class:BootVersion
+CF2_PROTO_VER	lib/cflib/bootloader/boottypes.py	/^    CF2_PROTO_VER = 0x10$/;"	v	class:BootVersion
+CF_URI	examples/zmqsrvtest.py	/^CF_URI = "radio:\/\/0\/10\/250K"$/;"	v
+CHAN_INFO	lib/cflib/crazyflie/mem.py	/^CHAN_INFO = 0$/;"	v
+CHAN_LOGDATA	lib/cflib/crazyflie/log.py	/^CHAN_LOGDATA = 2$/;"	v
+CHAN_READ	lib/cflib/crazyflie/mem.py	/^CHAN_READ = 1$/;"	v
+CHAN_SETTINGS	lib/cflib/crazyflie/log.py	/^CHAN_SETTINGS = 1$/;"	v
+CHAN_TOC	lib/cflib/crazyflie/log.py	/^CHAN_TOC = 0$/;"	v
+CHAN_WRITE	lib/cflib/crazyflie/mem.py	/^CHAN_WRITE = 2$/;"	v
+CMD_APPEND_BLOCK	lib/cflib/crazyflie/log.py	/^CMD_APPEND_BLOCK = 1$/;"	v
+CMD_CREATE_BLOCK	lib/cflib/crazyflie/log.py	/^CMD_CREATE_BLOCK = 0$/;"	v
+CMD_DELETE_BLOCK	lib/cflib/crazyflie/log.py	/^CMD_DELETE_BLOCK = 2$/;"	v
+CMD_INFO_DETAILS	lib/cflib/crazyflie/mem.py	/^CMD_INFO_DETAILS = 2$/;"	v
+CMD_INFO_NBR	lib/cflib/crazyflie/mem.py	/^CMD_INFO_NBR = 1$/;"	v
+CMD_INFO_VER	lib/cflib/crazyflie/mem.py	/^CMD_INFO_VER = 0$/;"	v
+CMD_RESET_LOGGING	lib/cflib/crazyflie/log.py	/^CMD_RESET_LOGGING = 5$/;"	v
+CMD_START_LOGGING	lib/cflib/crazyflie/log.py	/^CMD_START_LOGGING = 3$/;"	v
+CMD_STOP_LOGGING	lib/cflib/crazyflie/log.py	/^CMD_STOP_LOGGING = 4$/;"	v
+CMD_TOC_ELEMENT	lib/cflib/crazyflie/log.py	/^CMD_TOC_ELEMENT = 0$/;"	v
+CMD_TOC_ELEMENT	lib/cflib/crazyflie/toc.py	/^CMD_TOC_ELEMENT = 0$/;"	v
+CMD_TOC_INFO	lib/cflib/crazyflie/log.py	/^CMD_TOC_INFO = 1$/;"	v
+CMD_TOC_INFO	lib/cflib/crazyflie/toc.py	/^CMD_TOC_INFO = 1$/;"	v
+COLD_CONNECT	lib/cfclient/ui/dialogs/bootloader.py	/^    COLD_CONNECT = 2$/;"	v	class:UIState
+COLD_CONNECT	lib/cfclient/ui/dialogs/cf1config.py	/^    COLD_CONNECT = 2$/;"	v	class:UIState
+COMMANDER	lib/cflib/crtp/crtpstack.py	/^    COMMANDER = 0x03$/;"	v	class:CRTPPort
+CONFIGFILE	lib/cfconfig/Makefile	/^CONFIGFILE        := cblock.cfg$/;"	m
+CONNECTED	lib/cfclient/ui/main.py	/^    CONNECTED = 2$/;"	v	class:UIState
+CONNECTED	lib/cflib/crazyflie/__init__.py	/^    CONNECTED = 2$/;"	v	class:State
+CONNECTING	lib/cfclient/ui/dialogs/bootloader.py	/^    CONNECTING = 5$/;"	v	class:UIState
+CONNECTING	lib/cfclient/ui/dialogs/cf1config.py	/^    CONNECTING = 5$/;"	v	class:UIState
+CONNECTING	lib/cfclient/ui/main.py	/^    CONNECTING = 1$/;"	v	class:UIState
+CONNECT_FAILED	lib/cfclient/ui/dialogs/bootloader.py	/^    CONNECT_FAILED = 1$/;"	v	class:UIState
+CONNECT_FAILED	lib/cfclient/ui/dialogs/cf1config.py	/^    CONNECT_FAILED = 1$/;"	v	class:UIState
+CONNECT_TIMEOUT	lib/cfzmq.py	/^CONNECT_TIMEOUT = 5$/;"	v
+CONSOLE	lib/cflib/crtp/crtpstack.py	/^    CONSOLE = 0x00$/;"	v	class:CRTPPort
+CRADIO_PID	lib/cflib/drivers/crazyradio.py	/^CRADIO_PID = 0x7777$/;"	v
+CRADIO_VID	lib/cflib/drivers/crazyradio.py	/^CRADIO_VID = 0x1915$/;"	v
+CRTPDriver	lib/cflib/crtp/crtpdriver.py	/^class CRTPDriver:$/;"	c
+CRTPPacket	lib/cflib/crtp/crtpstack.py	/^class CRTPPacket(object):$/;"	c
+CRTPPort	lib/cflib/crtp/crtpstack.py	/^class CRTPPort:$/;"	c
+CTYPE_FIELD	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^CTYPE_FIELD = 3$/;"	v
+Caller	lib/cflib/utils/callbacks.py	/^class Caller():$/;"	c
+Cf1ConfigDialog	lib/cfclient/ui/dialogs/cf1config.py	/^class Cf1ConfigDialog(QtGui.QWidget, service_dialog_class):$/;"	c
+Cf2ConfigDialog	lib/cfclient/ui/dialogs/cf2config.py	/^class Cf2ConfigDialog(QtGui.QWidget, service_dialog_class):$/;"	c
+CfUsb	lib/cflib/drivers/cfusb.py	/^class CfUsb:$/;"	c
+CheckboxDelegate	lib/cfclient/ui/tabs/LogBlockTab.py	/^class CheckboxDelegate(QStyledItemDelegate):$/;"	c
+Cloader	lib/cflib/bootloader/cloader.py	/^class Cloader:$/;"	c
+Commander	lib/cflib/crazyflie/commander.py	/^class Commander():$/;"	c
+CommunicationException	lib/cflib/crtp/exceptions.py	/^class CommunicationException (Exception):$/;"	c
+Config	lib/cfclient/utils/config.py	/^class Config():$/;"	c
+ConfigManager	lib/cfclient/utils/config_manager.py	/^class ConfigManager():$/;"	c
+ConnectDialogue	lib/cfclient/ui/dialogs/connectiondialogue.py	/^class ConnectDialogue(QtGui.QWidget, connect_widget_class):$/;"	c
+Console	lib/cflib/crazyflie/console.py	/^class Console:$/;"	c
+ConsoleTab	lib/cfclient/ui/tabs/ConsoleTab.py	/^class ConsoleTab(Tab, console_tab_class):$/;"	c
+ConsoleToolbox	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^class ConsoleToolbox(QtGui.QWidget, console_class):$/;"	c
+Crazyflie	lib/cflib/crazyflie/__init__.py	/^class Crazyflie():$/;"	c
+CrazyloadThread	lib/cfclient/ui/dialogs/bootloader.py	/^class CrazyloadThread(QThread):$/;"	c
+CrazyloadThread	lib/cfclient/ui/dialogs/cf1config.py	/^class CrazyloadThread(QThread):$/;"	c
+Crazyradio	lib/cflib/drivers/crazyradio.py	/^class Crazyradio:$/;"	c
+CrtpSharkToolbox	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^class CrtpSharkToolbox(QtGui.QWidget, param_tab_class):$/;"	c
+DEBUGDRIVER	lib/cflib/crtp/crtpstack.py	/^    DEBUGDRIVER = 0x0E$/;"	v	class:CRTPPort
+DEVICE_FORMAT	lib/cfclient/ui/dialogs/about.py	/^DEVICE_FORMAT = "{}: ({}) {}<br>"$/;"	v
+DISCONNECTED	lib/cfclient/ui/dialogs/bootloader.py	/^    DISCONNECTED = 0$/;"	v	class:UIState
+DISCONNECTED	lib/cfclient/ui/dialogs/cf1config.py	/^    DISCONNECTED = 0$/;"	v	class:UIState
+DISCONNECTED	lib/cfclient/ui/main.py	/^    DISCONNECTED = 0$/;"	v	class:UIState
+DISCONNECTED	lib/cflib/crazyflie/__init__.py	/^    DISCONNECTED = 0$/;"	v	class:State
+DIST_PATH	win32install/generate_nsis.py	/^DIST_PATH = "..\\dist"$/;"	v
+DOWN	lib/cfclient/utils/inputinterfaces/wiimote.py	/^DOWN = 1024$/;"	v
+DRIVERS	lib/cflib/crtp/__init__.py	/^DRIVERS = [RadioDriver, SerialDriver, UdpDriver, DebugDriver, UsbDriver]$/;"	v
+DR_1MPS	lib/cflib/drivers/crazyradio.py	/^    DR_1MPS = 1$/;"	v	class:Crazyradio
+DR_250KPS	lib/cflib/drivers/crazyradio.py	/^    DR_250KPS = 0$/;"	v	class:Crazyradio
+DR_2MPS	lib/cflib/drivers/crazyradio.py	/^    DR_2MPS = 2$/;"	v	class:Crazyradio
+DebugDriver	lib/cflib/crtp/debugdriver.py	/^class DebugDriver (CRTPDriver):$/;"	c
+DebugDriverToolbox	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^class DebugDriverToolbox(QtGui.QWidget, debugdriver_tab_class):$/;"	c
+DeviceReader	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^class DeviceReader(QThread):$/;"	c
+Example	lib/cfclient/ui/widgets/ai.py	/^    class Example(QtGui.QWidget):$/;"	c	class:AttitudeIndicator
+ExampleTab	lib/cfclient/ui/tabs/ExampleTab.py	/^class ExampleTab(Tab, example_tab_class):$/;"	c
+FIRMWARE_FORMAT	lib/cfclient/ui/dialogs/about.py	/^FIRMWARE_FORMAT = "{:x}{:x} ({})"$/;"	v
+FLASHING	lib/cfclient/ui/dialogs/bootloader.py	/^    FLASHING = 3$/;"	v	class:UIState
+FLASHING	lib/cfclient/ui/dialogs/cf1config.py	/^    FLASHING = 3$/;"	v	class:UIState
+FakeConsoleThread	lib/cflib/crtp/debugdriver.py	/^class FakeConsoleThread (Thread):$/;"	c
+FakeMemory	lib/cflib/crtp/debugdriver.py	/^class FakeMemory:$/;"	c
+FancyMarbleWidget	lib/cfclient/ui/tabs/GpsTab.py	/^    class FancyMarbleWidget(Marble.MarbleWidget):$/;"	c	class:GpsTab
+FlightTab	lib/cfclient/ui/tabs/FlightTab.py	/^class FlightTab(Tab, flight_tab_class):$/;"	c
+GET_TOC_ELEMENT	lib/cflib/crazyflie/log.py	/^GET_TOC_ELEMENT = "GET_TOC_ELEMENT"$/;"	v
+GET_TOC_ELEMENT	lib/cflib/crazyflie/toc.py	/^GET_TOC_ELEMENT = "GET_TOC_ELEMENT"$/;"	v
+GET_TOC_INF	lib/cflib/crazyflie/log.py	/^GET_TOC_INF = "GET_TOC_INFO"$/;"	v
+GET_TOC_INFO	lib/cflib/crazyflie/toc.py	/^GET_TOC_INFO = "GET_TOC_INFO"$/;"	v
+GpsTab	lib/cfclient/ui/tabs/GpsTab.py	/^class GpsTab(Tab, gps_tab_class):$/;"	c
+HOME	lib/cfclient/utils/inputinterfaces/wiimote.py	/^HOME = 128$/;"	v
+HandleWiimote	lib/cfclient/utils/inputinterfaces/wiimote.py	/^class HandleWiimote(Thread):$/;"	c
+HeadlessClient	lib/cfheadless.py	/^class HeadlessClient():$/;"	c
+HexSpinBox	lib/cfclient/ui/widgets/hexspinbox.py	/^class HexSpinBox(QAbstractSpinBox):$/;"	c
+I2CElement	lib/cflib/crazyflie/mem.py	/^class I2CElement(MemoryElement):$/;"	c
+IDLE	lib/cflib/crazyflie/log.py	/^IDLE = "IDLE"$/;"	v
+IDLE	lib/cflib/crazyflie/param.py	/^IDLE = 0$/;"	v
+IDLE	lib/cflib/crazyflie/toc.py	/^IDLE = "IDLE"$/;"	v
+ID_FIELD	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^ID_FIELD = 1$/;"	v
+IMU_SENSORS_FORMAT	lib/cfclient/ui/dialogs/about.py	/^IMU_SENSORS_FORMAT = "{}: {}<br>"$/;"	v
+INITIALIZED	lib/cflib/crazyflie/__init__.py	/^    INITIALIZED = 1$/;"	v	class:State
+INPUT_READER_FORMAT	lib/cfclient/ui/dialogs/about.py	/^INPUT_READER_FORMAT = "{} ({} devices connected)<br>"$/;"	v
+INSTALL_DIRS	win32install/generate_nsis.py	/^INSTALL_DIRS = []$/;"	v
+INSTALL_FILES	win32install/generate_nsis.py	/^INSTALL_FILES = []$/;"	v
+INSTANCES	lib/cflib/crtp/__init__.py	/^INSTANCES = []$/;"	v
+INTERFACE_FORMAT	lib/cfclient/ui/dialogs/about.py	/^INTERFACE_FORMAT = "{}: {}<br>"$/;"	v
+InputConfigDialogue	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^class InputConfigDialogue(QtGui.QWidget, inputconfig_widget_class):$/;"	c
+InputDevice	lib/cfclient/utils/inputreaders/__init__.py	/^class InputDevice(InputReaderInterface):$/;"	c
+InputInterface	lib/cfclient/utils/inputinterfaces/__init__.py	/^class InputInterface(InputReaderInterface):$/;"	c
+InputMux	lib/cfclient/utils/mux/__init__.py	/^class InputMux(object):$/;"	c
+InputReaderInterface	lib/cfclient/utils/inputreaderinterface.py	/^class InputReaderInterface(object):$/;"	c
+JE_NUMBER	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JE_NUMBER = 3$/;"	v
+JE_TIME	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JE_TIME = 0$/;"	v
+JE_TYPE	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JE_TYPE = 2$/;"	v
+JE_VALUE	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JE_VALUE = 1$/;"	v
+JEvent	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^class JEvent(object):$/;"	c
+JSIOCGAXES	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JSIOCGAXES = 0x80016a11$/;"	v
+JSIOCGBUTTONS	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JSIOCGBUTTONS = 0x80016a12$/;"	v
+JS_EVENT_AXIS	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JS_EVENT_AXIS = 0x002$/;"	v
+JS_EVENT_BUTTON	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JS_EVENT_BUTTON = 0x001$/;"	v
+JS_EVENT_FMT	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JS_EVENT_FMT = "@IhBB"$/;"	v
+JS_EVENT_INIT	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^JS_EVENT_INIT = 0x080$/;"	v
+Joystick	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^class Joystick():$/;"	c
+JoystickReader	lib/cfclient/utils/input.py	/^class JoystickReader:$/;"	c
+LAUNCH_BOOTLOADER	lib/cflib/drivers/crazyradio.py	/^LAUNCH_BOOTLOADER = 0xFF$/;"	v
+LEFT	lib/cfclient/utils/inputinterfaces/wiimote.py	/^LEFT = 256$/;"	v
+LINKCTRL	lib/cflib/crtp/crtpstack.py	/^    LINKCTRL = 0x0F$/;"	v	class:CRTPPort
+LOGGING	lib/cflib/crtp/crtpstack.py	/^    LOGGING = 0x05$/;"	v	class:CRTPPort
+LOG_TIMEOUT	lib/cfzmq.py	/^LOG_TIMEOUT = 10$/;"	v
+LeapListener	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^class LeapListener(Leap.Listener):$/;"	c
+LeapmotionReader	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^class LeapmotionReader:$/;"	c
+Log	lib/cflib/crazyflie/log.py	/^class Log():$/;"	c
+LogBlockChildItem	lib/cfclient/ui/tabs/LogBlockTab.py	/^class LogBlockChildItem(object):$/;"	c
+LogBlockDebugTab	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^class LogBlockDebugTab(Tab, logblock_tab_class):$/;"	c
+LogBlockItem	lib/cfclient/ui/tabs/LogBlockTab.py	/^class LogBlockItem(object):$/;"	c
+LogBlockModel	lib/cfclient/ui/tabs/LogBlockTab.py	/^class LogBlockModel(QAbstractItemModel):$/;"	c
+LogBlockTab	lib/cfclient/ui/tabs/LogBlockTab.py	/^class LogBlockTab(Tab, logblock_tab_class):$/;"	c
+LogConfig	lib/cflib/crazyflie/log.py	/^class LogConfig(object):$/;"	c
+LogConfigDialogue	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^class LogConfigDialogue(QtGui.QWidget, logconfig_widget_class):$/;"	c
+LogConfigModel	lib/cfclient/ui/tabs/PlotTab.py	/^class LogConfigModel(QAbstractItemModel):$/;"	c
+LogConfigReader	lib/cfclient/utils/logconfigreader.py	/^class LogConfigReader():$/;"	c
+LogTab	lib/cfclient/ui/tabs/LogTab.py	/^class LogTab(Tab, param_tab_class):$/;"	c
+LogTocElement	lib/cflib/crazyflie/log.py	/^class LogTocElement:$/;"	c
+LogVariable	lib/cflib/crazyflie/log.py	/^class LogVariable():$/;"	c
+LogWriter	lib/cfclient/utils/logdatawriter.py	/^class LogWriter():$/;"	c
+LoggingExample	examples/basiclog.py	/^class LoggingExample:$/;"	c
+MAX_DATA_LENGTH	lib/cflib/crazyflie/mem.py	/^    MAX_DATA_LENGTH = 20$/;"	v	class:_ReadRequest
+MAX_DATA_LENGTH	lib/cflib/crazyflie/mem.py	/^    MAX_DATA_LENGTH = 20$/;"	v	class:_WriteRequest
+MAX_LOG_DATA_PACKET_SIZE	lib/cflib/crazyflie/log.py	/^MAX_LOG_DATA_PACKET_SIZE = 30$/;"	v
+MAX_LOG_DATA_PACKET_SIZE	lib/cflib/crazyflie/mem.py	/^MAX_LOG_DATA_PACKET_SIZE = 30$/;"	v
+MAX_THRUST	lib/cfclient/ui/tabs/FlightTab.py	/^MAX_THRUST = 65365.0$/;"	v
+MAX_THRUST	lib/cfclient/utils/input.py	/^MAX_THRUST = 65000$/;"	v
+MAX_THRUST	lib/cfclient/utils/mux/__init__.py	/^MAX_THRUST = 65000$/;"	v
+MEM	lib/cflib/crtp/crtpstack.py	/^    MEM = 0x04$/;"	v	class:CRTPPort
+MEM_TYPE	lib/cflib/crazyflie/log.py	/^    MEM_TYPE = 1$/;"	v	class:LogVariable
+MINUS	lib/cfclient/utils/inputinterfaces/wiimote.py	/^MINUS = 16$/;"	v
+MODULE_MAIN	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^MODULE_MAIN = "LeapmotionReader"$/;"	v
+MODULE_MAIN	lib/cfclient/utils/inputinterfaces/wiimote.py	/^MODULE_MAIN = "WiimoteReader"$/;"	v
+MODULE_MAIN	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^MODULE_MAIN = "ZMQReader"$/;"	v
+MODULE_MAIN	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^MODULE_MAIN = "Joystick"$/;"	v
+MODULE_MAIN	lib/cfclient/utils/inputreaders/pysdl2.py	/^MODULE_MAIN = "PySDL2Reader"$/;"	v
+MODULE_NAME	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^MODULE_NAME = "Leap Motion"$/;"	v
+MODULE_NAME	lib/cfclient/utils/inputinterfaces/wiimote.py	/^MODULE_NAME = "WII"$/;"	v
+MODULE_NAME	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^MODULE_NAME = "ZMQ"$/;"	v
+MODULE_NAME	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^MODULE_NAME = "linuxjsdev"$/;"	v
+MODULE_NAME	lib/cfclient/utils/inputreaders/pysdl2.py	/^MODULE_NAME = "PySDL2"$/;"	v
+MainUI	lib/cfclient/ui/main.py	/^class MainUI(QtGui.QMainWindow, main_window_class):$/;"	c
+Memory	lib/cflib/crazyflie/mem.py	/^class Memory():$/;"	c
+MemoryElement	lib/cflib/crazyflie/mem.py	/^class MemoryElement(object):$/;"	c
+MixMux	lib/cfclient/utils/mux/mixmux.py	/^class MixMux(InputMux):$/;"	c
+MotorRampExample	examples/ramp.py	/^class MotorRampExample:$/;"	c
+MyDockWidget	lib/cfclient/ui/main.py	/^class MyDockWidget(QtGui.QDockWidget):$/;"	c
+NAME_FIELD	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^NAME_FIELD = 0$/;"	v
+NRF51	lib/cflib/bootloader/boottypes.py	/^    NRF51 = 0xFE$/;"	v	class:TargetTypes
+NoMux	lib/cfclient/utils/mux/nomux.py	/^class NoMux(InputMux):$/;"	c
+ONE	lib/cfclient/utils/inputinterfaces/wiimote.py	/^ONE = 2$/;"	v
+OPENOCD_INTERFACE	lib/cfconfig/Makefile	/^OPENOCD_INTERFACE ?= interface\/jtagkey.cfg$/;"	m
+OPENOCD_TARGET	lib/cfconfig/Makefile	/^OPENOCD_TARGET    ?= target\/stm32.cfg$/;"	m
+OWElement	lib/cflib/crazyflie/mem.py	/^class OWElement(MemoryElement):$/;"	c
+PARAM	lib/cflib/crtp/crtpstack.py	/^    PARAM = 0x02$/;"	v	class:CRTPPort
+PARAM_TIMEOUT	lib/cfzmq.py	/^PARAM_TIMEOUT = 2$/;"	v
+PLUS	lib/cfclient/utils/inputinterfaces/wiimote.py	/^PLUS = 4096$/;"	v
+PTYPE_FIELD	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^PTYPE_FIELD = 2$/;"	v
+P_0DBM	lib/cflib/drivers/crazyradio.py	/^    P_0DBM = 3$/;"	v	class:Crazyradio
+P_M12DBM	lib/cflib/drivers/crazyradio.py	/^    P_M12DBM = 1$/;"	v	class:Crazyradio
+P_M18DBM	lib/cflib/drivers/crazyradio.py	/^    P_M18DBM = 0$/;"	v	class:Crazyradio
+P_M6DBM	lib/cflib/drivers/crazyradio.py	/^    P_M6DBM = 2$/;"	v	class:Crazyradio
+Param	lib/cflib/crazyflie/param.py	/^class Param():$/;"	c
+ParamBlockModel	lib/cfclient/ui/tabs/ParamTab.py	/^class ParamBlockModel(QAbstractItemModel):$/;"	c
+ParamChildItem	lib/cfclient/ui/tabs/ParamTab.py	/^class ParamChildItem(object):$/;"	c
+ParamExample	examples/basicparam.py	/^class ParamExample:$/;"	c
+ParamGroupItem	lib/cfclient/ui/tabs/ParamTab.py	/^class ParamGroupItem(object):$/;"	c
+ParamTab	lib/cfclient/ui/tabs/ParamTab.py	/^class ParamTab(Tab, param_tab_class):$/;"	c
+ParamTocElement	lib/cflib/crazyflie/param.py	/^class ParamTocElement:$/;"	c
+PeriodicTimer	lib/cfclient/utils/periodictimer.py	/^class PeriodicTimer:$/;"	c
+PlatformService	lib/cflib/crazyflie/platformservice.py	/^class PlatformService():$/;"	c
+PlotItemWrapper	lib/cfclient/ui/widgets/plotwidget.py	/^class PlotItemWrapper:$/;"	c
+PlotTab	lib/cfclient/ui/tabs/PlotTab.py	/^class PlotTab(Tab, plot_tab_class):$/;"	c
+PlotWidget	lib/cfclient/ui/widgets/plotwidget.py	/^class PlotWidget(QtGui.QWidget, plot_widget_class):$/;"	c
+PluginHelper	lib/cfclient/ui/pluginhelper.py	/^class PluginHelper():$/;"	c
+PySDL2Reader	lib/cfclient/utils/inputreaders/pysdl2.py	/^class PySDL2Reader():$/;"	c
+READ_CHANNEL	lib/cflib/crazyflie/param.py	/^READ_CHANNEL = 1$/;"	v
+RESET	lib/cfclient/ui/dialogs/bootloader.py	/^    RESET = 4$/;"	v	class:UIState
+RESET	lib/cfclient/ui/dialogs/cf1config.py	/^    RESET = 4$/;"	v	class:UIState
+RETRYCOUNT_BEFORE_DISCONNECT	lib/cflib/crtp/radiodriver.py	/^    RETRYCOUNT_BEFORE_DISCONNECT = 10$/;"	v	class:_RadioDriverThread
+RIGHT	lib/cfclient/utils/inputinterfaces/wiimote.py	/^RIGHT = 512$/;"	v
+RO_ACCESS	lib/cflib/crazyflie/param.py	/^    RO_ACCESS = 1$/;"	v	class:ParamTocElement
+RO_ACCESS	lib/cflib/crazyflie/toc.py	/^    RO_ACCESS = 1$/;"	v	class:TocElement
+RW_ACCESS	lib/cflib/crazyflie/param.py	/^    RW_ACCESS = 0$/;"	v	class:ParamTocElement
+RW_ACCESS	lib/cflib/crazyflie/toc.py	/^    RW_ACCESS = 0$/;"	v	class:TocElement
+RadioDriver	lib/cflib/crtp/radiodriver.py	/^class RadioDriver(CRTPDriver):$/;"	c
+SCANN_CHANNELS	lib/cflib/drivers/crazyradio.py	/^SCANN_CHANNELS = 0x21$/;"	v
+SENSOR_TESTS_FORMAT	lib/cfclient/ui/dialogs/about.py	/^SENSOR_TESTS_FORMAT = "{}: {}<br>"$/;"	v
+SETUP_FINISHED	lib/cflib/crazyflie/__init__.py	/^    SETUP_FINISHED = 3$/;"	v	class:State
+SET_CONT_CARRIER	lib/cflib/drivers/crazyradio.py	/^SET_CONT_CARRIER = 0x20$/;"	v
+SET_DATA_RATE	lib/cflib/drivers/crazyradio.py	/^SET_DATA_RATE = 0x03$/;"	v
+SET_RADIO_ADDRESS	lib/cflib/drivers/crazyradio.py	/^SET_RADIO_ADDRESS = 0x02$/;"	v
+SET_RADIO_ARC	lib/cflib/drivers/crazyradio.py	/^SET_RADIO_ARC = 0x06$/;"	v
+SET_RADIO_ARD	lib/cflib/drivers/crazyradio.py	/^SET_RADIO_ARD = 0x05$/;"	v
+SET_RADIO_CHANNEL	lib/cflib/drivers/crazyradio.py	/^SET_RADIO_CHANNEL = 0x01$/;"	v
+SET_RADIO_POWER	lib/cflib/drivers/crazyradio.py	/^SET_RADIO_POWER = 0x04$/;"	v
+SRV_ADDR	examples/zmqsrvtest.py	/^SRV_ADDR = "tcp:\/\/127.0.0.1"$/;"	v
+STM32	lib/cflib/bootloader/boottypes.py	/^    STM32 = 0xFF$/;"	v	class:TargetTypes
+ScannerThread	lib/cfclient/ui/dialogs/connectiondialogue.py	/^class ScannerThread(QThread):$/;"	c
+SelectiveMux	lib/cfclient/utils/mux/selectivemux.py	/^class SelectiveMux(InputMux):$/;"	c
+SerialDriver	lib/cflib/crtp/serialdriver.py	/^class SerialDriver (CRTPDriver):$/;"	c
+Singleton	lib/cfclient/utils/singleton.py	/^class Singleton(type):$/;"	c
+State	lib/cflib/crazyflie/__init__.py	/^class State:$/;"	c
+TEMPLATE	win32install/generate_nsis.py	/^    TEMPLATE = template_file.read()$/;"	v
+TMPL	win32install/generate_nsis.py	/^TMPL = jinja2.Template(TEMPLATE)$/;"	v
+TOC_CHANNEL	lib/cflib/crazyflie/param.py	/^TOC_CHANNEL = 0$/;"	v
+TOC_CHANNEL	lib/cflib/crazyflie/toc.py	/^TOC_CHANNEL = 0$/;"	v
+TOC_GETCRC32	lib/cflib/crazyflie/param.py	/^TOC_GETCRC32 = 2$/;"	v
+TOC_GETNEXT	lib/cflib/crazyflie/param.py	/^TOC_GETNEXT = 1$/;"	v
+TOC_RESET	lib/cflib/crazyflie/param.py	/^TOC_RESET = 0$/;"	v
+TOC_TYPE	lib/cflib/crazyflie/log.py	/^    TOC_TYPE = 0$/;"	v	class:LogVariable
+TWO	lib/cfclient/utils/inputinterfaces/wiimote.py	/^TWO = 1$/;"	v
+TYPE_1W	lib/cflib/crazyflie/mem.py	/^    TYPE_1W = 1$/;"	v	class:MemoryElement
+TYPE_1W	lib/cflib/crtp/debugdriver.py	/^    TYPE_1W = 1$/;"	v	class:FakeMemory
+TYPE_AXIS	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^TYPE_AXIS = 2$/;"	v
+TYPE_BUTTON	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^TYPE_BUTTON = 1$/;"	v
+TYPE_I2C	lib/cflib/crazyflie/mem.py	/^    TYPE_I2C = 0$/;"	v	class:MemoryElement
+TYPE_I2C	lib/cflib/crtp/debugdriver.py	/^    TYPE_I2C = 0$/;"	v	class:FakeMemory
+Tab	lib/cfclient/ui/tab.py	/^class Tab(QtGui.QWidget):$/;"	c
+TakeOverMux	lib/cfclient/utils/mux/takeovermux.py	/^class TakeOverMux(InputMux):$/;"	c
+TakeOverSelectiveMux	lib/cfclient/utils/mux/takeoverselectivemux.py	/^class TakeOverSelectiveMux(InputMux):$/;"	c
+Target	lib/cflib/bootloader/boottypes.py	/^class Target:$/;"	c
+TargetTypes	lib/cflib/bootloader/boottypes.py	/^class TargetTypes:$/;"	c
+Toc	lib/cflib/crazyflie/toc.py	/^class Toc:$/;"	c
+TocCache	lib/cflib/crazyflie/toccache.py	/^class TocCache():$/;"	c
+TocElement	lib/cflib/crazyflie/toc.py	/^class TocElement:$/;"	c
+TocFetcher	lib/cflib/crazyflie/toc.py	/^class TocFetcher:$/;"	c
+UIState	lib/cfclient/ui/dialogs/bootloader.py	/^class UIState:$/;"	c
+UIState	lib/cfclient/ui/dialogs/cf1config.py	/^class UIState:$/;"	c
+UIState	lib/cfclient/ui/main.py	/^class UIState:$/;"	c
+UP	lib/cfclient/utils/inputinterfaces/wiimote.py	/^UP = 2048$/;"	v
+USB_PID	lib/cflib/drivers/cfusb.py	/^USB_PID = 0x5740$/;"	v
+USB_VID	lib/cflib/drivers/cfusb.py	/^USB_VID = 0x0483$/;"	v
+UdpDriver	lib/cflib/crtp/udpdriver.py	/^class UdpDriver(CRTPDriver):$/;"	c
+UsbDriver	lib/cflib/crtp/usbdriver.py	/^class UsbDriver(CRTPDriver):$/;"	c
+VERSION	lib/cfclient/__init__.py	/^        VERSION = "dev"$/;"	v
+VERSION	lib/cfclient/__init__.py	/^        VERSION = subprocess.check_output(["git", "describe"])$/;"	v
+VERSION	setup.py	/^VERSION = output.strip()$/;"	v
+VERSION	win32install/generate_nsis.py	/^VERSION = output.strip()$/;"	v
+WAIT_READ	lib/cflib/crazyflie/param.py	/^WAIT_READ = 2$/;"	v
+WAIT_TOC	lib/cflib/crazyflie/param.py	/^WAIT_TOC = 1$/;"	v
+WAIT_WRITE	lib/cflib/crazyflie/param.py	/^WAIT_WRITE = 3$/;"	v
+WRITE_CHANNEL	lib/cflib/crazyflie/param.py	/^WRITE_CHANNEL = 2$/;"	v
+WiimoteReader	lib/cfclient/utils/inputinterfaces/wiimote.py	/^class WiimoteReader(_Reader):$/;"	c
+WrongUriType	lib/cflib/crtp/exceptions.py	/^class WrongUriType (Exception):$/;"	c
+ZMQReader	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^class ZMQReader:$/;"	c
+ZMQServer	lib/cfzmq.py	/^class ZMQServer():$/;"	c
+ZMQ_CONN_PORT	lib/cfzmq.py	/^ZMQ_CONN_PORT = 2003$/;"	v
+ZMQ_CTRL_PORT	lib/cfzmq.py	/^ZMQ_CTRL_PORT = 2004$/;"	v
+ZMQ_LOG_PORT	lib/cfzmq.py	/^ZMQ_LOG_PORT = 2001$/;"	v
+ZMQ_PARAM_PORT	lib/cfzmq.py	/^ZMQ_PARAM_PORT = 2002$/;"	v
+ZMQ_PULL_PORT	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^ZMQ_PULL_PORT = 1024 + 188$/;"	v
+ZMQ_SRV_PORT	lib/cfzmq.py	/^ZMQ_SRV_PORT = 2000$/;"	v
+_ConnThread	examples/zmqsrvtest.py	/^class _ConnThread(Thread):$/;"	c
+_CtrlThread	examples/zmqsrvtest.py	/^class _CtrlThread(Thread):$/;"	c
+_CtrlThread	lib/cfzmq.py	/^class _CtrlThread(Thread):$/;"	c
+_FakeLoggingDataThread	lib/cflib/crtp/debugdriver.py	/^class _FakeLoggingDataThread (Thread):$/;"	c
+_IncomingPacketHandler	lib/cflib/crazyflie/__init__.py	/^class _IncomingPacketHandler(Thread):$/;"	c
+_JS	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^class _JS():$/;"	c
+_JS	lib/cfclient/utils/inputreaders/pysdl2.py	/^class _JS():$/;"	c
+_LogThread	examples/zmqsrvtest.py	/^class _LogThread(Thread):$/;"	c
+_PacketHandlingThread	lib/cflib/crtp/debugdriver.py	/^class _PacketHandlingThread(Thread):$/;"	c
+_ParamThread	examples/zmqsrvtest.py	/^class _ParamThread(Thread):$/;"	c
+_ParamUpdater	lib/cflib/crazyflie/param.py	/^class _ParamUpdater(Thread):$/;"	c
+_PeriodicTimerThread	lib/cfclient/utils/periodictimer.py	/^class _PeriodicTimerThread(Thread):$/;"	c
+_PullReader	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^class _PullReader(Thread):$/;"	c
+_RadioDriverThread	lib/cflib/crtp/radiodriver.py	/^class _RadioDriverThread (threading.Thread):$/;"	c
+_ReadRequest	lib/cflib/crazyflie/mem.py	/^class _ReadRequest:$/;"	c
+_Reader	lib/cfclient/utils/inputinterfaces/wiimote.py	/^class _Reader(object):$/;"	c
+_SrvThread	lib/cfzmq.py	/^class _SrvThread(Thread):$/;"	c
+_UsbReceiveThread	lib/cflib/crtp/usbdriver.py	/^class _UsbReceiveThread (threading.Thread):$/;"	c
+_WriteRequest	lib/cflib/crazyflie/mem.py	/^class _WriteRequest:$/;"	c
+__all__	lib/cfclient/cfclient.py	/^__all__ = ['']$/;"	v
+__all__	lib/cfclient/ui/__init__.py	/^__all__ = []$/;"	v
+__all__	lib/cfclient/ui/dialogs/about.py	/^__all__ = ['AboutDialog']$/;"	v
+__all__	lib/cfclient/ui/dialogs/bootloader.py	/^__all__ = ['BootloaderDialog']$/;"	v
+__all__	lib/cfclient/ui/dialogs/cf1config.py	/^__all__ = ['Cf1ConfigDialog']$/;"	v
+__all__	lib/cfclient/ui/dialogs/cf2config.py	/^__all__ = ['CfConfig']$/;"	v
+__all__	lib/cfclient/ui/dialogs/connectiondialogue.py	/^__all__ = ['ConnectionDialogue']$/;"	v
+__all__	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^__all__ = ['InputConfigDialogue']$/;"	v
+__all__	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^__all__ = ['LogConfigDialogue']$/;"	v
+__all__	lib/cfclient/ui/main.py	/^__all__ = ['MainUI']$/;"	v
+__all__	lib/cfclient/ui/pluginhelper.py	/^__all__ = ['PluginHelper']$/;"	v
+__all__	lib/cfclient/ui/tab.py	/^__all__ = ['Tab']$/;"	v
+__all__	lib/cfclient/ui/tabs/ConsoleTab.py	/^__all__ = ['ConsoleTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/ExampleTab.py	/^__all__ = ['ExampleTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/FlightTab.py	/^__all__ = ['FlightTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/GpsTab.py	/^__all__ = ['GpsTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^__all__ = ['LogBlockTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/LogBlockTab.py	/^__all__ = ['LogBlockTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/LogTab.py	/^__all__ = ['LogTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/ParamTab.py	/^__all__ = ['ParamTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/PlotTab.py	/^__all__ = ['PlotTab']$/;"	v
+__all__	lib/cfclient/ui/tabs/__init__.py	/^__all__ = []$/;"	v
+__all__	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^__all__ = ['ConsoleToolbox']$/;"	v
+__all__	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^__all__ = ['CrtpSharkBoolbox']$/;"	v
+__all__	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^__all__ = ['DebugDriverToolbox']$/;"	v
+__all__	lib/cfclient/ui/toolboxes/__init__.py	/^__all__ = []$/;"	v
+__all__	lib/cfclient/ui/widgets/ai.py	/^__all__ = ['AttitudeIndicator']$/;"	v
+__all__	lib/cfclient/ui/widgets/hexspinbox.py	/^__all__ = ['HexSpinBox']$/;"	v
+__all__	lib/cfclient/ui/widgets/plotwidget.py	/^__all__ = ['PlotWidget']$/;"	v
+__all__	lib/cfclient/utils/config.py	/^__all__ = ['Config']$/;"	v
+__all__	lib/cfclient/utils/config_manager.py	/^__all__ = ['ConfigManager']$/;"	v
+__all__	lib/cfclient/utils/input.py	/^__all__ = ['JoystickReader']$/;"	v
+__all__	lib/cfclient/utils/inputinterfaces/__init__.py	/^__all__ = ['InputInterface']$/;"	v
+__all__	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^__all__ = ['LeapmotionReader']$/;"	v
+__all__	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^__all__ = ['ZMQReader']$/;"	v
+__all__	lib/cfclient/utils/inputreaders/__init__.py	/^__all__ = ['InputDevice']$/;"	v
+__all__	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^__all__ = ['Joystick']$/;"	v
+__all__	lib/cfclient/utils/inputreaders/pysdl2.py	/^__all__ = ['PySDL2Reader']$/;"	v
+__all__	lib/cfclient/utils/logconfigreader.py	/^__all__ = ['LogVariable', 'LogConfigReader', 'LogConfigRemoveThis']$/;"	v
+__all__	lib/cfclient/utils/logdatawriter.py	/^__all__ = ['LogWriter']$/;"	v
+__all__	lib/cfclient/utils/mux/__init__.py	/^__all__ = ['InputMux']$/;"	v
+__all__	lib/cfclient/utils/mux/mixmux.py	/^__all__ = ['MixMux']$/;"	v
+__all__	lib/cfclient/utils/mux/nomux.py	/^__all__ = ['NoMux']$/;"	v
+__all__	lib/cfclient/utils/mux/selectivemux.py	/^__all__ = ['SelectiveMux']$/;"	v
+__all__	lib/cfclient/utils/mux/takeovermux.py	/^__all__ = ['SelectiveMux']$/;"	v
+__all__	lib/cfclient/utils/mux/takeoverselectivemux.py	/^__all__ = ['TakeOverSelectiveMux']$/;"	v
+__all__	lib/cfclient/utils/periodictimer.py	/^__all__ = ['PeriodicTimer']$/;"	v
+__all__	lib/cfclient/utils/singleton.py	/^__all__ = ['Singleton']$/;"	v
+__all__	lib/cflib/bootloader/__init__.py	/^__all__ = ['Bootloader']$/;"	v
+__all__	lib/cflib/bootloader/boottypes.py	/^__all__ = ['BootVersion', 'TargetTypes', 'Target']$/;"	v
+__all__	lib/cflib/bootloader/cloader.py	/^__all__ = ['Cloader']$/;"	v
+__all__	lib/cflib/crazyflie/__init__.py	/^__all__ = ['Crazyflie']$/;"	v
+__all__	lib/cflib/crazyflie/commander.py	/^__all__ = ['Commander']$/;"	v
+__all__	lib/cflib/crazyflie/console.py	/^__all__ = ['Console']$/;"	v
+__all__	lib/cflib/crazyflie/log.py	/^__all__ = ['Log', 'LogTocElement']$/;"	v
+__all__	lib/cflib/crazyflie/mem.py	/^__all__ = ['Memory', 'MemoryElement']$/;"	v
+__all__	lib/cflib/crazyflie/param.py	/^__all__ = ['Param', 'ParamTocElement']$/;"	v
+__all__	lib/cflib/crazyflie/platformservice.py	/^__all__ = ['PlatformService']$/;"	v
+__all__	lib/cflib/crazyflie/toc.py	/^__all__ = ['TocElement', 'Toc', 'TocFetcher']$/;"	v
+__all__	lib/cflib/crazyflie/toccache.py	/^__all__ = ['TocCache']$/;"	v
+__all__	lib/cflib/crtp/__init__.py	/^__all__ = []$/;"	v
+__all__	lib/cflib/crtp/crtpdriver.py	/^__all__ = ['CRTPDriver']$/;"	v
+__all__	lib/cflib/crtp/crtpstack.py	/^__all__ = ['CRTPPort', 'CRTPPacket']$/;"	v
+__all__	lib/cflib/crtp/debugdriver.py	/^__all__ = ['DebugDriver']$/;"	v
+__all__	lib/cflib/crtp/exceptions.py	/^__all__ = ['WrongUriType', 'CommunicationException']$/;"	v
+__all__	lib/cflib/crtp/radiodriver.py	/^__all__ = ['RadioDriver']$/;"	v
+__all__	lib/cflib/crtp/serialdriver.py	/^__all__ = ['SerialDriver']$/;"	v
+__all__	lib/cflib/crtp/udpdriver.py	/^__all__ = ['UdpDriver']$/;"	v
+__all__	lib/cflib/crtp/usbdriver.py	/^__all__ = ['UsbDriver']$/;"	v
+__all__	lib/cflib/drivers/cfusb.py	/^__all__ = ['CfUsb']$/;"	v
+__all__	lib/cflib/drivers/crazyradio.py	/^__all__ = ['Crazyradio']$/;"	v
+__all__	lib/cflib/utils/callbacks.py	/^__all__ = ['Caller']$/;"	v
+__author__	lib/cfclient/cfclient.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/about.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/bootloader.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/cf1config.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/cf2config.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/connectiondialogue.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/main.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/pluginhelper.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/ConsoleTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/ExampleTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/FlightTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/GpsTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/LogBlockTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/LogTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/ParamTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/PlotTab.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/tabs/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/toolboxes/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/widgets/ai.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/widgets/hexspinbox.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/ui/widgets/plotwidget.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/config.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/config_manager.py	/^__author__ = 'Bitcraze AB\/Allyn Bauer'$/;"	v
+__author__	lib/cfclient/utils/input.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/inputinterfaces/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/inputreaders/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/inputreaders/pysdl2.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/logconfigreader.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/logdatawriter.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/mux/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/mux/mixmux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/mux/nomux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/mux/selectivemux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/mux/takeovermux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/mux/takeoverselectivemux.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/periodictimer.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cfclient/utils/singleton.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/bootloader/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/bootloader/boottypes.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/bootloader/cloader.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/commander.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/console.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/log.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/mem.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/param.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/platformservice.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/toc.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crazyflie/toccache.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/__init__.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/crtpdriver.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/crtpstack.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/debugdriver.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/exceptions.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/radiodriver.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/serialdriver.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/udpdriver.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/crtp/usbdriver.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/drivers/cfusb.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/drivers/crazyradio.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__author__	lib/cflib/utils/callbacks.py	/^__author__ = 'Bitcraze AB'$/;"	v
+__call__	lib/cfclient/utils/singleton.py	/^    def __call__(cls, *args, **kwargs):$/;"	m	class:Singleton	file:
+__decode_event	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __decode_event(self, jsdata):$/;"	m	class:_JS	file:
+__del__	lib/cfclient/ui/dialogs/bootloader.py	/^    def __del__(self):$/;"	m	class:CrazyloadThread	file:
+__del__	lib/cfclient/ui/dialogs/cf1config.py	/^    def __del__(self):$/;"	m	class:CrazyloadThread	file:
+__init__	examples/basiclog.py	/^    def __init__(self, link_uri):$/;"	m	class:LoggingExample
+__init__	examples/basicparam.py	/^    def __init__(self, link_uri):$/;"	m	class:ParamExample
+__init__	examples/ramp.py	/^    def __init__(self, link_uri):$/;"	m	class:MotorRampExample
+__init__	examples/zmqsrvtest.py	/^    def __init__(self, socket, *args):$/;"	m	class:_ConnThread
+__init__	examples/zmqsrvtest.py	/^    def __init__(self, socket, *args):$/;"	m	class:_CtrlThread
+__init__	examples/zmqsrvtest.py	/^    def __init__(self, socket, *args):$/;"	m	class:_LogThread
+__init__	examples/zmqsrvtest.py	/^    def __init__(self, socket, *args):$/;"	m	class:_ParamThread
+__init__	lib/cfclient/ui/dialogs/about.py	/^    def __init__(self, helper, *args):$/;"	m	class:AboutDialog
+__init__	lib/cfclient/ui/dialogs/bootloader.py	/^    def __init__(self):$/;"	m	class:CrazyloadThread
+__init__	lib/cfclient/ui/dialogs/bootloader.py	/^    def __init__(self, helper, *args):$/;"	m	class:BootloaderDialog
+__init__	lib/cfclient/ui/dialogs/cf1config.py	/^    def __init__(self):$/;"	m	class:CrazyloadThread
+__init__	lib/cfclient/ui/dialogs/cf1config.py	/^    def __init__(self, helper, *args):$/;"	m	class:Cf1ConfigDialog
+__init__	lib/cfclient/ui/dialogs/cf2config.py	/^    def __init__(self, helper, *args):$/;"	m	class:Cf2ConfigDialog
+__init__	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def __init__(self):$/;"	m	class:ScannerThread
+__init__	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def __init__(self, *args):$/;"	m	class:ConnectDialogue
+__init__	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def __init__(self, input):$/;"	m	class:DeviceReader
+__init__	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def __init__(self, joystickReader, *args):$/;"	m	class:InputConfigDialogue
+__init__	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def __init__(self, helper, *args):$/;"	m	class:LogConfigDialogue
+__init__	lib/cfclient/ui/main.py	/^    def __init__(self, *args):$/;"	m	class:MainUI
+__init__	lib/cfclient/ui/pluginhelper.py	/^    def __init__(self):$/;"	m	class:PluginHelper
+__init__	lib/cfclient/ui/tab.py	/^    def __init__(self):$/;"	m	class:Tab
+__init__	lib/cfclient/ui/tabs/ConsoleTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:ConsoleTab
+__init__	lib/cfclient/ui/tabs/ExampleTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:ExampleTab
+__init__	lib/cfclient/ui/tabs/FlightTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:FlightTab
+__init__	lib/cfclient/ui/tabs/GpsTab.py	/^        def __init__(self):$/;"	m	class:GpsTab.FancyMarbleWidget
+__init__	lib/cfclient/ui/tabs/GpsTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:GpsTab
+__init__	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:LogBlockDebugTab
+__init__	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def __init__(self, block, model, connected_ts):$/;"	m	class:LogBlockItem
+__init__	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def __init__(self, parent, name):$/;"	m	class:LogBlockChildItem
+__init__	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:LogBlockTab
+__init__	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def __init__(self, view, parent=None):$/;"	m	class:LogBlockModel
+__init__	lib/cfclient/ui/tabs/LogTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:LogTab
+__init__	lib/cfclient/ui/tabs/ParamTab.py	/^    def __init__(self, name, model):$/;"	m	class:ParamGroupItem
+__init__	lib/cfclient/ui/tabs/ParamTab.py	/^    def __init__(self, parent):$/;"	m	class:ParamBlockModel
+__init__	lib/cfclient/ui/tabs/ParamTab.py	/^    def __init__(self, parent, name, crazyflie):$/;"	m	class:ParamChildItem
+__init__	lib/cfclient/ui/tabs/ParamTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:ParamTab
+__init__	lib/cfclient/ui/tabs/PlotTab.py	/^    def __init__(self, parent=None):$/;"	m	class:LogConfigModel
+__init__	lib/cfclient/ui/tabs/PlotTab.py	/^    def __init__(self, tabWidget, helper, *args):$/;"	m	class:PlotTab
+__init__	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^    def __init__(self, helper, *args):$/;"	m	class:ConsoleToolbox
+__init__	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def __init__(self, helper, *args):$/;"	m	class:CrtpSharkToolbox
+__init__	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def __init__(self, helper, *args):$/;"	m	class:DebugDriverToolbox
+__init__	lib/cfclient/ui/widgets/ai.py	/^        def __init__(self):$/;"	m	class:AttitudeIndicator.Example
+__init__	lib/cfclient/ui/widgets/ai.py	/^    def __init__(self):$/;"	m	class:AttitudeIndicator
+__init__	lib/cfclient/ui/widgets/hexspinbox.py	/^    def __init__(self, *args):$/;"	m	class:HexSpinBox
+__init__	lib/cfclient/ui/widgets/plotwidget.py	/^    def __init__(self, curve):$/;"	m	class:PlotItemWrapper
+__init__	lib/cfclient/ui/widgets/plotwidget.py	/^    def __init__(self, parent=None, fps=100, title="", *args):$/;"	m	class:PlotWidget
+__init__	lib/cfclient/utils/config.py	/^    def __init__(self):$/;"	m	class:Config
+__init__	lib/cfclient/utils/config_manager.py	/^    def __init__(self):$/;"	m	class:ConfigManager
+__init__	lib/cfclient/utils/input.py	/^    def __init__(self, do_device_discovery=True):$/;"	m	class:JoystickReader
+__init__	lib/cfclient/utils/inputinterfaces/__init__.py	/^    def __init__(self, dev_name, dev_id, dev_reader):$/;"	m	class:InputInterface
+__init__	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def __init__(self):$/;"	m	class:LeapmotionReader
+__init__	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def __init__(self):$/;"	m	class:WiimoteReader
+__init__	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def __init__(self, reader, wii, *args):$/;"	m	class:HandleWiimote
+__init__	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def __init__(self):$/;"	m	class:ZMQReader
+__init__	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def __init__(self, receiver, callback, *args):$/;"	m	class:_PullReader
+__init__	lib/cfclient/utils/inputreaderinterface.py	/^    def __init__(self, dev_name, dev_id, dev_reader):$/;"	m	class:InputReaderInterface
+__init__	lib/cfclient/utils/inputreaders/__init__.py	/^    def __init__(self, dev_name, dev_id, dev_reader):$/;"	m	class:InputDevice
+__init__	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __init__(self):$/;"	m	class:Joystick
+__init__	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __init__(self, evt_type, number, value):$/;"	m	class:JEvent
+__init__	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __init__(self, num, name):$/;"	m	class:_JS
+__init__	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def __init__(self):$/;"	m	class:PySDL2Reader
+__init__	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def __init__(self, num, name):$/;"	m	class:_JS
+__init__	lib/cfclient/utils/logconfigreader.py	/^    def __init__(self, crazyflie):$/;"	m	class:LogConfigReader
+__init__	lib/cfclient/utils/logdatawriter.py	/^    def __init__(self, logblock, connected_ts=None, directory=None):$/;"	m	class:LogWriter
+__init__	lib/cfclient/utils/mux/__init__.py	/^    def __init__(self, input):$/;"	m	class:InputMux
+__init__	lib/cfclient/utils/mux/mixmux.py	/^    def __init__(self, *args):$/;"	m	class:MixMux
+__init__	lib/cfclient/utils/mux/nomux.py	/^    def __init__(self, *args):$/;"	m	class:NoMux
+__init__	lib/cfclient/utils/mux/selectivemux.py	/^    def __init__(self, *args):$/;"	m	class:SelectiveMux
+__init__	lib/cfclient/utils/mux/takeovermux.py	/^    def __init__(self, *args):$/;"	m	class:TakeOverMux
+__init__	lib/cfclient/utils/mux/takeoverselectivemux.py	/^    def __init__(self, *args):$/;"	m	class:TakeOverSelectiveMux
+__init__	lib/cfclient/utils/periodictimer.py	/^    def __init__(self, period, callback):$/;"	m	class:PeriodicTimer
+__init__	lib/cfclient/utils/periodictimer.py	/^    def __init__(self, period, caller):$/;"	m	class:_PeriodicTimerThread
+__init__	lib/cfheadless.py	/^    def __init__(self):$/;"	m	class:HeadlessClient
+__init__	lib/cflib/bootloader/__init__.py	/^    def __init__(self, clink=None):$/;"	m	class:Bootloader
+__init__	lib/cflib/bootloader/boottypes.py	/^    def __init__(self, id):$/;"	m	class:Target
+__init__	lib/cflib/bootloader/cloader.py	/^    def __init__(self, link, info_cb=None, in_boot_cb=None):$/;"	m	class:Cloader
+__init__	lib/cflib/crazyflie/__init__.py	/^    def __init__(self, cf):$/;"	m	class:_IncomingPacketHandler
+__init__	lib/cflib/crazyflie/__init__.py	/^    def __init__(self, link=None, ro_cache=None, rw_cache=None):$/;"	m	class:Crazyflie
+__init__	lib/cflib/crazyflie/commander.py	/^    def __init__(self, crazyflie=None):$/;"	m	class:Commander
+__init__	lib/cflib/crazyflie/console.py	/^    def __init__(self, crazyflie):$/;"	m	class:Console
+__init__	lib/cflib/crazyflie/log.py	/^    def __init__(self, crazyflie=None):$/;"	m	class:Log
+__init__	lib/cflib/crazyflie/log.py	/^    def __init__(self, data=None):$/;"	m	class:LogTocElement
+__init__	lib/cflib/crazyflie/log.py	/^    def __init__(self, name, period_in_ms):$/;"	m	class:LogConfig
+__init__	lib/cflib/crazyflie/log.py	/^    def __init__(self, name="", fetchAs="uint8_t", varType=TOC_TYPE,$/;"	m	class:LogVariable
+__init__	lib/cflib/crazyflie/mem.py	/^    def __init__(self, crazyflie=None):$/;"	m	class:Memory
+__init__	lib/cflib/crazyflie/mem.py	/^    def __init__(self, id, type, size, addr, mem_handler):$/;"	m	class:OWElement
+__init__	lib/cflib/crazyflie/mem.py	/^    def __init__(self, id, type, size, mem_handler):$/;"	m	class:I2CElement
+__init__	lib/cflib/crazyflie/mem.py	/^    def __init__(self, id, type, size, mem_handler):$/;"	m	class:MemoryElement
+__init__	lib/cflib/crazyflie/mem.py	/^    def __init__(self, mem, addr, data, cf):$/;"	m	class:_WriteRequest
+__init__	lib/cflib/crazyflie/mem.py	/^    def __init__(self, mem, addr, length, cf):$/;"	m	class:_ReadRequest
+__init__	lib/cflib/crazyflie/param.py	/^    def __init__(self, cf, updated_callback):$/;"	m	class:_ParamUpdater
+__init__	lib/cflib/crazyflie/param.py	/^    def __init__(self, crazyflie):$/;"	m	class:Param
+__init__	lib/cflib/crazyflie/param.py	/^    def __init__(self, data=None):$/;"	m	class:ParamTocElement
+__init__	lib/cflib/crazyflie/platformservice.py	/^    def __init__(self, crazyflie=None):$/;"	m	class:PlatformService
+__init__	lib/cflib/crazyflie/toc.py	/^    def __init__(self):$/;"	m	class:Toc
+__init__	lib/cflib/crazyflie/toc.py	/^    def __init__(self, crazyflie, element_class, port, toc_holder,$/;"	m	class:TocFetcher
+__init__	lib/cflib/crazyflie/toccache.py	/^    def __init__(self, ro_cache=None, rw_cache=None):$/;"	m	class:TocCache
+__init__	lib/cflib/crtp/crtpdriver.py	/^    def __init__(self):$/;"	m	class:CRTPDriver
+__init__	lib/cflib/crtp/crtpstack.py	/^    def __init__(self, header=0, data=None):$/;"	m	class:CRTPPacket
+__init__	lib/cflib/crtp/debugdriver.py	/^    def __init__(self):$/;"	m	class:DebugDriver
+__init__	lib/cflib/crtp/debugdriver.py	/^    def __init__(self, outQueue):$/;"	m	class:FakeConsoleThread
+__init__	lib/cflib/crtp/debugdriver.py	/^    def __init__(self, outQueue, blockId, listofvars, fakeLogToc):$/;"	m	class:_FakeLoggingDataThread
+__init__	lib/cflib/crtp/debugdriver.py	/^    def __init__(self, out_queue, fake_log_toc, fake_param_toc, fake_mems):$/;"	m	class:_PacketHandlingThread
+__init__	lib/cflib/crtp/debugdriver.py	/^    def __init__(self, type, size, addr, data=None):$/;"	m	class:FakeMemory
+__init__	lib/cflib/crtp/radiodriver.py	/^    def __init__(self):$/;"	m	class:RadioDriver
+__init__	lib/cflib/crtp/radiodriver.py	/^    def __init__(self, cradio, inQueue, outQueue, link_quality_callback,$/;"	m	class:_RadioDriverThread
+__init__	lib/cflib/crtp/serialdriver.py	/^    def __init__(self):$/;"	m	class:SerialDriver
+__init__	lib/cflib/crtp/udpdriver.py	/^    def __init__(self):$/;"	m	class:UdpDriver
+__init__	lib/cflib/crtp/usbdriver.py	/^    def __init__(self):$/;"	m	class:UsbDriver
+__init__	lib/cflib/crtp/usbdriver.py	/^    def __init__(self, cfusb, inQueue, link_quality_callback,$/;"	m	class:_UsbReceiveThread
+__init__	lib/cflib/drivers/cfusb.py	/^    def __init__(self, device=None, devid=0):$/;"	m	class:CfUsb
+__init__	lib/cflib/drivers/crazyradio.py	/^    def __init__(self, device=None, devid=0):$/;"	m	class:Crazyradio
+__init__	lib/cflib/utils/callbacks.py	/^    def __init__(self):$/;"	m	class:Caller
+__init__	lib/cfzmq.py	/^    def __init__(self, base_url):$/;"	m	class:ZMQServer
+__init__	lib/cfzmq.py	/^    def __init__(self, socket, cf, *args):$/;"	m	class:_CtrlThread
+__init__	lib/cfzmq.py	/^    def __init__(self, socket, log_socket, param_socket, conn_socket, cf, *args):$/;"	m	class:_SrvThread
+__initvalues	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __initvalues(self):$/;"	m	class:_JS	file:
+__metaclass__	lib/cfclient/utils/config.py	/^    __metaclass__ = Singleton$/;"	v	class:Config
+__metaclass__	lib/cfclient/utils/config_manager.py	/^    __metaclass__ = Singleton$/;"	v	class:ConfigManager
+__repr__	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __repr__(self):$/;"	m	class:JEvent	file:
+__str__	lib/cflib/bootloader/boottypes.py	/^    def __str__(self):$/;"	m	class:Target	file:
+__str__	lib/cflib/crazyflie/log.py	/^    def __str__(self):$/;"	m	class:LogVariable	file:
+__str__	lib/cflib/crazyflie/mem.py	/^    def __str__(self):$/;"	m	class:MemoryElement	file:
+__str__	lib/cflib/crazyflie/mem.py	/^    def __str__(self):$/;"	m	class:OWElement	file:
+__str__	lib/cflib/crtp/crtpstack.py	/^    def __str__(self):$/;"	m	class:CRTPPacket	file:
+__updatestate	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def __updatestate(self, jsdata):$/;"	m	class:_JS	file:
+_a_pitch_kd_callback	examples/basicparam.py	/^    def _a_pitch_kd_callback(self, name, value):$/;"	m	class:ParamExample
+_adjust_nbr_of_selected_devices	lib/cfclient/ui/main.py	/^    def _adjust_nbr_of_selected_devices(self):$/;"	m	class:MainUI
+_all_param_update	lib/cfzmq.py	/^    def _all_param_update(self, name, value):$/;"	m	class:_SrvThread
+_althold_data_received	lib/cfclient/ui/tabs/FlightTab.py	/^    def _althold_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_althold_data_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _althold_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_auto_reconnect_changed	lib/cfclient/ui/main.py	/^    def _auto_reconnect_changed(self, checked):$/;"	m	class:MainUI
+_auto_redraw_change	lib/cfclient/ui/widgets/plotwidget.py	/^    def _auto_redraw_change(self, state):$/;"	m	class:PlotWidget
+_axis_detect	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _axis_detect(self, varname, caption, message, directions=[]):$/;"	m	class:InputConfigDialogue
+_baro_data_received	lib/cfclient/ui/tabs/FlightTab.py	/^    def _baro_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_baro_data_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _baro_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_bind_zmq_socket	lib/cfzmq.py	/^    def _bind_zmq_socket(self, pattern, name, port):$/;"	m	class:ZMQServer
+_block_added	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^    def _block_added(self, block):$/;"	m	class:LogBlockDebugTab
+_block_added	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def _block_added(self, block):$/;"	m	class:LogBlockTab
+_blocks_updated_signal	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^    _blocks_updated_signal = pyqtSignal(object, bool)$/;"	v	class:LogBlockDebugTab
+_blocks_updated_signal	lib/cfclient/ui/tabs/LogBlockTab.py	/^    _blocks_updated_signal = pyqtSignal(bool)$/;"	v	class:LogBlockTab
+_button_detect	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _button_detect(self, varname, caption, message):$/;"	m	class:InputConfigDialogue
+_calc_rp_trim	lib/cfclient/utils/input.py	/^    def _calc_rp_trim(self, key_neg, key_pos, data):$/;"	m	class:JoystickReader
+_cancel_config_popup	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _cancel_config_popup(self, button):$/;"	m	class:InputConfigDialogue
+_cap_rp	lib/cfclient/utils/mux/__init__.py	/^    def _cap_rp(self, rp):$/;"	m	class:InputMux
+_check_and_enable_saving	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _check_and_enable_saving(self):$/;"	m	class:InputConfigDialogue
+_check_for_answers	lib/cflib/crazyflie/__init__.py	/^    def _check_for_answers(self, pk):$/;"	m	class:Crazyflie
+_check_for_initial_packet_cb	lib/cflib/crazyflie/__init__.py	/^    def _check_for_initial_packet_cb(self, data):$/;"	m	class:Crazyflie
+_check_if_all_updated	lib/cflib/crazyflie/param.py	/^    def _check_if_all_updated(self):$/;"	m	class:Param
+_check_toggle	lib/cfclient/utils/input.py	/^    def _check_toggle(self, key, data):$/;"	m	class:JoystickReader
+_check_toggle	lib/cfclient/utils/mux/__init__.py	/^    def _check_toggle(self, key, data):$/;"	m	class:InputMux
+_checksum256	lib/cflib/crazyflie/mem.py	/^    def _checksum256(self, st):$/;"	m	class:I2CElement
+_cmd_callback	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def _cmd_callback(self, cmd):$/;"	m	class:ZMQReader
+_config_added	lib/cfclient/ui/tabs/PlotTab.py	/^    def _config_added(self, logconfig):$/;"	m	class:PlotTab
+_config_id_counter	lib/cflib/crazyflie/log.py	/^    _config_id_counter = 1$/;"	v	class:LogConfig
+_connect	lib/cfclient/ui/main.py	/^    def _connect(self):$/;"	m	class:MainUI
+_connected	examples/basiclog.py	/^    def _connected(self, link_uri):$/;"	m	class:LoggingExample
+_connected	examples/basicparam.py	/^    def _connected(self, link_uri):$/;"	m	class:ParamExample
+_connected	examples/ramp.py	/^    def _connected(self, link_uri):$/;"	m	class:MotorRampExample
+_connected	lib/cfclient/ui/dialogs/about.py	/^    def _connected(self, uri):$/;"	m	class:AboutDialog
+_connected	lib/cfclient/ui/main.py	/^    def _connected(self, linkURI):$/;"	m	class:MainUI
+_connected	lib/cfclient/ui/tabs/ExampleTab.py	/^    def _connected(self, link_uri):$/;"	m	class:ExampleTab
+_connected	lib/cfclient/ui/tabs/GpsTab.py	/^    def _connected(self, link_uri):$/;"	m	class:GpsTab
+_connected	lib/cfclient/ui/tabs/ParamTab.py	/^    def _connected(self, link_uri):$/;"	m	class:ParamTab
+_connected	lib/cfclient/ui/tabs/PlotTab.py	/^    def _connected(self, link_uri):$/;"	m	class:PlotTab
+_connected	lib/cfclient/utils/logconfigreader.py	/^    def _connected(self, link_uri):$/;"	m	class:LogConfigReader
+_connected	lib/cfheadless.py	/^    def _connected(self, link):$/;"	m	class:HeadlessClient
+_connected	lib/cfzmq.py	/^    def _connected(self, uri):$/;"	m	class:_SrvThread
+_connected_signal	lib/cfclient/ui/tabs/ExampleTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:ExampleTab
+_connected_signal	lib/cfclient/ui/tabs/GpsTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:GpsTab
+_connected_signal	lib/cfclient/ui/tabs/ParamTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:ParamTab
+_connected_signal	lib/cfclient/ui/tabs/PlotTab.py	/^    _connected_signal = pyqtSignal(str)$/;"	v	class:PlotTab
+_connection_failed	examples/basiclog.py	/^    def _connection_failed(self, link_uri, msg):$/;"	m	class:LoggingExample
+_connection_failed	examples/basicparam.py	/^    def _connection_failed(self, link_uri, msg):$/;"	m	class:ParamExample
+_connection_failed	examples/ramp.py	/^    def _connection_failed(self, link_uri, msg):$/;"	m	class:MotorRampExample
+_connection_failed	lib/cfclient/ui/main.py	/^    def _connection_failed(self, linkURI, error):$/;"	m	class:MainUI
+_connection_failed	lib/cfheadless.py	/^    def _connection_failed(self, link, message):$/;"	m	class:HeadlessClient
+_connection_failed	lib/cfzmq.py	/^    def _connection_failed(self, uri, msg):$/;"	m	class:_SrvThread
+_connection_lost	examples/basiclog.py	/^    def _connection_lost(self, link_uri, msg):$/;"	m	class:LoggingExample
+_connection_lost	examples/basicparam.py	/^    def _connection_lost(self, link_uri, msg):$/;"	m	class:ParamExample
+_connection_lost	examples/ramp.py	/^    def _connection_lost(self, link_uri, msg):$/;"	m	class:MotorRampExample
+_connection_lost	lib/cfclient/ui/main.py	/^    def _connection_lost(self, linkURI, msg):$/;"	m	class:MainUI
+_connection_lost	lib/cfzmq.py	/^    def _connection_lost(self, uri, msg):$/;"	m	class:_SrvThread
+_connection_requested	lib/cfzmq.py	/^    def _connection_requested(self, uri):$/;"	m	class:_SrvThread
+_console_signal	lib/cfclient/ui/tabs/GpsTab.py	/^    _console_signal = pyqtSignal(str)$/;"	v	class:GpsTab
+_cpu_flash_callback	examples/basicparam.py	/^    def _cpu_flash_callback(self, name, value):$/;"	m	class:ParamExample
+_data_updated	lib/cfclient/ui/dialogs/cf2config.py	/^    def _data_updated(self, mem):$/;"	m	class:Cf2ConfigDialog
+_decoder	lib/cflib/crazyflie/toccache.py	/^    def _decoder(self, obj):$/;"	m	class:TocCache
+_delete_configuration	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _delete_configuration(self):$/;"	m	class:InputConfigDialogue
+_detect_axis	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _detect_axis(self, data):$/;"	m	class:InputConfigDialogue
+_detect_button	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _detect_button(self, data):$/;"	m	class:InputConfigDialogue
+_disable_logging	lib/cflib/crtp/debugdriver.py	/^    def _disable_logging(self):$/;"	m	class:_FakeLoggingDataThread
+_disconnected	examples/basiclog.py	/^    def _disconnected(self, link_uri):$/;"	m	class:LoggingExample
+_disconnected	examples/basicparam.py	/^    def _disconnected(self, link_uri):$/;"	m	class:ParamExample
+_disconnected	examples/ramp.py	/^    def _disconnected(self, link_uri):$/;"	m	class:MotorRampExample
+_disconnected	lib/cfclient/ui/dialogs/about.py	/^    def _disconnected(self, uri):$/;"	m	class:AboutDialog
+_disconnected	lib/cfclient/ui/tabs/ExampleTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:ExampleTab
+_disconnected	lib/cfclient/ui/tabs/GpsTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:GpsTab
+_disconnected	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:LogBlockDebugTab
+_disconnected	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:LogBlockTab
+_disconnected	lib/cfclient/ui/tabs/ParamTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:ParamTab
+_disconnected	lib/cfclient/ui/tabs/PlotTab.py	/^    def _disconnected(self, link_uri):$/;"	m	class:PlotTab
+_disconnected	lib/cflib/crazyflie/__init__.py	/^    def _disconnected(self, link_uri):$/;"	m	class:Crazyflie
+_disconnected	lib/cfzmq.py	/^    def _disconnected(self, uri):$/;"	m	class:_SrvThread
+_disconnected_signal	lib/cfclient/ui/dialogs/about.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:AboutDialog
+_disconnected_signal	lib/cfclient/ui/tabs/ExampleTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:ExampleTab
+_disconnected_signal	lib/cfclient/ui/tabs/GpsTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:GpsTab
+_disconnected_signal	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:LogBlockDebugTab
+_disconnected_signal	lib/cfclient/ui/tabs/LogBlockTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:LogBlockTab
+_disconnected_signal	lib/cfclient/ui/tabs/ParamTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:ParamTab
+_disconnected_signal	lib/cfclient/ui/tabs/PlotTab.py	/^    _disconnected_signal = pyqtSignal(str)$/;"	v	class:PlotTab
+_display_input_device_error	lib/cfclient/ui/main.py	/^    def _display_input_device_error(self, error):$/;"	m	class:MainUI
+_do_device_discovery	lib/cfclient/utils/input.py	/^    def _do_device_discovery(self):$/;"	m	class:JoystickReader
+_emergency_stop_updated_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _emergency_stop_updated_signal = pyqtSignal(bool)$/;"	v	class:FlightTab
+_enable_logging	lib/cflib/crtp/debugdriver.py	/^    def _enable_logging(self):$/;"	m	class:_FakeLoggingDataThread
+_encoder	lib/cflib/crazyflie/toccache.py	/^    def _encoder(self, obj):$/;"	m	class:TocCache
+_err_codes	lib/cflib/crazyflie/log.py	/^    _err_codes = {$/;"	v	class:Log
+_err_codes	lib/cflib/crazyflie/mem.py	/^    _err_codes = {$/;"	v	class:Memory
+_estop_callback	lib/cfclient/utils/mux/mixmux.py	/^    def _estop_callback(self, state):$/;"	m	class:MixMux
+_estop_callback	lib/cfclient/utils/mux/takeovermux.py	/^    def _estop_callback(self, state):$/;"	m	class:TakeOverMux
+_expand_all_signal	lib/cfclient/ui/tabs/ParamTab.py	/^    _expand_all_signal = pyqtSignal()$/;"	v	class:ParamTab
+_find_block	lib/cflib/crazyflie/log.py	/^    def _find_block(self, id):$/;"	m	class:Log
+_find_devices	lib/cflib/drivers/cfusb.py	/^def _find_devices():$/;"	f
+_find_devices	lib/cflib/drivers/crazyradio.py	/^def _find_devices():$/;"	f
+_firmware_update	lib/cfclient/ui/dialogs/about.py	/^    def _firmware_update(self, name, value):$/;"	m	class:AboutDialog
+_get_added	lib/cflib/crazyflie/log.py	/^    def _get_added(self):$/;"	m	class:LogConfig
+_get_channel	lib/cflib/crtp/crtpstack.py	/^    def _get_channel(self):$/;"	m	class:CRTPPacket
+_get_data	lib/cflib/crtp/crtpstack.py	/^    def _get_data(self):$/;"	m	class:CRTPPacket
+_get_data_l	lib/cflib/crtp/crtpstack.py	/^    def _get_data_l(self):$/;"	m	class:CRTPPacket
+_get_data_t	lib/cflib/crtp/crtpstack.py	/^    def _get_data_t(self):$/;"	m	class:CRTPPacket
+_get_port	lib/cflib/crtp/crtpstack.py	/^    def _get_port(self):$/;"	m	class:CRTPPacket
+_get_saved_device_mapping	lib/cfclient/ui/main.py	/^    def _get_saved_device_mapping(self, device_name):$/;"	m	class:MainUI
+_get_started	lib/cflib/crazyflie/log.py	/^    def _get_started(self):$/;"	m	class:LogConfig
+_get_vendor_setup	lib/cflib/drivers/cfusb.py	/^def _get_vendor_setup(handle, request, value, index, length):$/;"	f
+_get_vendor_setup	lib/cflib/drivers/crazyradio.py	/^def _get_vendor_setup(handle, request, value, index, length):$/;"	f
+_handle_bootloader	lib/cflib/crtp/debugdriver.py	/^    def _handle_bootloader(self, pk):$/;"	m	class:_PacketHandlingThread
+_handle_connect	lib/cfzmq.py	/^    def _handle_connect(self, uri):$/;"	m	class:_SrvThread
+_handle_debugmessage	lib/cflib/crtp/debugdriver.py	/^    def _handle_debugmessage(self, pk):$/;"	m	class:_PacketHandlingThread
+_handle_logging	lib/cflib/crtp/debugdriver.py	/^    def _handle_logging(self, pk):$/;"	m	class:_PacketHandlingThread
+_handle_logging	lib/cfzmq.py	/^    def _handle_logging(self, data):$/;"	m	class:_SrvThread
+_handle_mem_access	lib/cflib/crtp/debugdriver.py	/^    def _handle_mem_access(self, pk):$/;"	m	class:_PacketHandlingThread
+_handle_param	lib/cfzmq.py	/^    def _handle_param(self, data):$/;"	m	class:_SrvThread
+_handle_scanning	lib/cfzmq.py	/^    def _handle_scanning(self):$/;"	m	class:_SrvThread
+_handle_toc_access	lib/cflib/crtp/debugdriver.py	/^    def _handle_toc_access(self, pk):$/;"	m	class:_PacketHandlingThread
+_has_fw_scan	lib/cflib/drivers/crazyradio.py	/^    def _has_fw_scan(self):$/;"	m	class:Crazyradio
+_imu_data_received	lib/cfclient/ui/tabs/FlightTab.py	/^    def _imu_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_imu_data_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _imu_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_imu_sensor_tests_update	lib/cfclient/ui/dialogs/about.py	/^    def _imu_sensor_tests_update(self, name, value):$/;"	m	class:AboutDialog
+_imu_sensors_update	lib/cfclient/ui/dialogs/about.py	/^    def _imu_sensors_update(self, name, value):$/;"	m	class:AboutDialog
+_incoming_packet_signal	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    _incoming_packet_signal = pyqtSignal(object)$/;"	v	class:CrtpSharkToolbox
+_input_dev_error	lib/cfheadless.py	/^    def _input_dev_error(self, message):$/;"	m	class:HeadlessClient
+_input_device_error_signal	lib/cfclient/ui/main.py	/^    _input_device_error_signal = pyqtSignal(str)$/;"	v	class:MainUI
+_input_discovery_signal	lib/cfclient/ui/main.py	/^    _input_discovery_signal = pyqtSignal(object)$/;"	v	class:MainUI
+_input_updated_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _input_updated_signal = pyqtSignal(float, float, float, float)$/;"	v	class:FlightTab
+_inputconfig_selected	lib/cfclient/ui/main.py	/^    def _inputconfig_selected(self, checked):$/;"	m	class:MainUI
+_inputdevice_selected	lib/cfclient/ui/main.py	/^    def _inputdevice_selected(self, checked):$/;"	m	class:MainUI
+_instances	lib/cfclient/utils/singleton.py	/^    _instances = {}$/;"	v	class:Singleton
+_internal_flash	lib/cflib/bootloader/__init__.py	/^    def _internal_flash(self, target, current_file_number=1, total_files=1):$/;"	m	class:Bootloader
+_limit_thrust	lib/cfclient/utils/mux/__init__.py	/^    def _limit_thrust(self, thrust, althold, emergency_stop):$/;"	m	class:InputMux
+_limiting_updated	lib/cfclient/ui/tabs/FlightTab.py	/^    _limiting_updated = pyqtSignal(bool, bool, bool)$/;"	v	class:FlightTab
+_link_error_cb	lib/cflib/crazyflie/__init__.py	/^    def _link_error_cb(self, errmsg):$/;"	m	class:Crazyflie
+_link_quality_cb	lib/cflib/crazyflie/__init__.py	/^    def _link_quality_cb(self, percentage):$/;"	m	class:Crazyflie
+_load_config_from_file	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _load_config_from_file(self):$/;"	m	class:InputConfigDialogue
+_load_input_data	lib/cfclient/ui/main.py	/^    def _load_input_data(self):$/;"	m	class:MainUI
+_log_data_received	lib/cfclient/ui/tabs/ExampleTab.py	/^    def _log_data_received(self, timestamp, data, log_conf):$/;"	m	class:ExampleTab
+_log_data_received	lib/cfclient/ui/tabs/GpsTab.py	/^    def _log_data_received(self, timestamp, data, logconf):$/;"	m	class:GpsTab
+_log_data_received	lib/cfclient/ui/tabs/PlotTab.py	/^    def _log_data_received(self, timestamp, data, logconf):$/;"	m	class:PlotTab
+_log_data_signal	lib/cfclient/ui/tabs/ExampleTab.py	/^    _log_data_signal = pyqtSignal(int, object, object)$/;"	v	class:ExampleTab
+_log_data_signal	lib/cfclient/ui/tabs/GpsTab.py	/^    _log_data_signal = pyqtSignal(int, object, object)$/;"	v	class:GpsTab
+_log_data_signal	lib/cfclient/ui/tabs/PlotTab.py	/^    _log_data_signal = pyqtSignal(int, object, object)$/;"	v	class:PlotTab
+_log_data_signal_wrapper	lib/cfclient/ui/tabs/PlotTab.py	/^    def _log_data_signal_wrapper(self, ts, data, logconf):$/;"	m	class:PlotTab
+_log_error	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def _log_error(self, logconfig, msg):$/;"	m	class:LogBlockItem
+_log_error_signal	lib/cfclient/ui/main.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:MainUI
+_log_error_signal	lib/cfclient/ui/tabs/ExampleTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:ExampleTab
+_log_error_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:FlightTab
+_log_error_signal	lib/cfclient/ui/tabs/GpsTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:GpsTab
+_log_error_signal	lib/cfclient/ui/tabs/PlotTab.py	/^    _log_error_signal = pyqtSignal(object, str)$/;"	v	class:PlotTab
+_log_error_signal_wrapper	lib/cfclient/ui/tabs/PlotTab.py	/^    def _log_error_signal_wrapper(self, config, msg):$/;"	m	class:PlotTab
+_log_toc_updated_cb	lib/cflib/crazyflie/__init__.py	/^    def _log_toc_updated_cb(self):$/;"	m	class:Crazyflie
+_logdata_callback	lib/cfzmq.py	/^    def _logdata_callback(self, ts, data, conf):$/;"	m	class:_SrvThread
+_logging_added	lib/cfzmq.py	/^    def _logging_added(self, conf, added):$/;"	m	class:_SrvThread
+_logging_error	lib/cfclient/ui/main.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:MainUI
+_logging_error	lib/cfclient/ui/tabs/ExampleTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:ExampleTab
+_logging_error	lib/cfclient/ui/tabs/FlightTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:FlightTab
+_logging_error	lib/cfclient/ui/tabs/GpsTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:GpsTab
+_logging_error	lib/cfclient/ui/tabs/PlotTab.py	/^    def _logging_error(self, log_conf, msg):$/;"	m	class:PlotTab
+_logging_started	lib/cfzmq.py	/^    def _logging_started(self, conf, started):$/;"	m	class:_SrvThread
+_manual_range_change	lib/cfclient/ui/widgets/plotwidget.py	/^    def _manual_range_change(self, obj):$/;"	m	class:PlotWidget
+_map_axis	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _map_axis(self, function, key_id, scale):$/;"	m	class:InputConfigDialogue
+_map_button	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _map_button(self, function, key_id):$/;"	m	class:InputConfigDialogue
+_mem_update_done	lib/cflib/crazyflie/mem.py	/^    def _mem_update_done(self, mem):$/;"	m	class:Memory
+_mems_updated_cb	lib/cflib/crazyflie/__init__.py	/^    def _mems_updated_cb(self):$/;"	m	class:Crazyflie
+_motor_data_received	lib/cfclient/ui/tabs/FlightTab.py	/^    def _motor_data_received(self, timestamp, data, logconf):$/;"	m	class:FlightTab
+_motor_data_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _motor_data_signal = pyqtSignal(int, object, object)$/;"	v	class:FlightTab
+_mux_selected	lib/cfclient/ui/main.py	/^    def _mux_selected(self, checked):$/;"	m	class:MainUI
+_nbr_samples_changed	lib/cfclient/ui/widgets/plotwidget.py	/^    def _nbr_samples_changed(self, val):$/;"	m	class:PlotWidget
+_new_data	lib/cfclient/utils/logdatawriter.py	/^    def _new_data(self, timestamp, data, logconf):$/;"	m	class:LogWriter
+_new_packet_cb	lib/cflib/crazyflie/log.py	/^    def _new_packet_cb(self, packet):$/;"	m	class:Log
+_new_packet_cb	lib/cflib/crazyflie/mem.py	/^    def _new_packet_cb(self, packet):$/;"	m	class:Memory
+_new_packet_cb	lib/cflib/crazyflie/param.py	/^    def _new_packet_cb(self, pk):$/;"	m	class:_ParamUpdater
+_new_packet_cb	lib/cflib/crazyflie/toc.py	/^    def _new_packet_cb(self, packet):$/;"	m	class:TocFetcher
+_no_answer_do_retry	lib/cflib/crazyflie/__init__.py	/^    def _no_answer_do_retry(self, pk, pattern):$/;"	m	class:Crazyflie
+_open_config_folder	lib/cfclient/ui/main.py	/^    def _open_config_folder(self):$/;"	m	class:MainUI
+_outgoing_packet_signal	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    _outgoing_packet_signal = pyqtSignal(object)$/;"	v	class:CrtpSharkToolbox
+_packet	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def _packet(self, dir, pk):$/;"	m	class:CrtpSharkToolbox
+_param_callback	examples/basicparam.py	/^    def _param_callback(self, name, value):$/;"	m	class:ParamExample
+_param_callback	lib/cfzmq.py	/^    def _param_callback(self, name, value):$/;"	m	class:_SrvThread
+_param_toc_updated_cb	lib/cflib/crazyflie/__init__.py	/^    def _param_toc_updated_cb(self):$/;"	m	class:Crazyflie
+_param_updated	lib/cfclient/ui/tabs/ExampleTab.py	/^    def _param_updated(self, name, value):$/;"	m	class:ExampleTab
+_param_updated	lib/cflib/crazyflie/param.py	/^    def _param_updated(self, pk):$/;"	m	class:Param
+_param_updated_signal	lib/cfclient/ui/tabs/ExampleTab.py	/^    _param_updated_signal = pyqtSignal(str, str)$/;"	v	class:ExampleTab
+_parse_and_check_elements	lib/cflib/crazyflie/mem.py	/^    def _parse_and_check_elements(self, data):$/;"	m	class:OWElement
+_parse_and_check_header	lib/cflib/crazyflie/mem.py	/^    def _parse_and_check_header(self, data):$/;"	m	class:OWElement
+_populate_config_dropdown	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _populate_config_dropdown(self):$/;"	m	class:InputConfigDialogue
+_pyqtgraph_found	lib/cfclient/ui/widgets/plotwidget.py	/^    _pyqtgraph_found = False$/;"	v
+_pyqtgraph_found	lib/cfclient/ui/widgets/plotwidget.py	/^    _pyqtgraph_found = True$/;"	v
+_quick_connect	lib/cfclient/ui/main.py	/^    def _quick_connect(self):$/;"	m	class:MainUI
+_radio_ack	lib/cflib/drivers/crazyradio.py	/^class _radio_ack:$/;"	c
+_ramp_motors	examples/ramp.py	/^    def _ramp_motors(self):$/;"	m	class:MotorRampExample
+_read_all_events	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def _read_all_events(self):$/;"	m	class:_JS
+_read_config	lib/cfclient/utils/config.py	/^    def _read_config(self):$/;"	m	class:Config
+_read_config_files	lib/cfclient/utils/logconfigreader.py	/^    def _read_config_files(self):$/;"	m	class:LogConfigReader
+_read_distfile	lib/cfclient/utils/config.py	/^    def _read_distfile(self):$/;"	m	class:Config
+_read_input	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _read_input(self):$/;"	m	class:DeviceReader
+_reload_configs	lib/cfclient/ui/main.py	/^    def _reload_configs(self, newConfigName):$/;"	m	class:MainUI
+_request_new_chunk	lib/cflib/crazyflie/mem.py	/^    def _request_new_chunk(self):$/;"	m	class:_ReadRequest
+_request_toc_element	lib/cflib/crazyflie/toc.py	/^    def _request_toc_element(self, index):$/;"	m	class:TocFetcher
+_rescan_devices	lib/cfclient/ui/main.py	/^    def _rescan_devices(self):$/;"	m	class:MainUI
+_reset_mapping	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _reset_mapping(self):$/;"	m	class:InputConfigDialogue
+_reset_max	lib/cfclient/ui/tabs/GpsTab.py	/^    def _reset_max(self):$/;"	m	class:GpsTab
+_ring_effect_changed	lib/cfclient/ui/tabs/FlightTab.py	/^    def _ring_effect_changed(self, index):$/;"	m	class:FlightTab
+_ring_effect_updated	lib/cfclient/ui/tabs/FlightTab.py	/^    def _ring_effect_updated(self, name, value):$/;"	m	class:FlightTab
+_ring_populate_dropdown	lib/cfclient/ui/tabs/FlightTab.py	/^    def _ring_populate_dropdown(self):$/;"	m	class:FlightTab
+_rp_trim_updated_signal	lib/cfclient/ui/tabs/FlightTab.py	/^    _rp_trim_updated_signal = pyqtSignal(float, float)$/;"	v	class:FlightTab
+_save_config	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _save_config(self):$/;"	m	class:InputConfigDialogue
+_save_data	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def _save_data(self):$/;"	m	class:CrtpSharkToolbox
+_scale_and_deadband_yaw	lib/cfclient/utils/mux/__init__.py	/^    def _scale_and_deadband_yaw(self, yaw):$/;"	m	class:InputMux
+_scale_rp	lib/cfclient/utils/mux/__init__.py	/^    def _scale_rp(self, roll, pitch):$/;"	m	class:InputMux
+_scan_radio_channels	lib/cflib/crtp/radiodriver.py	/^    def _scan_radio_channels(self, start=0, stop=125):$/;"	m	class:RadioDriver
+_selection_changed	lib/cfclient/ui/tabs/PlotTab.py	/^    def _selection_changed(self, i):$/;"	m	class:PlotTab
+_send_packet	lib/cflib/crtp/debugdriver.py	/^    def _send_packet(self, pk):$/;"	m	class:_PacketHandlingThread
+_send_text	lib/cflib/crtp/debugdriver.py	/^    def _send_text(self, message):$/;"	m	class:FakeConsoleThread
+_send_vendor_setup	lib/cflib/drivers/cfusb.py	/^def _send_vendor_setup(handle, request, value, index, data):$/;"	f
+_send_vendor_setup	lib/cflib/drivers/crazyradio.py	/^def _send_vendor_setup(handle, request, value, index, data):$/;"	f
+_set_added	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def _set_added(self, conf, started):$/;"	m	class:LogBlockItem
+_set_added	lib/cflib/crazyflie/log.py	/^    def _set_added(self, added):$/;"	m	class:LogConfig
+_set_address	lib/cflib/bootloader/cloader.py	/^    def _set_address(self, new_address):$/;"	m	class:Cloader
+_set_available_sensors	lib/cfclient/ui/tabs/FlightTab.py	/^    def _set_available_sensors(self, name, available):$/;"	m	class:FlightTab
+_set_channel	lib/cflib/crtp/crtpstack.py	/^    def _set_channel(self, channel):$/;"	m	class:CRTPPacket
+_set_data	lib/cflib/crtp/crtpstack.py	/^    def _set_data(self, data):$/;"	m	class:CRTPPacket
+_set_fake_hat_button	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def _set_fake_hat_button(self, btn=None):$/;"	m	class:_JS
+_set_limiting_enabled	lib/cfclient/ui/tabs/FlightTab.py	/^    def _set_limiting_enabled(self, rp_limiting_enabled,$/;"	m	class:FlightTab
+_set_neffect	lib/cfclient/ui/tabs/FlightTab.py	/^    def _set_neffect(self, n):$/;"	m	class:FlightTab
+_set_port	lib/cflib/crtp/crtpstack.py	/^    def _set_port(self, port):$/;"	m	class:CRTPPacket
+_set_started	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def _set_started(self, conf, started):$/;"	m	class:LogBlockItem
+_set_started	lib/cflib/crazyflie/log.py	/^    def _set_started(self, started):$/;"	m	class:LogConfig
+_set_ui_connected	lib/cfclient/ui/dialogs/cf2config.py	/^    def _set_ui_connected(self, link_uri):$/;"	m	class:Cf2ConfigDialog
+_set_ui_disconnected	lib/cfclient/ui/dialogs/cf2config.py	/^    def _set_ui_disconnected(self, link_uri):$/;"	m	class:Cf2ConfigDialog
+_show_config_popup	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _show_config_popup(self, caption, message, directions=[]):$/;"	m	class:InputConfigDialogue
+_show_connect_dialog	lib/cfclient/ui/main.py	/^    def _show_connect_dialog(self):$/;"	m	class:MainUI
+_show_error	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _show_error(self, caption, message):$/;"	m	class:InputConfigDialogue
+_show_input_device_config_dialog	lib/cfclient/ui/main.py	/^    def _show_input_device_config_dialog(self):$/;"	m	class:MainUI
+_stab_log_data	examples/basiclog.py	/^    def _stab_log_data(self, timestamp, data, logconf):$/;"	m	class:LoggingExample
+_stab_log_error	examples/basiclog.py	/^    def _stab_log_error(self, logconf, msg):$/;"	m	class:LoggingExample
+_start_configuration	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _start_configuration(self):$/;"	m	class:InputConfigDialogue
+_start_connection_setup	lib/cflib/crazyflie/__init__.py	/^    def _start_connection_setup(self):$/;"	m	class:Crazyflie
+_toc_fetch_finished	lib/cflib/crazyflie/toc.py	/^    def _toc_fetch_finished(self):$/;"	m	class:TocFetcher
+_tocs_updated	lib/cfzmq.py	/^    def _tocs_updated(self):$/;"	m	class:_SrvThread
+_trim_pitch_changed	lib/cfclient/ui/tabs/FlightTab.py	/^    def _trim_pitch_changed(self, value):$/;"	m	class:FlightTab
+_trim_roll_changed	lib/cfclient/ui/tabs/FlightTab.py	/^    def _trim_roll_changed(self, value):$/;"	m	class:FlightTab
+_trim_rp	lib/cfclient/utils/mux/__init__.py	/^    def _trim_rp(self, roll, pitch):$/;"	m	class:InputMux
+_ui_connection_fail	lib/cfclient/ui/dialogs/bootloader.py	/^    def _ui_connection_fail(self, message):$/;"	m	class:BootloaderDialog
+_ui_connection_fail	lib/cfclient/ui/dialogs/cf1config.py	/^    def _ui_connection_fail(self, message):$/;"	m	class:Cf1ConfigDialog
+_update_alt1	lib/cfclient/utils/mux/__init__.py	/^    def _update_alt1(self, value):$/;"	m	class:InputMux
+_update_alt2	lib/cfclient/utils/mux/__init__.py	/^    def _update_alt2(self, value):$/;"	m	class:InputMux
+_update_alt_hold	lib/cfclient/utils/mux/__init__.py	/^    def _update_alt_hold(self, value):$/;"	m	class:InputMux
+_update_em_stop	lib/cfclient/utils/mux/__init__.py	/^    def _update_em_stop(self, value):$/;"	m	class:InputMux
+_update_header	lib/cflib/crtp/crtpstack.py	/^    def _update_header(self):$/;"	m	class:CRTPPacket
+_update_info	lib/cflib/bootloader/cloader.py	/^    def _update_info(self, target_id):$/;"	m	class:Cloader
+_update_input	lib/cfclient/ui/main.py	/^    def _update_input(self, device="", config=""):$/;"	m	class:MainUI
+_update_input_device_footer	lib/cfclient/ui/main.py	/^    def _update_input_device_footer(self, device_name=None, mapping_name=None):$/;"	m	class:MainUI
+_update_mapped_values	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def _update_mapped_values(self, values):$/;"	m	class:InputConfigDialogue
+_update_mapping	lib/cflib/bootloader/cloader.py	/^    def _update_mapping(self, target_id):$/;"	m	class:Cloader
+_update_tree	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^    def _update_tree(self, conf, value):$/;"	m	class:LogBlockDebugTab
+_update_ui_state	lib/cfclient/ui/main.py	/^    def _update_ui_state(self, newState, linkURI=""):$/;"	m	class:MainUI
+_update_vbatt	lib/cfclient/ui/main.py	/^    def _update_vbatt(self, timestamp, data, logconf):$/;"	m	class:MainUI
+_write_data	lib/cfclient/ui/dialogs/cf2config.py	/^    def _write_data(self):$/;"	m	class:Cf2ConfigDialog
+_write_done	lib/cfclient/ui/dialogs/cf2config.py	/^    def _write_done(self, mem, addr):$/;"	m	class:Cf2ConfigDialog
+_write_header	lib/cfclient/utils/logdatawriter.py	/^    def _write_header(self):$/;"	m	class:LogWriter
+_write_new_chunk	lib/cflib/crazyflie/mem.py	/^    def _write_new_chunk(self):$/;"	m	class:_WriteRequest
+_x_mode_change	lib/cfclient/ui/widgets/plotwidget.py	/^    def _x_mode_change(self, box):$/;"	m	class:PlotWidget
+_y_mode_change	lib/cfclient/ui/widgets/plotwidget.py	/^    def _y_mode_change(self, box):$/;"	m	class:PlotWidget
+_y_range_changed	lib/cfclient/ui/widgets/plotwidget.py	/^    def _y_range_changed(self, val):$/;"	m	class:PlotWidget
+_zero_all_buttons	lib/cfclient/utils/inputreaders/__init__.py	/^    def _zero_all_buttons(self):$/;"	m	class:InputDevice
+access	lib/cflib/crazyflie/toc.py	/^    access = RO_ACCESS$/;"	v	class:TocElement
+ack	lib/cflib/drivers/crazyradio.py	/^    ack = False$/;"	v	class:_radio_ack
+addNewVar	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def addNewVar(self, logTreeItem, target):$/;"	m	class:LogConfigDialogue
+add_block	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def add_block(self, block, connected_ts):$/;"	m	class:LogBlockModel
+add_block	lib/cfclient/ui/tabs/PlotTab.py	/^    def add_block(self, block):$/;"	m	class:LogConfigModel
+add_callback	lib/cflib/utils/callbacks.py	/^    def add_callback(self, cb):$/;"	m	class:Caller
+add_config	lib/cflib/crazyflie/log.py	/^    def add_config(self, logconf):$/;"	m	class:Log
+add_curve	lib/cfclient/ui/widgets/plotwidget.py	/^    def add_curve(self, title, pen='r'):$/;"	m	class:PlotWidget
+add_data	lib/cfclient/ui/tabs/GpsTab.py	/^        def add_data(self, long, lat, height, accu, locked):$/;"	m	class:GpsTab.FancyMarbleWidget
+add_data	lib/cfclient/ui/widgets/plotwidget.py	/^    def add_data(self, data, ts):$/;"	m	class:PlotWidget
+add_data	lib/cflib/crazyflie/mem.py	/^    def add_data(self, addr, data):$/;"	m	class:_ReadRequest
+add_device	lib/cfclient/utils/mux/__init__.py	/^    def add_device(self, dev, parameters):$/;"	m	class:InputMux
+add_device	lib/cfclient/utils/mux/mixmux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:MixMux
+add_device	lib/cfclient/utils/mux/nomux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:NoMux
+add_device	lib/cfclient/utils/mux/selectivemux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:SelectiveMux
+add_device	lib/cfclient/utils/mux/takeovermux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:TakeOverMux
+add_device	lib/cfclient/utils/mux/takeoverselectivemux.py	/^    def add_device(self, dev, parameters):$/;"	m	class:TakeOverSelectiveMux
+add_element	lib/cflib/crazyflie/toc.py	/^    def add_element(self, element):$/;"	m	class:Toc
+add_header_callback	lib/cflib/crazyflie/__init__.py	/^    def add_header_callback(self, cb, port, channel, port_mask=0xFF,$/;"	m	class:_IncomingPacketHandler
+add_memory	lib/cflib/crazyflie/log.py	/^    def add_memory(self, name, fetch_as, stored_as, address):$/;"	m	class:LogConfig
+add_point	lib/cfclient/ui/widgets/plotwidget.py	/^    def add_point(self, p, ts):$/;"	m	class:PlotItemWrapper
+add_port_callback	lib/cflib/crazyflie/__init__.py	/^    def add_port_callback(self, port, cb):$/;"	m	class:Crazyflie
+add_port_callback	lib/cflib/crazyflie/__init__.py	/^    def add_port_callback(self, port, cb):$/;"	m	class:_IncomingPacketHandler
+add_update_callback	lib/cflib/crazyflie/param.py	/^    def add_update_callback(self, group=None, name=None, cb=None):$/;"	m	class:Param
+add_variable	lib/cflib/crazyflie/log.py	/^    def add_variable(self, name, fetch_as=None):$/;"	m	class:LogConfig
+added	lib/cflib/crazyflie/log.py	/^    added = property(_get_added, _set_added)$/;"	v	class:LogConfig
+adjust	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def adjust(self):$/;"	m	class:HandleWiimote
+alt1_updated	lib/cfclient/ui/tabs/FlightTab.py	/^    def alt1_updated(self, state):$/;"	m	class:FlightTab
+alt2_updated	lib/cfclient/ui/tabs/FlightTab.py	/^    def alt2_updated(self, state):$/;"	m	class:FlightTab
+author	setup.py	/^      author='Bitcraze team',$/;"	v
+author_email	setup.py	/^      author_email='contact@bitcraze.se',$/;"	v
+available	examples/basiclog.py	/^    available = cflib.crtp.scan_interfaces()$/;"	v
+available	examples/basicparam.py	/^    available = cflib.crtp.scan_interfaces()$/;"	v
+available	examples/ramp.py	/^    available = cflib.crtp.scan_interfaces()$/;"	v	class:MotorRampExample
+available	examples/scan.py	/^available = cflib.crtp.scan_interfaces()$/;"	v
+available	lib/cfclient/ui/tabs/__init__.py	/^available = []$/;"	v
+available_devices	lib/cfclient/utils/input.py	/^    def available_devices(self):$/;"	m	class:JoystickReader
+available_devices	lib/cfclient/utils/inputreaders/__init__.py	/^available_devices = []$/;"	v
+available_interfaces	lib/cfclient/utils/inputinterfaces/__init__.py	/^available_interfaces = []$/;"	v
+available_mux	lib/cfclient/utils/input.py	/^    def available_mux(self):$/;"	m	class:JoystickReader
+batteryUpdatedSignal	lib/cfclient/ui/main.py	/^    batteryUpdatedSignal = pyqtSignal(int, object, object)$/;"	v	class:MainUI
+calUpdateFromInput	lib/cfclient/ui/tabs/FlightTab.py	/^    def calUpdateFromInput(self, rollCal, pitchCal):$/;"	m	class:FlightTab
+call	lib/cflib/utils/callbacks.py	/^    def call(self, *args):$/;"	m	class:Caller
+cancel	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def cancel(self):$/;"	m	class:ConnectDialogue
+changeValue	lib/cfclient/ui/widgets/ai.py	/^        def changeValue(self, value):$/;"	m	class:AttitudeIndicator.Example
+changeXmode	lib/cfclient/ui/tabs/FlightTab.py	/^    def changeXmode(self, checked):$/;"	m	class:FlightTab
+channel	lib/cflib/crtp/crtpstack.py	/^    channel = property(_get_channel, _set_channel)$/;"	v	class:CRTPPacket
+checkAndEnableSaveButton	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def checkAndEnableSaveButton(self):$/;"	m	class:LogConfigDialogue
+check_link_and_get_info	lib/cflib/bootloader/cloader.py	/^    def check_link_and_get_info(self, target_id=0xFF):$/;"	m	class:Cloader
+checksum256	lib/cfclient/ui/dialogs/cf1config.py	/^    def checksum256(self, st):$/;"	m	class:CrazyloadThread
+checksum256	lib/cfconfig/configblock.py	/^def checksum256(st):$/;"	f
+child_count	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def child_count(self):$/;"	m	class:LogBlockChildItem
+child_count	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def child_count(self):$/;"	m	class:LogBlockItem
+child_count	lib/cfclient/ui/tabs/ParamTab.py	/^    def child_count(self):$/;"	m	class:ParamChildItem
+child_count	lib/cfclient/ui/tabs/ParamTab.py	/^    def child_count(self):$/;"	m	class:ParamGroupItem
+clear	lib/cflib/crazyflie/toc.py	/^    def clear(self):$/;"	m	class:Toc
+clearLog	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def clearLog(self):$/;"	m	class:CrtpSharkToolbox
+clear_data	lib/cfclient/ui/tabs/GpsTab.py	/^        def clear_data(self):$/;"	m	class:GpsTab.FancyMarbleWidget
+clicked	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def clicked(self, index):$/;"	m	class:LogBlockModel
+client_conn	examples/zmqsrvtest.py	/^client_conn = context.socket(zmq.REQ)$/;"	v
+close	lib/cfclient/utils/inputinterfaces/__init__.py	/^    def close(self):$/;"	m	class:InputInterface
+close	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def close(self, id):$/;"	m	class:LeapmotionReader
+close	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def close(self, device_id):$/;"	m	class:_Reader
+close	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def close(self, device_id):$/;"	m	class:ZMQReader
+close	lib/cfclient/utils/inputreaderinterface.py	/^    def close(self, device_id):$/;"	m	class:InputReaderInterface
+close	lib/cfclient/utils/inputreaders/__init__.py	/^    def close(self):$/;"	m	class:InputDevice
+close	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def close(self):$/;"	m	class:_JS
+close	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def close(self, device_id):$/;"	m	class:Joystick
+close	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def close(self):$/;"	m	class:_JS
+close	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def close(self, device_id):$/;"	m	class:PySDL2Reader
+close	lib/cfclient/utils/mux/__init__.py	/^    def close(self):$/;"	m	class:InputMux
+close	lib/cflib/bootloader/__init__.py	/^    def close(self):$/;"	m	class:Bootloader
+close	lib/cflib/bootloader/cloader.py	/^    def close(self):$/;"	m	class:Cloader
+close	lib/cflib/crazyflie/param.py	/^    def close(self, uri):$/;"	m	class:_ParamUpdater
+close	lib/cflib/crtp/crtpdriver.py	/^    def close(self):$/;"	m	class:CRTPDriver
+close	lib/cflib/crtp/debugdriver.py	/^    def close(self):$/;"	m	class:DebugDriver
+close	lib/cflib/crtp/radiodriver.py	/^    def close(self):$/;"	m	class:RadioDriver
+close	lib/cflib/crtp/udpdriver.py	/^    def close(self):$/;"	m	class:UdpDriver
+close	lib/cflib/crtp/usbdriver.py	/^    def close(self):$/;"	m	class:UsbDriver
+close	lib/cflib/drivers/cfusb.py	/^    def close(self):$/;"	m	class:CfUsb
+close	lib/cflib/drivers/crazyradio.py	/^    def close(self):$/;"	m	class:Crazyradio
+closeAppRequest	lib/cfclient/ui/main.py	/^    def closeAppRequest(self):$/;"	m	class:MainUI
+closeEvent	lib/cfclient/ui/dialogs/bootloader.py	/^    def closeEvent(self, event):$/;"	m	class:BootloaderDialog
+closeEvent	lib/cfclient/ui/dialogs/cf1config.py	/^    def closeEvent(self, event):$/;"	m	class:Cf1ConfigDialog
+closeEvent	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def closeEvent(self, event):$/;"	m	class:InputConfigDialogue
+closeEvent	lib/cfclient/ui/main.py	/^    def closeEvent(self, event):$/;"	m	class:MainUI
+closeEvent	lib/cfclient/ui/main.py	/^    def closeEvent(self, event):$/;"	m	class:MyDockWidget
+close_link	lib/cflib/crazyflie/__init__.py	/^    def close_link(self):$/;"	m	class:Crazyflie
+closed	lib/cfclient/ui/main.py	/^    closed = pyqtSignal()$/;"	v	class:MyDockWidget
+colors	lib/cfclient/ui/tabs/PlotTab.py	/^    colors = ['g', 'b', 'm', 'r', 'y', 'c']$/;"	v	class:PlotTab
+columnCount	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def columnCount(self, parent):$/;"	m	class:LogBlockModel
+columnCount	lib/cfclient/ui/tabs/ParamTab.py	/^    def columnCount(self, parent):$/;"	m	class:ParamBlockModel
+columnCount	lib/cfclient/ui/tabs/PlotTab.py	/^    def columnCount(self, parent):$/;"	m	class:LogConfigModel
+compileBlock	lib/cfconfig/configblock.py	/^def compileBlock(configFile, binFile):$/;"	f
+conf_needs_reload	lib/cfclient/utils/config_manager.py	/^    conf_needs_reload = Caller()$/;"	v	class:ConfigManager
+configVersion	lib/cfconfig/configblock.py	/^configVersion = 0$/;"	v
+configs_dir	lib/cfclient/utils/config_manager.py	/^    configs_dir = sys.path[1] + "\/input"$/;"	v	class:ConfigManager
+conn_conn	examples/zmqsrvtest.py	/^conn_conn = context.socket(zmq.SUB)$/;"	v
+conn_thread	examples/zmqsrvtest.py	/^conn_thread = _ConnThread(conn_conn)$/;"	v
+connect	lib/cflib/crtp/crtpdriver.py	/^    def connect(self, uri, link_quality_callback, link_error_callback):$/;"	m	class:CRTPDriver
+connect	lib/cflib/crtp/debugdriver.py	/^    def connect(self, uri, linkQualityCallback, linkErrorCallback):$/;"	m	class:DebugDriver
+connect	lib/cflib/crtp/radiodriver.py	/^    def connect(self, uri, link_quality_callback, link_error_callback):$/;"	m	class:RadioDriver
+connect	lib/cflib/crtp/serialdriver.py	/^    def connect(self, uri, linkQualityCallback, linkErrorCallback):$/;"	m	class:SerialDriver
+connect	lib/cflib/crtp/udpdriver.py	/^    def connect(self, uri, linkQualityCallback, linkErrorCallback):$/;"	m	class:UdpDriver
+connect	lib/cflib/crtp/usbdriver.py	/^    def connect(self, uri, link_quality_callback, link_error_callback):$/;"	m	class:UsbDriver
+connect_cmd	examples/zmqsrvtest.py	/^connect_cmd = {$/;"	v
+connect_crazyflie	lib/cfheadless.py	/^    def connect_crazyflie(self, link_uri):$/;"	m	class:HeadlessClient
+connected	lib/cfclient/ui/dialogs/bootloader.py	/^    def connected(self):$/;"	m	class:BootloaderDialog
+connected	lib/cfclient/ui/dialogs/cf1config.py	/^    def connected(self):$/;"	m	class:Cf1ConfigDialog
+connected	lib/cfclient/ui/tabs/FlightTab.py	/^    def connected(self, linkURI):$/;"	m	class:FlightTab
+connected	lib/cfclient/ui/tabs/LogTab.py	/^    def connected(self, linkURI):$/;"	m	class:LogTab
+connected	lib/cflib/crazyflie/__init__.py	/^    connected = Caller()$/;"	v	class:Crazyflie
+connectedSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    connectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectedSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    connectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectedSignal	lib/cfclient/ui/tabs/LogTab.py	/^    connectedSignal = pyqtSignal(str)$/;"	v	class:LogTab
+connected_signal	lib/cfclient/ui/dialogs/cf2config.py	/^    connected_signal = pyqtSignal(str)$/;"	v	class:Cf2ConfigDialog
+connectingSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    connectingSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectingSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    connectingSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+connectionDone	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def connectionDone(self, linkURI):$/;"	m	class:DebugDriverToolbox
+connectionDoneSignal	lib/cfclient/ui/main.py	/^    connectionDoneSignal = pyqtSignal(str)$/;"	v	class:MainUI
+connectionDoneSignal	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    connectionDoneSignal = pyqtSignal(str)$/;"	v	class:DebugDriverToolbox
+connectionFailed	lib/cfclient/ui/dialogs/bootloader.py	/^    def connectionFailed(self):$/;"	m	class:BootloaderDialog
+connectionFailed	lib/cfclient/ui/dialogs/cf1config.py	/^    def connectionFailed(self):$/;"	m	class:Cf1ConfigDialog
+connectionFailedSignal	lib/cfclient/ui/main.py	/^    connectionFailedSignal = pyqtSignal(str, str)$/;"	v	class:MainUI
+connectionFinishedSignal	lib/cfclient/ui/tabs/FlightTab.py	/^    connectionFinishedSignal = pyqtSignal(str)$/;"	v	class:FlightTab
+connectionInitiatedSignal	lib/cfclient/ui/main.py	/^    connectionInitiatedSignal = pyqtSignal(str)$/;"	v	class:MainUI
+connectionLostSignal	lib/cfclient/ui/main.py	/^    connectionLostSignal = pyqtSignal(str, str)$/;"	v	class:MainUI
+connection_failed	lib/cflib/crazyflie/__init__.py	/^    connection_failed = Caller()$/;"	v	class:Crazyflie
+connection_lost	lib/cflib/crazyflie/__init__.py	/^    connection_lost = Caller()$/;"	v	class:Crazyflie
+connection_requested	lib/cflib/crazyflie/__init__.py	/^    connection_requested = Caller()$/;"	v	class:Crazyflie
+console	setup.py	/^        console=[{$/;"	v
+console_class	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^console_class = uic.loadUiType(sys.path[0] + "\/cfclient\/ui\/toolboxes\/consoleToolbox.ui")[0]$/;"	v
+console_tab_class	lib/cfclient/ui/tabs/ConsoleTab.py	/^console_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+context	examples/zmqsrvtest.py	/^context = zmq.Context()$/;"	v
+controller_connected	lib/cfheadless.py	/^    def controller_connected(self):$/;"	m	class:HeadlessClient
+create	lib/cflib/crazyflie/log.py	/^    def create(self):$/;"	m	class:LogConfig
+createConfigFromSelection	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def createConfigFromSelection(self):$/;"	m	class:LogConfigDialogue
+ctrl	examples/zmqsrvtest.py	/^ctrl = _CtrlThread(ctrl_conn)$/;"	v
+ctrl_conn	examples/zmqsrvtest.py	/^ctrl_conn = context.socket(zmq.PUSH)$/;"	v
+ctype	lib/cflib/crazyflie/toc.py	/^    ctype = ""$/;"	v	class:TocElement
+customPaint	lib/cfclient/ui/tabs/GpsTab.py	/^        def customPaint(self, painter):$/;"	m	class:GpsTab.FancyMarbleWidget
+data	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def data(self, index, role):$/;"	m	class:LogBlockModel
+data	lib/cfclient/ui/tabs/ParamTab.py	/^    def data(self, index, role):$/;"	m	class:ParamBlockModel
+data	lib/cfclient/ui/tabs/PlotTab.py	/^    def data(self, index, role):$/;"	m	class:LogConfigModel
+data	lib/cflib/crtp/crtpstack.py	/^    data = property(_get_data, _set_data)$/;"	v	class:CRTPPacket
+data	lib/cflib/drivers/crazyradio.py	/^    data = ()$/;"	v	class:_radio_ack
+data_files	setup.py	/^      data_files=[('', toplevel_data_files),$/;"	v
+datal	lib/cflib/crtp/crtpstack.py	/^    datal = property(_get_data_l, _set_data)$/;"	v	class:CRTPPacket
+datas	lib/cflib/crtp/crtpstack.py	/^    datas = property(_get_data, _set_data)$/;"	v	class:CRTPPacket
+datat	lib/cflib/crtp/crtpstack.py	/^    datat = property(_get_data_t, _set_data)$/;"	v	class:CRTPPacket
+deadband	lib/cfclient/utils/input.py	/^    def deadband(value, threshold):$/;"	m	class:JoystickReader
+deadband	lib/cfclient/utils/mux/__init__.py	/^    def deadband(value, threshold):$/;"	m	class:InputMux
+debugdriver_tab_class	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^debugdriver_tab_class = uic.loadUiType($/;"	v
+decodeSize	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def decodeSize(self, s):$/;"	m	class:LogConfigDialogue
+decode_cpu_id	lib/cflib/bootloader/cloader.py	/^    def decode_cpu_id(self, cpuid):$/;"	m	class:Cloader
+decompileBlock	lib/cfconfig/configblock.py	/^def decompileBlock(binFile, configFile):$/;"	f
+delete	lib/cflib/crazyflie/log.py	/^    def delete(self):$/;"	m	class:LogConfig
+description	setup.py	/^      description='Bitcraze Cazyflie nano quadcopter client',$/;"	v
+device_discovery	lib/cfclient/ui/main.py	/^    def device_discovery(self, devs):$/;"	m	class:MainUI
+devices	lib/cfclient/utils/inputinterfaces/__init__.py	/^def devices():$/;"	f
+devices	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def devices(self):$/;"	m	class:LeapmotionReader
+devices	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def devices(self):$/;"	m	class:WiimoteReader
+devices	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def devices(self):$/;"	m	class:_Reader
+devices	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def devices(self):$/;"	m	class:ZMQReader
+devices	lib/cfclient/utils/inputreaderinterface.py	/^    def devices(self):$/;"	m	class:InputReaderInterface
+devices	lib/cfclient/utils/inputreaders/__init__.py	/^def devices():$/;"	f
+devices	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def devices(self):$/;"	m	class:Joystick
+devices	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def devices(self):$/;"	m	class:PySDL2Reader
+dirs	win32install/generate_nsis.py	/^                               dirs=INSTALL_DIRS,$/;"	v
+disable	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^    def disable(self):$/;"	m	class:ConsoleToolbox
+disable	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def disable(self):$/;"	m	class:CrtpSharkToolbox
+disable	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def disable(self):$/;"	m	class:DebugDriverToolbox
+disconnect	lib/cflib/crazyflie/mem.py	/^    def disconnect(self):$/;"	m	class:I2CElement
+disconnect	lib/cflib/crazyflie/mem.py	/^    def disconnect(self):$/;"	m	class:OWElement
+disconnected	lib/cfclient/ui/tabs/FlightTab.py	/^    def disconnected(self, linkURI):$/;"	m	class:FlightTab
+disconnected	lib/cfclient/ui/tabs/LogTab.py	/^    def disconnected(self, linkname):$/;"	m	class:LogTab
+disconnected	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def disconnected(self, linkURI):$/;"	m	class:DebugDriverToolbox
+disconnected	lib/cflib/crazyflie/__init__.py	/^    disconnected = Caller()$/;"	v	class:Crazyflie
+disconnected	lib/cflib/crazyflie/param.py	/^    def disconnected(self, uri):$/;"	m	class:Param
+disconnectedSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    disconnectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+disconnectedSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    disconnectedSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+disconnectedSignal	lib/cfclient/ui/main.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:MainUI
+disconnectedSignal	lib/cfclient/ui/tabs/FlightTab.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:FlightTab
+disconnectedSignal	lib/cfclient/ui/tabs/LogTab.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:LogTab
+disconnectedSignal	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    disconnectedSignal = pyqtSignal(str)$/;"	v	class:DebugDriverToolbox
+disconnected_signal	lib/cfclient/ui/dialogs/cf2config.py	/^    disconnected_signal = pyqtSignal(str)$/;"	v	class:Cf2ConfigDialog
+doing_transaction	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def doing_transaction(self):$/;"	m	class:LogBlockItem
+drawWidget	lib/cfclient/ui/widgets/ai.py	/^    def drawWidget(self, qp):$/;"	m	class:AttitudeIndicator
+element_mapping	lib/cflib/crazyflie/mem.py	/^    element_mapping = {$/;"	v	class:OWElement
+emergencyStopStringWithText	lib/cfclient/ui/tabs/FlightTab.py	/^    def emergencyStopStringWithText(self, text):$/;"	m	class:FlightTab
+enable	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^    def enable(self):$/;"	m	class:ConsoleToolbox
+enable	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def enable(self):$/;"	m	class:CrtpSharkToolbox
+enable	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def enable(self):$/;"	m	class:DebugDriverToolbox
+enableRawReading	lib/cfclient/utils/input.py	/^    def enableRawReading(self, device_name):$/;"	m	class:JoystickReader
+enable_alt_hold	lib/cfclient/utils/input.py	/^    def enable_alt_hold(self, althold):$/;"	m	class:JoystickReader
+enable_alt_hold	lib/cfclient/utils/mux/__init__.py	/^    def enable_alt_hold(self, althold):$/;"	m	class:InputMux
+enum	lib/cflib/crtp/crtpdriver.py	/^    def enum(self):$/;"	m	class:CRTPDriver
+erase	lib/cflib/crtp/debugdriver.py	/^    def erase(self):$/;"	m	class:FakeMemory
+example_tab_class	lib/cfclient/ui/tabs/ExampleTab.py	/^example_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+exit_code	setup.py	/^    exit_code = process.wait()$/;"	v
+exit_code	win32install/generate_nsis.py	/^    exit_code = process.wait()$/;"	v
+failed_signal	lib/cfclient/ui/dialogs/bootloader.py	/^    failed_signal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+failed_signal	lib/cfclient/ui/dialogs/cf1config.py	/^    failed_signal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+fetch	lib/cflib/crazyflie/toccache.py	/^    def fetch(self, crc):$/;"	m	class:TocCache
+flags	lib/cfclient/ui/tabs/ParamTab.py	/^    def flags(self, index):$/;"	m	class:ParamBlockModel
+flash	lib/cflib/bootloader/__init__.py	/^    def flash(self, filename, targets):$/;"	m	class:Bootloader
+flight_tab_class	lib/cfclient/ui/tabs/FlightTab.py	/^flight_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+flightmodeChange	lib/cfclient/ui/tabs/FlightTab.py	/^    def flightmodeChange(self, item):$/;"	m	class:FlightTab
+forceDisconnecPressed	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def forceDisconnecPressed(self):$/;"	m	class:DebugDriverToolbox
+foundInterfaces	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def foundInterfaces(self, interfaces):$/;"	m	class:ConnectDialogue
+foundToolboxes	lib/cfclient/ui/toolboxes/__init__.py	/^    foundToolboxes = [os.path.splitext(os.path.basename(f))[0] for f in$/;"	v
+foundToolboxes	lib/cfclient/ui/toolboxes/__init__.py	/^foundToolboxes = [os.path.splitext(os.path.basename(f))[0] for f in$/;"	v
+found_interfaces	lib/cfclient/utils/inputinterfaces/__init__.py	/^found_interfaces = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_readers	lib/cfclient/utils/inputinterfaces/__init__.py	/^    found_readers = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_readers	lib/cfclient/utils/inputreaders/__init__.py	/^    found_readers = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_readers	lib/cfclient/utils/inputreaders/__init__.py	/^found_readers = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_tabs	lib/cfclient/ui/tabs/__init__.py	/^    found_tabs = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+found_tabs	lib/cfclient/ui/tabs/__init__.py	/^found_tabs = [os.path.splitext(os.path.basename(f))[0] for$/;"	v
+from_string	lib/cflib/bootloader/boottypes.py	/^    def from_string(name):$/;"	m	class:TargetTypes
+get	lib/cfclient/utils/config.py	/^    def get(self, key):$/;"	m	class:Config
+getLogConfigs	lib/cfclient/utils/logconfigreader.py	/^    def getLogConfigs(self):$/;"	m	class:LogConfigReader
+getMenuName	lib/cfclient/ui/tab.py	/^    def getMenuName(self):$/;"	m	class:Tab
+getName	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^    def getName(self):$/;"	m	class:ConsoleToolbox
+getName	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def getName(self):$/;"	m	class:CrtpSharkToolbox
+getName	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def getName(self):$/;"	m	class:DebugDriverToolbox
+getNodeChildren	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def getNodeChildren(self, treeNode):$/;"	m	class:LogConfigDialogue
+getTabName	lib/cfclient/ui/tab.py	/^    def getTabName(self):$/;"	m	class:Tab
+getTabName	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def getTabName(self):$/;"	m	class:CrtpSharkToolbox
+getTabName	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def getTabName(self):$/;"	m	class:DebugDriverToolbox
+get_child	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def get_child(self, index):$/;"	m	class:LogBlockItem
+get_config	lib/cfclient/ui/tabs/PlotTab.py	/^    def get_config(self, i):$/;"	m	class:LogConfigModel
+get_config	lib/cfclient/utils/config_manager.py	/^    def get_config(self, config_name):$/;"	m	class:ConfigManager
+get_cstring_from_id	lib/cflib/crazyflie/log.py	/^    def get_cstring_from_id(ident):$/;"	m	class:LogTocElement
+get_device_name	lib/cfclient/utils/input.py	/^    def get_device_name(self):$/;"	m	class:JoystickReader
+get_element	lib/cflib/crazyflie/toc.py	/^    def get_element(self, group, name):$/;"	m	class:Toc
+get_element_by_complete_name	lib/cflib/crazyflie/toc.py	/^    def get_element_by_complete_name(self, complete_name):$/;"	m	class:Toc
+get_element_by_id	lib/cflib/crazyflie/toc.py	/^    def get_element_by_id(self, ident):$/;"	m	class:Toc
+get_element_id	lib/cflib/crazyflie/toc.py	/^    def get_element_id(self, complete_name):$/;"	m	class:Toc
+get_header	lib/cflib/crtp/crtpstack.py	/^    def get_header(self):$/;"	m	class:CRTPPacket
+get_help	lib/cflib/crtp/crtpdriver.py	/^    def get_help(self):$/;"	m	class:CRTPDriver
+get_id_from_cstring	lib/cflib/crazyflie/log.py	/^    def get_id_from_cstring(name):$/;"	m	class:LogTocElement
+get_interfaces_status	lib/cflib/crtp/__init__.py	/^def get_interfaces_status():$/;"	f
+get_link_driver	lib/cflib/crtp/__init__.py	/^def get_link_driver(uri, link_quality_callback=None, link_error_callback=None):$/;"	f
+get_list_of_configs	lib/cfclient/utils/config_manager.py	/^    def get_list_of_configs(self):$/;"	m	class:ConfigManager
+get_mem	lib/cflib/crazyflie/mem.py	/^    def get_mem(self, id):$/;"	m	class:Memory
+get_mems	lib/cflib/crazyflie/mem.py	/^    def get_mems(self, type):$/;"	m	class:Memory
+get_mux_supported_dev_count	lib/cfclient/utils/input.py	/^    def get_mux_supported_dev_count(self):$/;"	m	class:JoystickReader
+get_name	lib/cflib/crtp/crtpdriver.py	/^    def get_name(self):$/;"	m	class:CRTPDriver
+get_name	lib/cflib/crtp/debugdriver.py	/^    def get_name(self):$/;"	m	class:DebugDriver
+get_name	lib/cflib/crtp/radiodriver.py	/^    def get_name(self):$/;"	m	class:RadioDriver
+get_name	lib/cflib/crtp/serialdriver.py	/^    def get_name(self):$/;"	m	class:SerialDriver
+get_name	lib/cflib/crtp/udpdriver.py	/^    def get_name(self):$/;"	m	class:UdpDriver
+get_name	lib/cflib/crtp/usbdriver.py	/^    def get_name(self):$/;"	m	class:UsbDriver
+get_readable_access	lib/cflib/crazyflie/param.py	/^    def get_readable_access(self):$/;"	m	class:ParamTocElement
+get_saved_device_mapping	lib/cfclient/utils/input.py	/^    def get_saved_device_mapping(self, device_name):$/;"	m	class:JoystickReader
+get_serial	lib/cflib/drivers/cfusb.py	/^    def get_serial(self):$/;"	m	class:CfUsb
+get_settings	lib/cfclient/utils/config_manager.py	/^    def get_settings(self, config_name):$/;"	m	class:ConfigManager
+get_size_from_id	lib/cflib/crazyflie/log.py	/^    def get_size_from_id(ident):$/;"	m	class:LogTocElement
+get_status	lib/cflib/crtp/crtpdriver.py	/^    def get_status(self):$/;"	m	class:CRTPDriver
+get_status	lib/cflib/crtp/debugdriver.py	/^    def get_status(self):$/;"	m	class:DebugDriver
+get_status	lib/cflib/crtp/radiodriver.py	/^    def get_status(self):$/;"	m	class:RadioDriver
+get_status	lib/cflib/crtp/usbdriver.py	/^    def get_status(self):$/;"	m	class:UsbDriver
+get_storage_and_fetch_byte	lib/cflib/crazyflie/log.py	/^    def get_storage_and_fetch_byte(self):$/;"	m	class:LogVariable
+get_supported_dev_count	lib/cfclient/utils/mux/__init__.py	/^    def get_supported_dev_count(self):$/;"	m	class:InputMux
+get_supported_dev_count	lib/cfclient/utils/mux/mixmux.py	/^    def get_supported_dev_count(self):$/;"	m	class:MixMux
+get_supported_dev_count	lib/cfclient/utils/mux/selectivemux.py	/^    def get_supported_dev_count(self):$/;"	m	class:SelectiveMux
+get_supported_dev_count	lib/cfclient/utils/mux/takeovermux.py	/^    def get_supported_dev_count(self):$/;"	m	class:TakeOverMux
+get_supported_dev_count	lib/cfclient/utils/mux/takeoverselectivemux.py	/^    def get_supported_dev_count(self):$/;"	m	class:TakeOverSelectiveMux
+get_target	lib/cflib/bootloader/__init__.py	/^    def get_target(self, target_id):$/;"	m	class:Bootloader
+get_unpack_string_from_id	lib/cflib/crazyflie/log.py	/^    def get_unpack_string_from_id(ident):$/;"	m	class:LogTocElement
+gps_tab_class	lib/cfclient/ui/tabs/GpsTab.py	/^gps_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+group	lib/cflib/crazyflie/toc.py	/^    group = ""$/;"	v	class:TocElement
+handleParam	lib/cflib/crtp/debugdriver.py	/^    def handleParam(self, pk):$/;"	m	class:_PacketHandlingThread
+handle_packet	lib/cflib/crtp/debugdriver.py	/^    def handle_packet(self, pk):$/;"	m	class:_PacketHandlingThread
+headerData	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def headerData(self, section, orientation, role):$/;"	m	class:LogBlockModel
+headerData	lib/cfclient/ui/tabs/ParamTab.py	/^    def headerData(self, section, orientation, role):$/;"	m	class:ParamBlockModel
+ident	lib/cflib/crazyflie/toc.py	/^    ident = 0$/;"	v	class:TocElement
+incoming	lib/cflib/crazyflie/console.py	/^    def incoming(self, packet):$/;"	m	class:Console
+index	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def index(self, row, column, parent):$/;"	m	class:LogBlockModel
+index	lib/cfclient/ui/tabs/ParamTab.py	/^    def index(self, row, column, parent):$/;"	m	class:ParamBlockModel
+index	lib/cfclient/ui/tabs/PlotTab.py	/^    def index(self, row, column, parent):$/;"	m	class:LogConfigModel
+initUI	lib/cfclient/ui/widgets/ai.py	/^        def initUI(self):$/;"	m	class:AttitudeIndicator.Example
+init_drivers	lib/cflib/crtp/__init__.py	/^def init_drivers(enable_debug_driver=False):$/;"	f
+initialized_interfaces	lib/cfclient/utils/inputinterfaces/__init__.py	/^initialized_interfaces = []$/;"	v
+initialized_readers	lib/cfclient/utils/inputreaders/__init__.py	/^initialized_readers = []$/;"	v
+initiateColdBoot	lib/cfclient/ui/dialogs/bootloader.py	/^    def initiateColdBoot(self, linkURI):$/;"	m	class:CrazyloadThread
+initiateColdBoot	lib/cfclient/ui/dialogs/cf1config.py	/^    def initiateColdBoot(self, linkURI):$/;"	m	class:CrazyloadThread
+initiateColdBootSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    initiateColdBootSignal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+initiateColdBootSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    initiateColdBootSignal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+initiateColdboot	lib/cfclient/ui/dialogs/bootloader.py	/^    def initiateColdboot(self):$/;"	m	class:BootloaderDialog
+initiateColdboot	lib/cfclient/ui/dialogs/cf1config.py	/^    def initiateColdboot(self):$/;"	m	class:Cf1ConfigDialog
+inputConfig	lib/cfclient/utils/input.py	/^    inputConfig = []$/;"	v	class:JoystickReader
+insert	lib/cflib/crazyflie/toccache.py	/^    def insert(self, crc, toc):$/;"	m	class:TocCache
+interfaceFoundSignal	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    interfaceFoundSignal = pyqtSignal(object)$/;"	v	class:ScannerThread
+interfaceSelected	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def interfaceSelected(self, listItem):$/;"	m	class:ConnectDialogue
+is_toc_variable	lib/cflib/crazyflie/log.py	/^    def is_toc_variable(self):$/;"	m	class:LogVariable
+leap_callback	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def leap_callback(self, data):$/;"	m	class:LeapmotionReader
+linkQualityChanged	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def linkQualityChanged(self, value):$/;"	m	class:DebugDriverToolbox
+linkQualitySignal	lib/cfclient/ui/main.py	/^    linkQualitySignal = pyqtSignal(int)$/;"	v	class:MainUI
+link_established	lib/cflib/crazyflie/__init__.py	/^    link_established = Caller()$/;"	v	class:Crazyflie
+link_quality_updated	lib/cflib/crazyflie/__init__.py	/^    link_quality_updated = Caller()$/;"	v	class:Crazyflie
+list_controllers	lib/cfheadless.py	/^    def list_controllers(self):$/;"	m	class:HeadlessClient
+loadConfig	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def loadConfig(self):$/;"	m	class:LogConfigDialogue
+log_cmd	examples/zmqsrvtest.py	/^log_cmd = {$/;"	v
+log_conn	examples/zmqsrvtest.py	/^log_conn = context.socket(zmq.SUB)$/;"	v
+log_thread	examples/zmqsrvtest.py	/^log_thread = _LogThread(log_conn)$/;"	v
+logblock_tab_class	lib/cfclient/ui/tabs/LogBlockDebugTab.py	/^logblock_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+logblock_tab_class	lib/cfclient/ui/tabs/LogBlockTab.py	/^logblock_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+logger	lib/cfclient/ui/dialogs/bootloader.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/dialogs/cf1config.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/dialogs/cf2config.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/main.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/ConsoleTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/ExampleTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/FlightTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/GpsTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/LogBlockTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/ParamTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/PlotTab.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/tabs/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/toolboxes/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/ui/widgets/plotwidget.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/config.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/config_manager.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/input.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputinterfaces/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputinterfaces/wiimote.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputreaders/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/inputreaders/pysdl2.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/logconfigreader.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/logdatawriter.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/mux/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/mux/mixmux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/mux/nomux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/mux/selectivemux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/mux/takeovermux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/mux/takeoverselectivemux.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfclient/utils/periodictimer.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/bootloader/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/bootloader/cloader.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crazyflie/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crazyflie/log.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crazyflie/mem.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crazyflie/param.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crazyflie/toc.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crazyflie/toccache.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crtp/__init__.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crtp/debugdriver.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crtp/radiodriver.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/crtp/usbdriver.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/drivers/cfusb.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cflib/drivers/crazyradio.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	lib/cfzmq.py	/^logger = logging.getLogger(__name__)$/;"	v
+logging_started	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def logging_started(self):$/;"	m	class:LogBlockItem
+main	lib/cfclient/cfclient.py	/^def main():$/;"	f
+main	lib/cfclient/ui/widgets/ai.py	/^    def main():$/;"	m	class:AttitudeIndicator
+main	lib/cfheadless.py	/^def main():$/;"	f
+main	lib/cfzmq.py	/^def main():$/;"	f
+main_name	lib/cfclient/utils/inputinterfaces/__init__.py	/^        main_name = getattr(module, "MODULE_MAIN")$/;"	v
+main_name	lib/cfclient/utils/inputreaders/__init__.py	/^        main_name = getattr(module, "MODULE_MAIN")$/;"	v
+mapped_values_signal	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    mapped_values_signal = pyqtSignal(object)$/;"	v	class:DeviceReader
+maxAngleChanged	lib/cfclient/ui/tabs/FlightTab.py	/^    def maxAngleChanged(self):$/;"	m	class:FlightTab
+maxYawRateChanged	lib/cfclient/ui/tabs/FlightTab.py	/^    def maxYawRateChanged(self):$/;"	m	class:FlightTab
+memlogging	lib/cflib/crtp/debugdriver.py	/^memlogging = {0x01: {"min": 0, "max": 255, "mod": 1, "vartype": 1},$/;"	v
+minMaxThrustChanged	lib/cfclient/ui/tabs/FlightTab.py	/^    def minMaxThrustChanged(self):$/;"	m	class:FlightTab
+module	lib/cfclient/utils/inputinterfaces/__init__.py	/^        module = __import__(interface, globals(), locals(), [interface], -1)$/;"	v
+module	lib/cfclient/utils/inputreaders/__init__.py	/^        module = __import__(reader, globals(), locals(), [reader], -1)$/;"	v
+moveNode	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def moveNode(self, source, target):$/;"	m	class:LogConfigDialogue
+moveNodeByName	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def moveNodeByName(self, source, target, parentName, itemName):$/;"	m	class:LogConfigDialogue
+moveNodeItem	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def moveNodeItem(self, source, target, item):$/;"	m	class:LogConfigDialogue
+name	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    name = MODULE_NAME$/;"	v	class:WiimoteReader
+name	lib/cflib/crazyflie/toc.py	/^    name = ""$/;"	v	class:TocElement
+nameModified	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    nameModified = pyqtSignal()$/;"	v	class:CrtpSharkToolbox
+nbr_of_fingers	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def nbr_of_fingers(self):$/;"	m	class:LeapListener
+new_data	lib/cflib/crazyflie/mem.py	/^    def new_data(self, mem, addr, data):$/;"	m	class:I2CElement
+new_data	lib/cflib/crazyflie/mem.py	/^    def new_data(self, mem, addr, data):$/;"	m	class:MemoryElement
+new_data	lib/cflib/crazyflie/mem.py	/^    def new_data(self, mem, addr, data):$/;"	m	class:OWElement
+on_connect	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def on_connect(self, controller):$/;"	m	class:LeapListener
+on_disconnect	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def on_disconnect(self, controller):$/;"	m	class:LeapListener
+on_exit	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def on_exit(self, controller):$/;"	m	class:LeapListener
+on_frame	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def on_frame(self, controller):$/;"	m	class:LeapListener
+on_init	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def on_init(self, controller):$/;"	m	class:LeapListener
+open	lib/cfclient/utils/inputinterfaces/__init__.py	/^    def open(self):$/;"	m	class:InputInterface
+open	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def open(self, deviceId):$/;"	m	class:LeapmotionReader
+open	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def open(self, device_id):$/;"	m	class:_Reader
+open	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def open(self, device_id):$/;"	m	class:ZMQReader
+open	lib/cfclient/utils/inputreaderinterface.py	/^    def open(self, device_id):$/;"	m	class:InputReaderInterface
+open	lib/cfclient/utils/inputreaders/__init__.py	/^    def open(self):$/;"	m	class:InputDevice
+open	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def open(self):$/;"	m	class:_JS
+open	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def open(self, device_id):$/;"	m	class:Joystick
+open	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def open(self):$/;"	m	class:_JS
+open	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def open(self, device_id):$/;"	m	class:PySDL2Reader
+openConnection	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def openConnection(self):$/;"	m	class:ConnectDialogue
+open_bootloader_uri	lib/cflib/bootloader/cloader.py	/^    def open_bootloader_uri(self, uri=None):$/;"	m	class:Cloader
+open_link	lib/cflib/crazyflie/__init__.py	/^    def open_link(self, link_uri):$/;"	m	class:Crazyflie
+options	setup.py	/^        options={"py2exe": {"includes": ["sip", "PyQt4",$/;"	v
+ow_search	lib/cflib/crazyflie/mem.py	/^    def ow_search(self, vid=0xBC, pid=None, name=None):$/;"	m	class:Memory
+p2t	lib/cfclient/utils/input.py	/^    def p2t(percentage):$/;"	m	class:JoystickReader
+p2t	lib/cfclient/utils/mux/__init__.py	/^    def p2t(percentage):$/;"	m	class:InputMux
+package_dir	setup.py	/^      package_dir={'': 'lib'},$/;"	v
+packages	setup.py	/^      packages=['cfclient', 'cfclient.ui', 'cfclient.ui.tabs',$/;"	v
+packet_received	lib/cflib/crazyflie/__init__.py	/^    packet_received = Caller()$/;"	v	class:Crazyflie
+packet_sent	lib/cflib/crazyflie/__init__.py	/^    packet_sent = Caller()$/;"	v	class:Crazyflie
+paint	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def paint(self, painter, option, index):$/;"	m	class:CheckboxDelegate
+paintEvent	lib/cfclient/ui/widgets/ai.py	/^    def paintEvent(self, e):$/;"	m	class:AttitudeIndicator
+param_cmd	examples/zmqsrvtest.py	/^param_cmd = {$/;"	v
+param_conn	examples/zmqsrvtest.py	/^param_conn = context.socket(zmq.SUB)$/;"	v
+param_tab_class	lib/cfclient/ui/tabs/LogTab.py	/^param_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+param_tab_class	lib/cfclient/ui/tabs/ParamTab.py	/^param_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+param_tab_class	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^param_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+param_thread	examples/zmqsrvtest.py	/^param_thread = _ParamThread(param_conn)$/;"	v
+parent	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def parent(self, index):$/;"	m	class:LogBlockModel
+parent	lib/cfclient/ui/tabs/ParamTab.py	/^    def parent(self, index):$/;"	m	class:ParamBlockModel
+parent	lib/cfclient/ui/tabs/PlotTab.py	/^    def parent(self, index):$/;"	m	class:LogConfigModel
+pathBrowse	lib/cfclient/ui/dialogs/bootloader.py	/^    def pathBrowse(self):$/;"	m	class:BootloaderDialog
+pause	lib/cflib/crtp/radiodriver.py	/^    def pause(self):$/;"	m	class:RadioDriver
+pause	lib/cflib/crtp/usbdriver.py	/^    def pause(self):$/;"	m	class:UsbDriver
+periodChanged	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def periodChanged(self, value):$/;"	m	class:LogConfigDialogue
+plot_tab_class	lib/cfclient/ui/tabs/PlotTab.py	/^plot_tab_class = uic.loadUiType(sys.path[0] +$/;"	v
+pluginhelper	lib/cfclient/ui/__init__.py	/^pluginhelper = PluginHelper()$/;"	v
+populateDropDown	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def populateDropDown(self):$/;"	m	class:LogConfigDialogue
+port	lib/cflib/crtp/crtpstack.py	/^    port = property(_get_port, _set_port)$/;"	v	class:CRTPPacket
+powerDet	lib/cflib/drivers/crazyradio.py	/^    powerDet = False$/;"	v	class:_radio_ack
+preferedDockArea	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^    def preferedDockArea(self):$/;"	m	class:ConsoleToolbox
+preferedDockArea	lib/cfclient/ui/toolboxes/CrtpSharkToolbox.py	/^    def preferedDockArea(self):$/;"	m	class:CrtpSharkToolbox
+preferedDockArea	lib/cfclient/ui/toolboxes/DebugDriverToolbox.py	/^    def preferedDockArea(self):$/;"	m	class:DebugDriverToolbox
+printText	lib/cfclient/ui/tabs/ConsoleTab.py	/^    def printText(self, text):$/;"	m	class:ConsoleTab
+process	setup.py	/^    process = Popen(["git", "describe", "--tags"], stdout=PIPE)$/;"	v
+process	win32install/generate_nsis.py	/^    process = Popen(["git", "describe", "--tags"], stdout=PIPE)$/;"	v
+program	lib/cfclient/ui/dialogs/bootloader.py	/^    program = pyqtSignal(str, bool)$/;"	v	class:CrazyloadThread
+programAction	lib/cfclient/ui/dialogs/bootloader.py	/^    def programAction(self):$/;"	m	class:BootloaderDialog
+programAction	lib/cfclient/ui/dialogs/bootloader.py	/^    def programAction(self, filename, verify):$/;"	m	class:CrazyloadThread
+programDone	lib/cfclient/ui/dialogs/bootloader.py	/^    def programDone(self, success):$/;"	m	class:BootloaderDialog
+programmed	lib/cfclient/ui/dialogs/bootloader.py	/^    programmed = pyqtSignal(bool)$/;"	v	class:CrazyloadThread
+pytype	lib/cflib/crazyflie/toc.py	/^    pytype = ""$/;"	v	class:TocElement
+pyusb1	lib/cflib/drivers/cfusb.py	/^    pyusb1 = False$/;"	v
+pyusb1	lib/cflib/drivers/cfusb.py	/^    pyusb1 = True$/;"	v
+pyusb1	lib/cflib/drivers/crazyradio.py	/^    pyusb1 = False$/;"	v
+pyusb1	lib/cflib/drivers/crazyradio.py	/^    pyusb1 = True$/;"	v
+pyusb_backend	lib/cflib/drivers/cfusb.py	/^        pyusb_backend = libusb0.get_backend()$/;"	v
+pyusb_backend	lib/cflib/drivers/cfusb.py	/^    pyusb_backend = None$/;"	v
+pyusb_backend	lib/cflib/drivers/crazyradio.py	/^        pyusb_backend = libusb0.get_backend()$/;"	v
+pyusb_backend	lib/cflib/drivers/crazyradio.py	/^    pyusb_backend = None$/;"	v
+radioSpeedPos	lib/cfclient/ui/dialogs/bootloader.py	/^    radioSpeedPos = 2$/;"	v	class:CrazyloadThread
+radioSpeedPos	lib/cfconfig/configblock.py	/^radioSpeedPos = 2$/;"	v
+raw_axis_data_signal	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    raw_axis_data_signal = pyqtSignal(object)$/;"	v	class:DeviceReader
+raw_button_data_signal	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    raw_button_data_signal = pyqtSignal(object)$/;"	v	class:DeviceReader
+read	lib/cfclient/utils/inputinterfaces/__init__.py	/^    def read(self, include_raw=False):$/;"	m	class:InputInterface
+read	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def read(self, id):$/;"	m	class:LeapmotionReader
+read	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def read(self, dev_id):$/;"	m	class:WiimoteReader
+read	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def read(self, device_id):$/;"	m	class:_Reader
+read	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def read(self, device_id):$/;"	m	class:ZMQReader
+read	lib/cfclient/utils/inputreaderinterface.py	/^    def read(self, device_id):$/;"	m	class:InputReaderInterface
+read	lib/cfclient/utils/inputreaders/__init__.py	/^    def read(self, include_raw=False):$/;"	m	class:InputDevice
+read	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def read(self):$/;"	m	class:_JS
+read	lib/cfclient/utils/inputreaders/linuxjsdev.py	/^    def read(self, device_id):$/;"	m	class:Joystick
+read	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def read(self):$/;"	m	class:_JS
+read	lib/cfclient/utils/inputreaders/pysdl2.py	/^    def read(self, device_id):$/;"	m	class:PySDL2Reader
+read	lib/cfclient/utils/mux/__init__.py	/^    def read(self):$/;"	m	class:InputMux
+read	lib/cfclient/utils/mux/mixmux.py	/^    def read(self):$/;"	m	class:MixMux
+read	lib/cfclient/utils/mux/nomux.py	/^    def read(self):$/;"	m	class:NoMux
+read	lib/cfclient/utils/mux/selectivemux.py	/^    def read(self):$/;"	m	class:SelectiveMux
+read	lib/cfclient/utils/mux/takeovermux.py	/^    def read(self):$/;"	m	class:TakeOverMux
+read	lib/cfclient/utils/mux/takeoverselectivemux.py	/^    def read(self):$/;"	m	class:TakeOverSelectiveMux
+read	lib/cflib/crazyflie/mem.py	/^    def read(self, memory, addr, length):$/;"	m	class:Memory
+readConfigAction	lib/cfclient/ui/dialogs/cf1config.py	/^    def readConfigAction(self):$/;"	m	class:CrazyloadThread
+read_cf1_config	lib/cflib/bootloader/__init__.py	/^    def read_cf1_config(self):$/;"	m	class:Bootloader
+read_flash	lib/cflib/bootloader/cloader.py	/^    def read_flash(self, addr=0xFF, page=0x00):$/;"	m	class:Cloader
+read_input	lib/cfclient/utils/input.py	/^    def read_input(self):$/;"	m	class:JoystickReader
+read_raw_values	lib/cfclient/utils/input.py	/^    def read_raw_values(self):$/;"	m	class:JoystickReader
+receive_packet	lib/cflib/crtp/crtpdriver.py	/^    def receive_packet(self, wait=0):$/;"	m	class:CRTPDriver
+receive_packet	lib/cflib/crtp/debugdriver.py	/^    def receive_packet(self, time=0):$/;"	m	class:DebugDriver
+receive_packet	lib/cflib/crtp/radiodriver.py	/^    def receive_packet(self, time=0):$/;"	m	class:RadioDriver
+receive_packet	lib/cflib/crtp/udpdriver.py	/^    def receive_packet(self, time=0):$/;"	m	class:UdpDriver
+receive_packet	lib/cflib/crtp/usbdriver.py	/^    def receive_packet(self, time=0):$/;"	m	class:UsbDriver
+receive_packet	lib/cflib/drivers/cfusb.py	/^    def receive_packet(self):$/;"	m	class:CfUsb
+receivedChar	lib/cflib/crazyflie/console.py	/^    receivedChar = Caller()$/;"	v	class:Console
+refresh	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def refresh(self):$/;"	m	class:LogBlockModel
+refresh	lib/cfclient/ui/tabs/ParamTab.py	/^    def refresh(self):$/;"	m	class:ParamBlockModel
+refresh	lib/cflib/crazyflie/mem.py	/^    def refresh(self, refresh_done_callback):$/;"	m	class:Memory
+refresh_toc	lib/cflib/crazyflie/log.py	/^    def refresh_toc(self, refresh_done_callback, toc_cache):$/;"	m	class:Log
+refresh_toc	lib/cflib/crazyflie/param.py	/^    def refresh_toc(self, refresh_done_callback, toc_cache):$/;"	m	class:Param
+removeAllDatasets	lib/cfclient/ui/widgets/plotwidget.py	/^    def removeAllDatasets(self):$/;"	m	class:PlotWidget
+remove_block	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def remove_block(self, block):$/;"	m	class:LogBlockModel
+remove_block	lib/cfclient/ui/tabs/PlotTab.py	/^    def remove_block(self, block):$/;"	m	class:LogConfigModel
+remove_callback	lib/cflib/utils/callbacks.py	/^    def remove_callback(self, cb):$/;"	m	class:Caller
+remove_device	lib/cfclient/utils/mux/__init__.py	/^    def remove_device(self, dev):$/;"	m	class:InputMux
+remove_port_callback	lib/cflib/crazyflie/__init__.py	/^    def remove_port_callback(self, port, cb):$/;"	m	class:Crazyflie
+remove_port_callback	lib/cflib/crazyflie/__init__.py	/^    def remove_port_callback(self, port, cb):$/;"	m	class:_IncomingPacketHandler
+remove_update_callback	lib/cflib/crazyflie/param.py	/^    def remove_update_callback(self, group, name=None, cb=None):$/;"	m	class:Param
+requestConnectionSignal	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    requestConnectionSignal = pyqtSignal(str)$/;"	v	class:ConnectDialogue
+request_info_update	lib/cflib/bootloader/cloader.py	/^    def request_info_update(self, target_id):$/;"	m	class:Cloader
+request_param_setvalue	lib/cflib/crazyflie/param.py	/^    def request_param_setvalue(self, pk):$/;"	m	class:_ParamUpdater
+request_param_update	lib/cflib/crazyflie/param.py	/^    def request_param_update(self, complete_name):$/;"	m	class:Param
+request_param_update	lib/cflib/crazyflie/param.py	/^    def request_param_update(self, var_id):$/;"	m	class:_ParamUpdater
+request_update_of_all_params	lib/cflib/crazyflie/param.py	/^    def request_update_of_all_params(self):$/;"	m	class:Param
+rescan	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def rescan(self):$/;"	m	class:ConnectDialogue
+resend	lib/cflib/crazyflie/mem.py	/^    def resend(self):$/;"	m	class:_ReadRequest
+resend	lib/cflib/crazyflie/mem.py	/^    def resend(self):$/;"	m	class:_WriteRequest
+reset	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def reset(self):$/;"	m	class:LogBlockModel
+reset	lib/cfclient/ui/tabs/ParamTab.py	/^    def reset(self):$/;"	m	class:ParamBlockModel
+reset	lib/cfclient/ui/tabs/PlotTab.py	/^    def reset(self):$/;"	m	class:LogConfigModel
+resetCopter	lib/cfclient/ui/dialogs/bootloader.py	/^    def resetCopter(self):$/;"	m	class:BootloaderDialog
+resetCopter	lib/cfclient/ui/dialogs/bootloader.py	/^    def resetCopter(self):$/;"	m	class:CrazyloadThread
+resetCopter	lib/cfclient/ui/dialogs/cf1config.py	/^    def resetCopter(self):$/;"	m	class:Cf1ConfigDialog
+resetCopter	lib/cfclient/ui/dialogs/cf1config.py	/^    def resetCopter(self):$/;"	m	class:CrazyloadThread
+resetCopterSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    resetCopterSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+resetCopterSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    resetCopterSignal = pyqtSignal()$/;"	v	class:CrazyloadThread
+resetTrees	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def resetTrees(self):$/;"	m	class:LogConfigDialogue
+reset_to_bootloader	lib/cflib/bootloader/cloader.py	/^    def reset_to_bootloader(self, target_id):$/;"	m	class:Cloader
+reset_to_bootloader1	lib/cflib/bootloader/cloader.py	/^    def reset_to_bootloader1(self, cpu_id):$/;"	m	class:Cloader
+reset_to_firmware	lib/cflib/bootloader/__init__.py	/^    def reset_to_firmware(self):$/;"	m	class:Bootloader
+reset_to_firmware	lib/cflib/bootloader/cloader.py	/^    def reset_to_firmware(self, target_id):$/;"	m	class:Cloader
+resp	examples/zmqsrvtest.py	/^resp = client_conn.recv_json()$/;"	v
+restart	lib/cflib/crtp/radiodriver.py	/^    def restart(self):$/;"	m	class:RadioDriver
+restart	lib/cflib/crtp/usbdriver.py	/^    def restart(self):$/;"	m	class:UsbDriver
+ret	lib/cfclient/__init__.py	/^        ret = subprocess.call(["git", "diff", "--quiet", "HEAD"])$/;"	v
+retry	lib/cflib/drivers/crazyradio.py	/^    retry = 0$/;"	v	class:_radio_ack
+rowCount	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def rowCount(self, parent):$/;"	m	class:LogBlockModel
+rowCount	lib/cfclient/ui/tabs/ParamTab.py	/^    def rowCount(self, parent):$/;"	m	class:ParamBlockModel
+rowCount	lib/cfclient/ui/tabs/PlotTab.py	/^    def rowCount(self, parent):$/;"	m	class:LogConfigModel
+run	examples/zmqsrvtest.py	/^    def run(self):$/;"	m	class:_ConnThread
+run	examples/zmqsrvtest.py	/^    def run(self):$/;"	m	class:_CtrlThread
+run	examples/zmqsrvtest.py	/^    def run(self):$/;"	m	class:_LogThread
+run	examples/zmqsrvtest.py	/^    def run(self):$/;"	m	class:_ParamThread
+run	lib/cfclient/utils/inputinterfaces/wiimote.py	/^    def run(self):$/;"	m	class:HandleWiimote
+run	lib/cfclient/utils/inputinterfaces/zmqpull.py	/^    def run(self):$/;"	m	class:_PullReader
+run	lib/cfclient/utils/periodictimer.py	/^    def run(self):$/;"	m	class:_PeriodicTimerThread
+run	lib/cflib/crazyflie/__init__.py	/^    def run(self):$/;"	m	class:_IncomingPacketHandler
+run	lib/cflib/crazyflie/param.py	/^    def run(self):$/;"	m	class:_ParamUpdater
+run	lib/cflib/crtp/debugdriver.py	/^    def run(self):$/;"	m	class:FakeConsoleThread
+run	lib/cflib/crtp/debugdriver.py	/^    def run(self):$/;"	m	class:_FakeLoggingDataThread
+run	lib/cflib/crtp/debugdriver.py	/^    def run(self):$/;"	m	class:_PacketHandlingThread
+run	lib/cflib/crtp/radiodriver.py	/^    def run(self):$/;"	m	class:_RadioDriverThread
+run	lib/cflib/crtp/usbdriver.py	/^    def run(self):$/;"	m	class:_UsbReceiveThread
+run	lib/cfzmq.py	/^    def run(self):$/;"	m	class:_CtrlThread
+run	lib/cfzmq.py	/^    def run(self):$/;"	m	class:_SrvThread
+saveConfig	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def saveConfig(self):$/;"	m	class:LogConfigDialogue
+saveLogConfigFile	lib/cfclient/utils/logconfigreader.py	/^    def saveLogConfigFile(self, logconfig):$/;"	m	class:LogConfigReader
+save_file	lib/cfclient/utils/config.py	/^    def save_file(self):$/;"	m	class:Config
+scan	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def scan(self, address):$/;"	m	class:ScannerThread
+scan	lib/cflib/drivers/cfusb.py	/^    def scan(self):$/;"	m	class:CfUsb
+scanSignal	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    scanSignal = pyqtSignal(object)$/;"	v	class:ScannerThread
+scan_channels	lib/cflib/drivers/crazyradio.py	/^    def scan_channels(self, start, stop, packet):$/;"	m	class:Crazyradio
+scan_cmd	examples/zmqsrvtest.py	/^scan_cmd = {$/;"	v
+scan_for_bootloader	lib/cflib/bootloader/cloader.py	/^    def scan_for_bootloader(self):$/;"	m	class:Cloader
+scan_interface	lib/cflib/crtp/crtpdriver.py	/^    def scan_interface(self, address = None):$/;"	m	class:CRTPDriver
+scan_interface	lib/cflib/crtp/debugdriver.py	/^    def scan_interface(self, address):$/;"	m	class:DebugDriver
+scan_interface	lib/cflib/crtp/radiodriver.py	/^    def scan_interface(self, address):$/;"	m	class:RadioDriver
+scan_interface	lib/cflib/crtp/serialdriver.py	/^    def scan_interface(self, address):$/;"	m	class:SerialDriver
+scan_interface	lib/cflib/crtp/udpdriver.py	/^    def scan_interface(self, address):$/;"	m	class:UdpDriver
+scan_interface	lib/cflib/crtp/usbdriver.py	/^    def scan_interface(self, address):$/;"	m	class:UsbDriver
+scan_interfaces	lib/cflib/crtp/__init__.py	/^def scan_interfaces(address = None):$/;"	f
+scan_selected	lib/cflib/crtp/radiodriver.py	/^    def scan_selected(self, links):$/;"	m	class:RadioDriver
+scan_selected	lib/cflib/drivers/crazyradio.py	/^    def scan_selected(self, selected, packet):$/;"	m	class:Crazyradio
+scripts	setup.py	/^        scripts=['bin\/cfclient', 'bin\/cfheadless'])$/;"	v
+send_packet	lib/cflib/crazyflie/__init__.py	/^    def send_packet(self, pk, expected_reply=(), resend=False, timeout=0.2):$/;"	m	class:Crazyflie
+send_packet	lib/cflib/crtp/crtpdriver.py	/^    def send_packet(self, pk):$/;"	m	class:CRTPDriver
+send_packet	lib/cflib/crtp/debugdriver.py	/^    def send_packet(self, pk):$/;"	m	class:DebugDriver
+send_packet	lib/cflib/crtp/radiodriver.py	/^    def send_packet(self, pk):$/;"	m	class:RadioDriver
+send_packet	lib/cflib/crtp/udpdriver.py	/^    def send_packet(self, pk):$/;"	m	class:UdpDriver
+send_packet	lib/cflib/crtp/usbdriver.py	/^    def send_packet(self, pk):$/;"	m	class:UsbDriver
+send_packet	lib/cflib/drivers/cfusb.py	/^    def send_packet(self, dataOut):$/;"	m	class:CfUsb
+send_packet	lib/cflib/drivers/crazyradio.py	/^    def send_packet(self, dataOut):$/;"	m	class:Crazyradio
+send_setpoint	lib/cflib/crazyflie/commander.py	/^    def send_setpoint(self, roll, pitch, yaw, thrust):$/;"	m	class:Commander
+service_dialog_class	lib/cfclient/ui/dialogs/bootloader.py	/^service_dialog_class = uic.loadUiType(sys.path[0] +$/;"	v
+service_dialog_class	lib/cfclient/ui/dialogs/cf1config.py	/^service_dialog_class = uic.loadUiType(sys.path[0] +$/;"	v
+service_dialog_class	lib/cfclient/ui/dialogs/cf2config.py	/^service_dialog_class = uic.loadUiType(sys.path[0] +$/;"	v
+set	lib/cfclient/utils/config.py	/^    def set(self, key, value):$/;"	m	class:Config
+setBaro	lib/cfclient/ui/widgets/ai.py	/^    def setBaro(self, asl):$/;"	m	class:AttitudeIndicator
+setData	lib/cfclient/ui/tabs/ParamTab.py	/^    def setData(self, index, value, role):$/;"	m	class:ParamBlockModel
+setHover	lib/cfclient/ui/widgets/ai.py	/^    def setHover(self, target):        $/;"	m	class:AttitudeIndicator
+setMotorLabelsEnabled	lib/cfclient/ui/tabs/FlightTab.py	/^    def setMotorLabelsEnabled(self, enabled):$/;"	m	class:FlightTab
+setPitch	lib/cfclient/ui/widgets/ai.py	/^    def setPitch(self, pitch):$/;"	m	class:AttitudeIndicator
+setRoll	lib/cfclient/ui/widgets/ai.py	/^    def setRoll(self, roll):$/;"	m	class:AttitudeIndicator
+setRollPitch	lib/cfclient/ui/widgets/ai.py	/^    def setRollPitch(self, roll, pitch):$/;"	m	class:AttitudeIndicator
+setStatusLabel	lib/cfclient/ui/dialogs/bootloader.py	/^    def setStatusLabel(self, text):$/;"	m	class:BootloaderDialog
+setStatusLabel	lib/cfclient/ui/dialogs/cf1config.py	/^    def setStatusLabel(self, text):$/;"	m	class:Cf1ConfigDialog
+setUiState	lib/cfclient/ui/dialogs/bootloader.py	/^    def setUiState(self, state):$/;"	m	class:BootloaderDialog
+setUiState	lib/cfclient/ui/dialogs/cf1config.py	/^    def setUiState(self, state):$/;"	m	class:Cf1ConfigDialog
+setValue	lib/cfclient/ui/widgets/hexspinbox.py	/^    def setValue(self, value):$/;"	m	class:HexSpinBox
+set_address	lib/cflib/drivers/crazyradio.py	/^    def set_address(self, address):$/;"	m	class:Crazyradio
+set_alt_hold_available	lib/cfclient/utils/input.py	/^    def set_alt_hold_available(self, available):$/;"	m	class:JoystickReader
+set_alt_hold_available	lib/cfclient/utils/mux/__init__.py	/^    def set_alt_hold_available(self, available):$/;"	m	class:InputMux
+set_arc	lib/cflib/drivers/crazyradio.py	/^    def set_arc(self, arc):$/;"	m	class:Crazyradio
+set_ard_bytes	lib/cflib/drivers/crazyradio.py	/^    def set_ard_bytes(self, nbytes):$/;"	m	class:Crazyradio
+set_ard_time	lib/cflib/drivers/crazyradio.py	/^    def set_ard_time(self, us):$/;"	m	class:Crazyradio
+set_channel	lib/cflib/drivers/crazyradio.py	/^    def set_channel(self, channel):$/;"	m	class:Crazyradio
+set_client_xmode	lib/cflib/crazyflie/commander.py	/^    def set_client_xmode(self, enabled):$/;"	m	class:Commander
+set_cont_carrier	lib/cflib/drivers/crazyradio.py	/^    def set_cont_carrier(self, active):$/;"	m	class:Crazyradio
+set_continous_wave	lib/cflib/crazyflie/platformservice.py	/^    def set_continous_wave(self, enabled):$/;"	m	class:PlatformService
+set_crtp_to_usb	lib/cflib/drivers/cfusb.py	/^    def set_crtp_to_usb(self, crtp_to_usb):$/;"	m	class:CfUsb
+set_data_callback	lib/cfclient/utils/inputinterfaces/leapmotion.py	/^    def set_data_callback(self, callback):$/;"	m	class:LeapListener
+set_data_rate	lib/cflib/drivers/crazyradio.py	/^    def set_data_rate(self, datarate):$/;"	m	class:Crazyradio
+set_header	lib/cflib/crtp/crtpstack.py	/^    def set_header(self, port, channel):$/;"	m	class:CRTPPacket
+set_input_map	lib/cfclient/utils/input.py	/^    def set_input_map(self, device_name, input_map_name):$/;"	m	class:JoystickReader
+set_mux	lib/cfclient/utils/input.py	/^    def set_mux(self, name=None, mux=None):$/;"	m	class:JoystickReader
+set_power	lib/cflib/drivers/crazyradio.py	/^    def set_power(self, power):$/;"	m	class:Crazyradio
+set_raw_input_map	lib/cfclient/utils/input.py	/^    def set_raw_input_map(self, input_map):$/;"	m	class:JoystickReader
+set_rp_limit	lib/cfclient/utils/input.py	/^    def set_rp_limit(self, max_rp_angle):$/;"	m	class:JoystickReader
+set_thrust_limits	lib/cfclient/utils/input.py	/^    def set_thrust_limits(self, min_thrust, max_thrust):$/;"	m	class:JoystickReader
+set_thrust_slew_limiting	lib/cfclient/utils/input.py	/^    def set_thrust_slew_limiting(self, thrust_slew_rate, thrust_slew_limit):$/;"	m	class:JoystickReader
+set_title	lib/cfclient/ui/widgets/plotwidget.py	/^    def set_title(self, title):$/;"	m	class:PlotWidget
+set_toc	lib/cfclient/ui/tabs/ParamTab.py	/^    def set_toc(self, toc, crazyflie):$/;"	m	class:ParamBlockModel
+set_trim_pitch	lib/cfclient/utils/input.py	/^    def set_trim_pitch(self, trim_pitch):$/;"	m	class:JoystickReader
+set_trim_roll	lib/cfclient/utils/input.py	/^    def set_trim_roll(self, trim_roll):$/;"	m	class:JoystickReader
+set_value	lib/cfclient/ui/tabs/ParamTab.py	/^    def set_value(self, value):$/;"	m	class:ParamChildItem
+set_value	lib/cflib/crazyflie/param.py	/^    def set_value(self, complete_name, value):$/;"	m	class:Param
+set_yaw_limit	lib/cfclient/utils/input.py	/^    def set_yaw_limit(self, max_yaw_rate):$/;"	m	class:JoystickReader
+setup_args	setup.py	/^    setup_args=dict($/;"	v
+setup_args	setup.py	/^    setup_args=generate_distutils_setup(**setup_args)$/;"	v
+setup_args	setup.py	/^setup_args=dict(name='cfclient',$/;"	v
+setup_controller	lib/cfheadless.py	/^    def setup_controller(self, input_config, input_device=0, xmode=False):$/;"	m	class:HeadlessClient
+should_enable_tab	lib/cfclient/ui/tabs/GpsTab.py	/^    should_enable_tab = False$/;"	v
+should_enable_tab	lib/cfclient/ui/tabs/GpsTab.py	/^    should_enable_tab = True$/;"	v
+showErrorPopup	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def showErrorPopup(self, caption, message):$/;"	m	class:LogConfigDialogue
+showEvent	lib/cfclient/ui/dialogs/about.py	/^    def showEvent(self, event):$/;"	m	class:AboutDialog
+showEvent	lib/cfclient/ui/dialogs/connectiondialogue.py	/^    def showEvent(self, ev):$/;"	m	class:ConnectDialogue
+showEvent	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def showEvent(self, event):$/;"	m	class:InputConfigDialogue
+showEvent	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def showEvent(self, event):$/;"	m	class:LogConfigDialogue
+show_data	lib/cfclient/ui/widgets/plotwidget.py	/^    def show_data(self, start, stop):$/;"	m	class:PlotItemWrapper
+sortTrees	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def sortTrees(self):$/;"	m	class:LogConfigDialogue
+speeds	lib/cfconfig/configblock.py	/^speeds = ["250K", "1M", "2M"]$/;"	v
+start	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def start(self):$/;"	m	class:LogBlockItem
+start	lib/cfclient/utils/logdatawriter.py	/^    def start(self):$/;"	m	class:LogWriter
+start	lib/cfclient/utils/periodictimer.py	/^    def start(self):$/;"	m	class:PeriodicTimer
+start	lib/cflib/crazyflie/log.py	/^    def start(self):$/;"	m	class:LogConfig
+start	lib/cflib/crazyflie/mem.py	/^    def start(self):$/;"	m	class:_ReadRequest
+start	lib/cflib/crazyflie/mem.py	/^    def start(self):$/;"	m	class:_WriteRequest
+start	lib/cflib/crazyflie/toc.py	/^    def start(self):$/;"	m	class:TocFetcher
+start_bootloader	lib/cflib/bootloader/__init__.py	/^    def start_bootloader(self, warm_boot=False):$/;"	m	class:Bootloader
+start_input	lib/cfclient/utils/input.py	/^    def start_input(self, device_name, config_name=None):$/;"	m	class:JoystickReader
+start_reading	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def start_reading(self):$/;"	m	class:DeviceReader
+start_writing_to_file	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def start_writing_to_file(self):$/;"	m	class:LogBlockItem
+started	lib/cflib/crazyflie/log.py	/^    started = property(_get_started, _set_started)$/;"	v	class:LogConfig
+state	lib/cflib/crazyflie/__init__.py	/^    state = State.DISCONNECTED$/;"	v	class:Crazyflie
+statusChanged	lib/cfclient/ui/dialogs/bootloader.py	/^    statusChanged = pyqtSignal(str, int)$/;"	v	class:CrazyloadThread
+statusChanged	lib/cfclient/ui/dialogs/cf1config.py	/^    statusChanged = pyqtSignal(str, int)$/;"	v	class:CrazyloadThread
+statusUpdate	lib/cfclient/ui/dialogs/bootloader.py	/^    def statusUpdate(self, status, progress):$/;"	m	class:BootloaderDialog
+statusUpdate	lib/cfclient/ui/dialogs/cf1config.py	/^    def statusUpdate(self, status, progress):$/;"	m	class:Cf1ConfigDialog
+stdout	lib/cfheadless.py	/^    stdout = os.dup(1)$/;"	v
+stdout	lib/cfzmq.py	/^    stdout = os.dup(1)$/;"	v
+stepBy	lib/cfclient/ui/widgets/hexspinbox.py	/^    def stepBy(self, steps):$/;"	m	class:HexSpinBox
+stepEnabled	lib/cfclient/ui/widgets/hexspinbox.py	/^    def stepEnabled(self):$/;"	m	class:HexSpinBox
+stop	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def stop(self):$/;"	m	class:LogBlockItem
+stop	lib/cfclient/utils/logdatawriter.py	/^    def stop(self):$/;"	m	class:LogWriter
+stop	lib/cfclient/utils/periodictimer.py	/^    def stop(self):$/;"	m	class:PeriodicTimer
+stop	lib/cfclient/utils/periodictimer.py	/^    def stop(self):$/;"	m	class:_PeriodicTimerThread
+stop	lib/cflib/crazyflie/log.py	/^    def stop(self):$/;"	m	class:LogConfig
+stop	lib/cflib/crtp/debugdriver.py	/^    def stop(self):$/;"	m	class:FakeConsoleThread
+stop	lib/cflib/crtp/debugdriver.py	/^    def stop(self):$/;"	m	class:_FakeLoggingDataThread
+stop	lib/cflib/crtp/radiodriver.py	/^    def stop(self):$/;"	m	class:_RadioDriverThread
+stop	lib/cflib/crtp/usbdriver.py	/^    def stop(self):$/;"	m	class:_UsbReceiveThread
+stop_input	lib/cfclient/utils/input.py	/^    def stop_input(self, device_name = None):$/;"	m	class:JoystickReader
+stop_raw_reading	lib/cfclient/utils/input.py	/^    def stop_raw_reading(self):$/;"	m	class:JoystickReader
+stop_reading	lib/cfclient/ui/dialogs/inputconfigdialogue.py	/^    def stop_reading(self):$/;"	m	class:DeviceReader
+stop_writing_to_file	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def stop_writing_to_file(self):$/;"	m	class:LogBlockItem
+structFormat	lib/cfconfig/configblock.py	/^structFormat = "<BBBff"$/;"	v
+tabModule	lib/cfclient/ui/tabs/__init__.py	/^    tabModule = __import__(tab, globals(), locals(), [tab], -1)$/;"	v
+tbModule	lib/cfclient/ui/toolboxes/__init__.py	/^    tbModule = __import__(tb, globals(), locals(), [tb], -1)$/;"	v
+textFromValue	lib/cfclient/ui/widgets/hexspinbox.py	/^    def textFromValue(self, value):$/;"	m	class:HexSpinBox
+thrustLoweringSlewRateLimitChanged	lib/cfclient/ui/tabs/FlightTab.py	/^    def thrustLoweringSlewRateLimitChanged(self):$/;"	m	class:FlightTab
+thrustToPercentage	lib/cfclient/ui/tabs/FlightTab.py	/^    def thrustToPercentage(self, thrust):$/;"	m	class:FlightTab
+to_string	lib/cflib/bootloader/boottypes.py	/^    def to_string(target):$/;"	m	class:TargetTypes
+to_ver_string	lib/cflib/bootloader/boottypes.py	/^    def to_ver_string(ver):$/;"	m	class:BootVersion
+toc	lib/cflib/crazyflie/param.py	/^    toc = Toc()$/;"	v	class:Param
+toggleToolbox	lib/cfclient/ui/main.py	/^    def toggleToolbox(self, display):$/;"	m	class:MainUI
+toggleVisibility	lib/cfclient/ui/tab.py	/^    def toggleVisibility(self, checked):$/;"	m	class:Tab
+toolboxes	lib/cfclient/ui/toolboxes/__init__.py	/^toolboxes = []$/;"	v
+toplevel_data_files	setup.py	/^toplevel_data_files = ['README.md', 'LICENSE.txt']$/;"	v
+type_to_string	lib/cflib/crazyflie/mem.py	/^    def type_to_string(t):$/;"	m	class:MemoryElement
+types	lib/cflib/crazyflie/log.py	/^    types = {0x01: ("uint8_t",  '<B', 1),$/;"	v	class:LogTocElement
+types	lib/cflib/crazyflie/param.py	/^    types = {0x08: ("uint8_t",  '<B'),$/;"	v	class:ParamTocElement
+uiSetupReady	lib/cfclient/ui/tabs/FlightTab.py	/^    def uiSetupReady(self):$/;"	m	class:FlightTab
+uiSetupReadySignal	lib/cfclient/ui/tabs/FlightTab.py	/^    uiSetupReadySignal = pyqtSignal()$/;"	v	class:FlightTab
+unpack_log_data	lib/cflib/crazyflie/log.py	/^    def unpack_log_data(self, log_data, timestamp):$/;"	m	class:LogConfig
+update	lib/cfclient/ui/tabs/ConsoleTab.py	/^    update = pyqtSignal(str)$/;"	v	class:ConsoleTab
+update	lib/cfclient/ui/toolboxes/ConsoleToolbox.py	/^    update = pyqtSignal(str)$/;"	v	class:ConsoleToolbox
+update	lib/cflib/crazyflie/mem.py	/^    def update(self, update_finished_cb):$/;"	m	class:I2CElement
+update	lib/cflib/crazyflie/mem.py	/^    def update(self, update_finished_cb):$/;"	m	class:OWElement
+updateBaro	lib/cfclient/ui/widgets/ai.py	/^        def updateBaro(self, asl):$/;"	m	class:AttitudeIndicator.Example
+updateConfig	lib/cfclient/ui/dialogs/bootloader.py	/^    def updateConfig(self, channel, speed, rollTrim, pitchTrim):$/;"	m	class:BootloaderDialog
+updateConfig	lib/cfclient/ui/dialogs/cf1config.py	/^    def updateConfig(self, channel, speed, rollTrim, pitchTrim):$/;"	m	class:Cf1ConfigDialog
+updateConfigSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    updateConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+updateConfigSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    updateConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+updateCpuIdSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    updateCpuIdSignal = pyqtSignal(str)$/;"	v	class:CrazyloadThread
+updateEmergencyStop	lib/cfclient/ui/tabs/FlightTab.py	/^    def updateEmergencyStop(self, emergencyStop):$/;"	m	class:FlightTab
+updateInputControl	lib/cfclient/ui/tabs/FlightTab.py	/^    def updateInputControl(self, roll, pitch, yaw, thrust):$/;"	m	class:FlightTab
+updatePacketSizeBar	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def updatePacketSizeBar(self):$/;"	m	class:LogConfigDialogue
+updatePitch	lib/cfclient/ui/widgets/ai.py	/^        def updatePitch(self, pitch):$/;"	m	class:AttitudeIndicator.Example
+updateRoll	lib/cfclient/ui/widgets/ai.py	/^        def updateRoll(self, roll):$/;"	m	class:AttitudeIndicator.Example
+updateTarget	lib/cfclient/ui/widgets/ai.py	/^        def updateTarget(self, target):$/;"	m	class:AttitudeIndicator.Example
+updateToc	lib/cfclient/ui/dialogs/logconfigdialogue.py	/^    def updateToc(self):$/;"	m	class:LogConfigDialogue
+updated	lib/cfclient/ui/tabs/ParamTab.py	/^    def updated(self, name, value):$/;"	m	class:ParamChildItem
+upload_buffer	lib/cflib/bootloader/cloader.py	/^    def upload_buffer(self, target_id, page, address, buff):$/;"	m	class:Cloader
+url	setup.py	/^      url='http:\/\/www.bitcraze.se',$/;"	v
+validate	lib/cfclient/ui/widgets/hexspinbox.py	/^    def validate(self, text, pos):$/;"	m	class:HexSpinBox
+value	lib/cfclient/ui/widgets/hexspinbox.py	/^    def value(self):$/;"	m	class:HexSpinBox
+valueFromText	lib/cfclient/ui/widgets/hexspinbox.py	/^    def valueFromText(self, text):$/;"	m	class:HexSpinBox
+var_list	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def var_list(self):$/;"	m	class:LogBlockItem
+verified	lib/cfclient/ui/dialogs/bootloader.py	/^    verified = pyqtSignal()$/;"	v	class:CrazyloadThread
+verify	lib/cfclient/ui/dialogs/bootloader.py	/^    verify = pyqtSignal()$/;"	v	class:CrazyloadThread
+verifyAction	lib/cfclient/ui/dialogs/bootloader.py	/^    def verifyAction(self):$/;"	m	class:BootloaderDialog
+verifyDone	lib/cfclient/ui/dialogs/bootloader.py	/^    def verifyDone(self):$/;"	m	class:BootloaderDialog
+version	setup.py	/^      version=VERSION,$/;"	v
+version	win32install/generate_nsis.py	/^                               version=VERSION))$/;"	v
+version_file	setup.py	/^version_file = os.path.join(os.path.dirname(__file__),$/;"	v
+write	lib/cflib/crazyflie/mem.py	/^    def write(self, memory, addr, data):$/;"	m	class:Memory
+writeConfig	lib/cfclient/ui/dialogs/cf1config.py	/^    def writeConfig(self):$/;"	m	class:Cf1ConfigDialog
+writeConfigAction	lib/cfclient/ui/dialogs/cf1config.py	/^    def writeConfigAction(self, channel, speed, rollTrim, pitchTrim):$/;"	m	class:CrazyloadThread
+writeConfigSignal	lib/cfclient/ui/dialogs/bootloader.py	/^    writeConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+writeConfigSignal	lib/cfclient/ui/dialogs/cf1config.py	/^    writeConfigSignal = pyqtSignal(int, int, float, float)$/;"	v	class:CrazyloadThread
+write_cf1_config	lib/cflib/bootloader/__init__.py	/^    def write_cf1_config(self, data):$/;"	m	class:Bootloader
+write_data	lib/cflib/crazyflie/mem.py	/^    def write_data(self, write_finished_cb):$/;"	m	class:I2CElement
+write_data	lib/cflib/crazyflie/mem.py	/^    def write_data(self, write_finished_cb):$/;"	m	class:OWElement
+write_done	lib/cflib/crazyflie/mem.py	/^    def write_done(self, addr):$/;"	m	class:_WriteRequest
+write_done	lib/cflib/crazyflie/mem.py	/^    def write_done(self, mem, addr):$/;"	m	class:I2CElement
+write_done	lib/cflib/crazyflie/mem.py	/^    def write_done(self, mem, addr):$/;"	m	class:OWElement
+write_flash	lib/cflib/bootloader/cloader.py	/^    def write_flash(self, addr, page_buffer, target_page, page_count):$/;"	m	class:Cloader
+writing	lib/cfclient/utils/logdatawriter.py	/^    def writing(self):$/;"	m	class:LogWriter
+writing_to_file	lib/cfclient/ui/tabs/LogBlockTab.py	/^    def writing_to_file(self):$/;"	m	class:LogBlockItem
