@@ -55,14 +55,24 @@ import pyqtgraph as pg
 # Only output errors from the logging framework
 logging.basicConfig(level=logging.ERROR)
 
-
-
 class PidExample:
     """
     Simple logging example class that logs the Stabilizer from a supplied
     link uri and disconnects after 5s.
     """
-    DATA_NUM = 400
+    DATA_NUM = 1000
+
+    log_var = [
+            ("stabilizer.roll",   "float",   "radius", -10,  10),
+            ("stabilizer.pitch",  "float",   "radius", -10,  10),
+            ("stabilizer.yaw",    "float",   "radius", -180, 180),
+            ("stabilizer.thrust", "uint16_t", "force",  0, 65535),
+
+            ("actuator.roll",     "int16_t",  "force",  0, 65535),
+            ("actuator.pitch",    "int16_t",  "force",  0, 65535)]
+    log_data = []
+    log_plot = []
+
     def __init__(self, link_uri):
         """ Initialize and run the example with the specified link_uri """
 
@@ -80,17 +90,18 @@ class PidExample:
         # Try to connect to the Crazyflie
         self._cf.open_link(link_uri)
 
-        self.thrust = 20000
+        self.thrust = 0
         self.pitch = 0
         self.roll = 0
         self.yawrate = 0
 
         # setup gui
         self._gui()
+        self._gui2()
 
-        self.roll_data = deque([0] * self.DATA_NUM)
-        self.pitch_data = deque([0] * self.DATA_NUM)
-        self.yaw_data = deque([0] * self.DATA_NUM)
+        for i in range(len(self.log_var)):
+            self.log_data.append(deque([0] * self.DATA_NUM))
+
 
     def _connected(self, link_uri):
         """ This callback is called form the Crazyflie API when a Crazyflie
@@ -99,9 +110,9 @@ class PidExample:
 
         # The definition of the logconfig can be made before connecting
         self._lg_stab = LogConfig(name="Stabilizer", period_in_ms=10)
-        self._lg_stab.add_variable("stabilizer.roll", "float")
-        self._lg_stab.add_variable("stabilizer.pitch", "float")
-        self._lg_stab.add_variable("stabilizer.yaw", "float")
+
+        for logname, logtype, logunit, y1, y2 in self.log_var:
+            self._lg_stab.add_variable(logname, logtype)
 
         # Adding the configuration cannot be done until a Crazyflie is
         # connected, since we need to check that the variables we
@@ -126,24 +137,19 @@ class PidExample:
         Thread(target=self._ramp_motors).start()
 
     def _ramp_motors(self):
-        thrust_mult = 1
-        thrust_step = 500
-        self.thrust = 30000
-        self.pitch = 0
-        self.roll = 0
-        self.yawrate = 0
-
         time.sleep(1)
+
+        self.pitch = 0 #sum(self.pitch_data)/len(self.pitch_data)
+        self.roll = 0 #sum(self.roll_data)/len(self.roll_data)
+        self.yawrate = 0
 
         #Unlock startup thrust protection
         self._cf.commander.send_setpoint(0, 0, 0, 0)
 
-        while self.thrust >= 20000:
+        while True:
             self._cf.commander.send_setpoint(self.roll, self.pitch, self.yawrate, self.thrust)
             time.sleep(0.1)
-            if self.thrust >= 45000:
-                thrust_mult = -1
-            self.thrust += thrust_step * thrust_mult
+
         self._cf.commander.send_setpoint(0, 0, 0, 0)
         # Make sure that the last packet leaves before the link is closed
         # since the message queue is not flushed before closing
@@ -154,25 +160,18 @@ class PidExample:
 
     def _stab_log_data(self, timestamp, data, logconf):
         """Callback froma the log API when data arrives"""
-        #print "[%d][%s]: %s" % (timestamp, logconf.name, data)
-        self.roll_data.append(data["stabilizer.roll"])
-        self.roll_data.popleft()
-        #self.p_roll.setData(y=list(self.roll_data), x=range(self.DATA_NUM));
-
-        self.pitch_data.append(data["stabilizer.pitch"])
-        self.pitch_data.popleft()
-        #self.p_pitch.setData(y=list(self.pitch_data), x=range(self.DATA_NUM));
-
-        self.yaw_data.append(data["stabilizer.yaw"])
-        self.yaw_data.popleft()
-        #self.p_yaw.setData(y=list(self.yaw_data), x=range(self.DATA_NUM));
-
+        #print "[%d][%s]: %2.4f %2.4f %2.4f" % (timestamp, logconf.name, data["stabilizer.roll"], data["stabilizer.pitch"], data["stabilizer.yaw"])
+        
+        for i in range(len(self.log_var)):
+            self.log_data[i].append(data[self.log_var[i][0]])
+            self.log_data[i].popleft()
 
     def _connection_failed(self, link_uri, msg):
         """Callback when connection initial connection fails (i.e no Crazyflie
         at the speficied address)"""
         print "Connection to %s failed: %s" % (link_uri, msg)
         self.is_connected = False
+        os._exit(0)
 
     def _connection_lost(self, link_uri, msg):
         """Callback when disconnected after a connection has been made (i.e
@@ -187,88 +186,72 @@ class PidExample:
     def _gui(self):
         """Setup a GUI for logging parameters"""
         print "GUI start"
-
-        self.app = QtGui.QApplication([])
-        self.mw = QtGui.QMainWindow()
-        self.mw.setWindowTitle('Pid')
-        self.mw.resize(800,800)
-        cw = QtGui.QWidget()
-        self.mw.setCentralWidget(cw)
-        l = QtGui.QVBoxLayout()
-        cw.setLayout(l)
         
-        pw_roll = pg.PlotWidget(name='Roll')
-        l.addWidget(pw_roll)
+        self.app = QtGui.QApplication([])
+        self.win = pg.GraphicsWindow(title="Pid tuning.")
+        self.win.resize(1000,600)
 
-        pw_pitch = pg.PlotWidget(name='Pitch')
-        l.addWidget(pw_pitch)
+        # Enable antialiasing for prettier plots
+        pg.setConfigOptions(antialias=True)
 
-        pw_yaw = pg.PlotWidget(name='Yaw')
-        l.addWidget(pw_yaw)
+        for logname, logtype, logunit, y1, y2 in self.log_var:
 
-        self.mw.show()
+            pw = self.win.addPlot(title=logname)
+            self.win.nextRow()
+            self.log_plot.append(pw.plot(pen = (255, 0, 0)))
 
-        self.p_roll = pw_roll.plot()
-        self.p_roll.setPen((200,200,100))
+            pw.showGrid(x = True, y = True)
 
-        line_roll = QtGui.QGraphicsLineItem(QtCore.QLineF(0, 0, self.DATA_NUM, 0))
-        line_roll.setPen(QtGui.QPen(QtGui.QColor(100, 200, 100)))
+            pw.setXRange(0, self.DATA_NUM)
+            pw.setYRange(y1, y2)
 
-        line_pitch = QtGui.QGraphicsLineItem(QtCore.QLineF(0, 0, self.DATA_NUM, 0))
-        line_pitch.setPen(QtGui.QPen(QtGui.QColor(100, 200, 100)))
+            pw.setLabel('left', 'Value', units=logunit)
+            pw.setLabel('bottom', 'Time', units='s')
 
-        line_yaw = QtGui.QGraphicsLineItem(QtCore.QLineF(0, 0, self.DATA_NUM, 0))
-        line_yaw.setPen(QtGui.QPen(QtGui.QColor(100, 200, 100)))
-
-        pw_roll.addItem(line_roll)
-        pw_pitch.addItem(line_pitch)
-        pw_yaw.addItem(line_yaw)
-
-        pw_roll.setLabel('left', 'Value', units='radius')
-        pw_roll.setLabel('bottom', 'Time', units='s')
-        pw_roll.setXRange(0, self.DATA_NUM)
-        pw_roll.setYRange(-180, 180)
-
-        self.p_pitch = pw_pitch.plot()
-        self.p_pitch.setPen((200,200,100))
-
-        pw_pitch.setLabel('left', 'Value', units='radius')
-        pw_pitch.setLabel('bottom', 'Time', units='s')
-        pw_pitch.setXRange(0, self.DATA_NUM)
-        pw_pitch.setYRange(-90, 90)
-
-        self.p_yaw = pw_yaw.plot()
-        self.p_yaw.setPen((200,200,100))
-
-        pw_yaw.setLabel('left', 'Value', units='radius')
-        pw_yaw.setLabel('bottom', 'Time', units='s')
-        pw_yaw.setXRange(0, self.DATA_NUM)
-        pw_yaw.setYRange(-180, 180)
 
         self.t = QtCore.QTimer()
         self.t.timeout.connect(self._updateData)
         self.t.start(50)
 
+    def valueChanging(self, sb, value):
+        self.thrust = value
+
+    def stopClicked(self):
+        self.thrust = 0
+
+    def _gui2(self):
+        spins = [
+            ("Thrust", pg.SpinBox(value=0, int=True, dec=False, minStep=500, step=500, bounds=[0, None]))
+        ]
+
+        self.win2 = QtGui.QMainWindow()
+        self.win2.setWindowTitle('Settings')
+        cw = QtGui.QWidget()
+        layout = QtGui.QGridLayout()
+        cw.setLayout(layout)
+        self.win2.setCentralWidget(cw)
+        self.win2.show()
+
+        self.labels = []
+
+        for text, spin in spins:
+            label = QtGui.QLabel(text)
+            self.labels.append(label)
+            layout.addWidget(label)
+            layout.addWidget(spin)
+            spin.sigValueChanging.connect(self.valueChanging)
+
+        btn = QtGui.QPushButton("Stop")
+        btn.clicked.connect(self.stopClicked)
+        layout.addWidget(btn)
+        
+
     def _updateData(self):
-        self.p_roll.setData(y=list(self.roll_data), x=range(self.DATA_NUM));
-        self.p_pitch.setData(y=list(self.pitch_data), x=range(self.DATA_NUM));
-        self.p_yaw.setData(y=list(self.yaw_data), x=range(self.DATA_NUM));
-
-#def rand(n):
-#    data = np.random.random(n)
-#    data[int(n*0.1):int(n*0.13)] += .5
-#    data[int(n*0.18)] += 2
-#    data[int(n*0.1):int(n*0.13)] *= 5
-#    data[int(n*0.18)] *= 20
-#    data *= 1e-12
-#    return data, np.arange(n, n+len(data)) / float(n)
-
-#def updateData():
-#    yd, xd = rand(10000)
-#    p1.setData(y=yd, x=xd)
-
-## Start a timer to rapidly update the plot in pw
-
+        for i in range(len(self.log_data)):
+            self.log_plot[i].setData(
+                    y = list(self.log_data[i]),
+                    x = range(self.DATA_NUM))
+        
 if __name__ == '__main__':
     # Initialize the low-level drivers (don't list the debug drivers)
     cflib.crtp.init_drivers(enable_debug_driver=False)
