@@ -65,8 +65,12 @@ class PidExample:
     log_var = [
             ("stabilizer.roll",   "float",   "radius", -10,  10),
             ("stabilizer.pitch",  "float",   "radius", -10,  10),
-           # ("stabilizer.yaw",    "float",   "radius", -180, 180),
+            ("stabilizer.yaw",    "float",   "radius", -180, 180),
             ("stabilizer.thrust", "uint16_t", "force",  0, 65535),
+
+           # ("baro.asl", "float", "pa",  0, 300),
+           # ("baro.aslRaw", "float", "pa",  0, 300),
+           # ("baro.aslLong", "float", "pa",  0, 300)]
 
             ("actuator.roll",     "int16_t",  "force",  -32768, 32767),
             ("actuator.pitch",    "int16_t",  "force",  -32768, 32767)]
@@ -91,6 +95,7 @@ class PidExample:
     control_spins = []
 
     control_data = {}
+    param_data   = {}
 
     def __init__(self, link_uri):
         """ Initialize and run the example with the specified link_uri """
@@ -159,71 +164,53 @@ class PidExample:
 
         for group, name in self.param_var:
             self._cf.param.add_update_callback(group = group, name = name,
-                    cb = self._param_callback)
+                    cb = self._init_param_callback)
             self._cf.param.request_param_update("{0}.{1}".format(group, name))
-
-        ## Print the param TOC
-        #p_toc = self._cf.param.toc.toc
-        #for group in sorted(p_toc.keys()):
-        #    print "{}".format(group)
-        #    for param in sorted(p_toc[group].keys()):
-        #        print "\t{}".format(param)
-        #        self._param_check_list.append("{0}.{1}".format(group, param))
-        #    self._param_groups.append("{}".format(group))
-        #    # For every group, register the callback
-        #    self._cf.param.add_update_callback(group=group, name=None,
-        #                                       cb=self._param_callback)
-
-        #print
-        #print "Reading back back all parameter values"
-        # Request update for all the parameters using the full name
-        # group.name
-        #for p in self._param_check_list:
-        #    self._cf.param.request_param_update(p)
-        
 
         # Start a timer to disconnect in 10s
         #t = Timer(5, self._cf.close_link)
         #t.start()
         Thread(target=self._ramp_motors).start()
 
+    def _init_param_callback(self, name, value):
+        """Generic callback registered for all the groups"""
+        print "init {0}: {1}".format(name, value)
+        arr = name.split('.')
+        group = arr[0]
+        name = arr[1]
+
+        self._cf.param.remove_update_callback(group = group, name = name,
+                cb = self._init_param_callback)
+
+        self.param_data[name] = value
+        
+        if len(self.param_data) == len(self.param_var):
+            print "all value recorded"
+            QtCore.QTimer.singleShot(100, self._param_update)
+
+        #for i in range(len(self.param_var)):
+        #    if group == self.param_var[i][0] and name == self.param_var[i][1]:
+        #        QTCore.QTimer.singleShot(0, )
+        #        #self.param_spins[i].setValue(value)
+        #        break
+
+        self._cf.param.add_update_callback(group = group, name = name,
+                cb = self._param_callback)
+
     def _param_callback(self, name, value):
         """Generic callback registered for all the groups"""
         print "{0}: {1}".format(name, value)
 
-        # Remove each parameter from the list and close the link when
-        # all are fetched
+    def _param_update(self):
+        print "updating init parameters"
+        for i in range(len(self.param_spins)):
+            name = "{0}.{1}".format(self.param_var[i][0], self.param_var[i][1])
+            self.param_spins[i].setValue(param_data[name])
 
-        #self._param_check_list.remove(name)
-        #if len(self._param_check_list) == 0:
-        #    print "Have fetched all parameter values."
 
-        #    # First remove all the group callbacks
-        #    for g in self._param_groups:
-        #        self._cf.param.remove_update_callback(group=g,
-        #                                              cb=self._param_callback)
-
-        #    # Create a new random value [0.00,1.00] for pid_attitude.pitch_kd
-        #    # and set it
-        #    pkd = random.random()
-        #    print
-        #    print "Write: pid_attitude.pitch_kd={:.2f}".format(pkd)
-        #    self._cf.param.add_update_callback(group="pid_attitude",
-        #                                       name="pitch_kd",
-        #                                       cb=self._a_pitch_kd_callback)
-        #    # When setting a value the parameter is automatically read back
-        #    # and the registered callbacks will get the updated value
-        #    self._cf.param.set_value("pid_attitude.pitch_kd",
-        #                             "{:.2f}".format(pkd))
-
-    #def _a_pitch_kd_callback(self, name, value):
-    #    """Callback for pid_attitude.pitch_kd"""
-    #    print "Readback: {0}={1}".format(name, value)
-    #    print
 
     def _ramp_motors(self):
         time.sleep(1)
-        self._cf.param.set_value("pid_attitude.pitch_kd", "0.1")
 
         #self.pitch = 0 #sum(self.pitch_data)/len(self.pitch_data)
         #self.roll = 0 #sum(self.roll_data)/len(self.roll_data)
@@ -306,12 +293,10 @@ class PidExample:
     def valueChanging(self, sb, value):
         for i in range(len(self.control_spins)):
             if self.control_spins[i] == sb:
-                print self.control_var[i]
                 self.control_data[self.control_var[i]] = value
 
         for i in range(len(self.param_spins)):
             if self.param_spins[i] == sb:
-                print self.param_var[i]
                 self._cf.param.set_value("{0}.{1}".format(self.param_var[i][0], self.param_var[i][1]), "{:.2f}".format(value))
 
         #self.thrust = value

@@ -174,6 +174,9 @@ bool stabilizerTest(void)
   return pass;
 }
 
+bool humanControl = false;
+uint32_t humanThrust = 0;
+
 static void stabilizerTask(void* param)
 {
   uint32_t attitudeCounter = 0;
@@ -246,6 +249,9 @@ static void stabilizerTask(void* param)
       {
         // Use thrust from controller if not in altitude hold mode
         commanderGetThrust(&actuatorThrust);
+
+        if( humanControl )
+           actuatorThrust = humanThrust;
       }
       else
       {
@@ -356,6 +362,7 @@ static void stabilizerAltHoldUpdate(void)
   }
 }
 
+
 static void distributePower(const uint16_t thrust, const int16_t roll,
                             const int16_t pitch, const int16_t yaw)
 {
@@ -423,6 +430,12 @@ LOG_ADD(LOG_FLOAT, pitch, &eulerPitchActual)
 LOG_ADD(LOG_FLOAT, yaw, &eulerYawActual)
 LOG_ADD(LOG_UINT16, thrust, &actuatorThrust)
 LOG_GROUP_STOP(stabilizer)
+
+LOG_GROUP_START(actuator)
+LOG_ADD(LOG_INT16, roll, &actuatorRoll)
+LOG_ADD(LOG_INT16, pitch, &actuatorPitch)
+LOG_GROUP_STOP(actuator)
+
 
 LOG_GROUP_START(acc)
 LOG_ADD(LOG_FLOAT, x, &acc.x)
@@ -498,4 +511,9 @@ PARAM_ADD(PARAM_UINT16, baseThrust, &altHoldBaseThrust)
 PARAM_ADD(PARAM_UINT16, maxThrust, &altHoldMaxThrust)
 PARAM_ADD(PARAM_UINT16, minThrust, &altHoldMinThrust)
 PARAM_GROUP_STOP(altHold)
+
+PARAM_GROUP_START(motor)
+PARAM_ADD(PARAM_UINT8 , enable, &humanControl)
+PARAM_ADD(PARAM_UINT32, thrust, &humanThrust)
+PARAM_GROUP_STOP(motor)
 
