@@ -51,6 +51,7 @@ from collections import deque
 from pyqtgraph.Qt import QtGui, QtCore
 import numpy as np
 import pyqtgraph as pg
+import Traceball
 
 # Only output errors from the logging framework
 logging.basicConfig(level=logging.ERROR)
@@ -74,12 +75,18 @@ class PID:
 
         return out
 
+    def clear(self):
+        self.sum_error = 0
+        self.last_error = 0
+
 
 class PidExample:
     """
     csiot final
     """
     DATA_NUM = 400
+    SAFE_ROLL = 15
+    SAFE_PITCH = 15
     MAX_THRUST = 65530
 
     log_var = [
@@ -90,7 +97,6 @@ class PidExample:
 
            # ("baro.asl", "float", "pa",  0, 300),
            # ("baro.aslRaw", "float", "pa",  0, 300),
-           # ("baro.aslLong", "float", "pa",  0, 300)]
 
            # ("motor.m1", "int32_t", "power", 0, 65535),
            # ("motor.m2", "int32_t", "power", 0, 65535),
@@ -107,21 +113,25 @@ class PidExample:
     # tuned parameters
     param_var = [
             ("pid_attitude", "roll_kp",  3.8),
-            ("pid_attitude", "roll_ki",  30),
+            ("pid_attitude", "roll_ki",  80),
             ("pid_attitude", "roll_kd",  0),
             ("pid_attitude", "pitch_kp", 3.8),
-            ("pid_attitude", "pitch_ki", 30),
+            ("pid_attitude", "pitch_ki", 80),
             ("pid_attitude", "pitch_kd", 0),
             ("pid_attitude", "yaw_kp",   3.5),
             ("pid_attitude", "yaw_ki",   5.0),
             ("pid_attitude", "yaw_kd",   0),
             ]
 
-    def __init__(self, link_uri):
+    stop = True
+
+    def __init__(self, link_uri, tb):
         """ Initialize and run the example with the specified link_uri """
 
         # Create a Crazyflie object without specifying any cache dirs
         self._cf = Crazyflie()
+
+        self._tb = tb
 
         # Connect some callbacks from the Crazyflie API
         self._cf.connected.add_callback(self._connected)
@@ -188,7 +198,6 @@ class PidExample:
 
         time.sleep(1)
 
-
         #Unlock startup thrust protection
         self._cf.commander.send_setpoint(0, 0, 0, 0)
 
@@ -197,22 +206,32 @@ class PidExample:
         pitch   = 0
         yawrate = 0
 
-        thrust_pid = PID(1, 1, 0)
-
-        # set target x, y, z
-        (tx, ty, tz) = (0, 0, 0)
+        thrust_pid = PID(10, 1000, 0)
 
         while True:
-            # get current (x, y, z)
-            (x, y, z) = (0, 0, 0)#TODO
+            self._cf.commander.send_setpoint(self.roll, self.pitch, self.yawrate, self.thrust)
 
-            thrust = thrust_pid.push(ty - y)
+            if self.stop:
+                thrust  = 0
+                roll    = 0
+                pitch   = 0
+                yawrate = 0
+                thrust_pid.clear()
+                time.sleep(0.1)
+                continue;
+
+            # get current (x, y, z)
+            (x, y, z) = self.tb.get()
+
+            thrust = thrust_pid.push(self.target_y - y)
 
             if thrust > self.MAX_THRUST:
                 thrust = self.MAX_THRUST
+            if thrust < 0:
+                thrust = 0
 
-            self._cf.commander.send_setpoint(roll, pitch, yawrate, thrust)
-            time.sleep(0.01)
+            time.sleep(0.1)
+
 
         self._cf.commander.send_setpoint(0, 0, 0, 0)
         # Make sure that the last packet leaves before the link is closed
@@ -228,6 +247,14 @@ class PidExample:
         for i in range(len(self.log_var)):
             self.log_data[i].append(data[self.log_var[i][0]])
             self.log_data[i].popleft()
+
+        roll   = data['stabilizer.roll']
+        pitch  = data['stabilizer.pitch']
+
+        #safe zone testing...
+        if abs(roll) > self.SAFE_ROLL or \
+                abs(pitch) > self.SAFE_PITCH :
+            self.stopClicked()
 
 
     def _connection_failed(self, link_uri, msg):
@@ -288,12 +315,20 @@ class PidExample:
         self.win2.show()
 
         btn = QtGui.QPushButton("Stop")
-        #btn.clicked.connect(self.stopClicked)
+        btn.clicked.connect(self.stopClicked)
         layout.addWidget(btn)
 
         btn2 = QtGui.QPushButton("Start")
-        #btn2.clicked.connect(self.startClicked)
+        btn2.clicked.connect(self.startClicked)
         layout.addWidget(btn2)
+
+    def stopClicked(self):
+        self.stop = True
+
+    def startClicked(self):
+        (x, y, z) = self.tb.get()
+        self.target_y = y
+        self.stop = False
 
     def _updateData(self):
         for i in range(len(self.log_data)):
@@ -312,7 +347,10 @@ if __name__ == '__main__':
         print i[0]
 
     if len(available) > 0:
-        le = PidExample(available[0][0])
+        tb = Traceball.Traceball(0)
+        tb.start()
+
+        le = PidExample(available[0][0], tb)
         QtGui.QApplication.instance().exec_()
         #le.app.exec_()
     else:

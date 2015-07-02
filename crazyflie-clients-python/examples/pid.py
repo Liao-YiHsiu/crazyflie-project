@@ -105,10 +105,10 @@ class PidExample:
     
     param_var = [
             ("pid_attitude", "roll_kp",  3.8),
-            ("pid_attitude", "roll_ki",  30),
+            ("pid_attitude", "roll_ki",  80),
             ("pid_attitude", "roll_kd",  0),
             ("pid_attitude", "pitch_kp", 3.8),
-            ("pid_attitude", "pitch_ki", 30),
+            ("pid_attitude", "pitch_ki", 80),
             ("pid_attitude", "pitch_kd", 0),
             ("pid_attitude", "yaw_kp",   3.5),
             ("pid_attitude", "yaw_ki",   5.0),
@@ -401,8 +401,7 @@ class PidExample:
         #self.thrust = value
 
     def startClicked(self):
-        self.control_data['thrust'] = 50000
-        sleep
+        self.control_data['thrust'] = 55000
 
     def stopClicked(self):
         self.control_data['thrust'] = 0
