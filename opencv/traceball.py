@@ -1,4 +1,3 @@
-#encoding:utf-8
 import numpy as np
 import cv2
 import sys
@@ -14,7 +13,7 @@ def get_mouse_value(event,x,y,flags,param):
 
 if __name__ == '__main__':
 
-    cam = cv2.VideoCapture(0)#读取视频
+    cam = cv2.VideoCapture(0)
     ret, prev = cam.read()
     prevgray = cv2.cvtColor(prev, cv2.COLOR_BGR2GRAY)
     show_img = False
@@ -32,8 +31,8 @@ if __name__ == '__main__':
     cv2.setMouseCallback('img',get_mouse_value)
 
     while True:
-        ret, img = cam.read()#读取视频的下一帧作为光流输入的当前帧
-        if ret == True:#判断视频是否结束
+        ret, img = cam.read()
+        if ret == True:
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
             hsv = cv2.medianBlur(hsv,51)
@@ -43,18 +42,7 @@ if __name__ == '__main__':
             threshold = cv2.inRange(hsv, ORANGE_MIN, ORANGE_MAX)
             cimg = cv2.cvtColor(threshold,cv2.COLOR_GRAY2BGR)
             kernel = np.ones((2,2),np.uint8)
-            '''
-            edges = cv2.Canny(hsv,100,50)
-            cv2.imshow("edges", edges)
-            contours,hierarchy = cv2.findContours(edges, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-            if len(contours)>0:
-                cv2.drawContours(hsv, contours,- 1 ,( 0 , 255 , 0 ), 3)
-            for h,cnt in enumerate(contours):
-                mask = np.zeros(gray.shape,np.uint8)
-                cv2.drawContours(hsv,[cnt],0,(255,0,0),-1)
-                mean = cv2.mean(hsv,mask = mask)
-            '''
-            #gradient = cv2.inRange(gradient, np.array([2,2,2]), np.array([255,255,255]))
+            
             erosion = cv2.dilate(threshold,kernel,iterations = 1)
             contours,hierarchy = cv2.findContours(erosion, 1, 2)
             threshold = cv2.cvtColor(threshold,cv2.COLOR_GRAY2BGR)

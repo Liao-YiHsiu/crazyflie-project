@@ -8,8 +8,10 @@ Usage:python traceball.py
 
 "z" to start to tune the contrain
 
-"x" to stop tuning and start to track
+"x" to stop tuning and start to track, output is [x][y][length][area]
 
 "s" to save the current threshold, hsv and img(original color) images
 
 "1" to show original color video
+
+
