@@ -209,7 +209,7 @@ class PidExample:
         thrust_pid = PID(10, 1000, 0)
 
         while True:
-            self._cf.commander.send_setpoint(self.roll, self.pitch, self.yawrate, self.thrust)
+            self._cf.commander.send_setpoint(roll, pitch, yawrate, thrust)
 
             if self.stop:
                 thrust  = 0
@@ -224,6 +224,7 @@ class PidExample:
             (x, y, z) = self.tb.get()
 
             thrust = thrust_pid.push(self.target_y - y)
+            print "thrust = %2.4f, diff = %2.4f" % (thrust, self.target_y -y)
 
             if thrust > self.MAX_THRUST:
                 thrust = self.MAX_THRUST

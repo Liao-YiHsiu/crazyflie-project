@@ -77,17 +77,17 @@ class PidExample:
     log_var = [
             ("stabilizer.roll",   "float",   "radius", -10,  10),
             ("stabilizer.pitch",  "float",   "radius", -10,  10),
-           # ("stabilizer.yaw",    "float",   "radius", -180, 180),
+            ("stabilizer.yaw",    "float",   "radius", -180, 180),
             ("stabilizer.thrust", "uint16_t", "force",  0, 65535),
 
            # ("baro.asl", "float", "pa",  0, 300),
            # ("baro.aslRaw", "float", "pa",  0, 300),
            # ("baro.aslLong", "float", "pa",  0, 300)]
 
-            ("motor.m1", "int32_t", "power", 0, 65535),
-            ("motor.m2", "int32_t", "power", 0, 65535),
-            ("motor.m3", "int32_t", "power", 0, 65535),
-            ("motor.m4", "int32_t", "power", 0, 65535),
+           #1 ("motor.m1", "int32_t", "power", 0, 65535),
+           #1 ("motor.m2", "int32_t", "power", 0, 65535),
+           #1 ("motor.m3", "int32_t", "power", 0, 65535),
+           #1 ("motor.m4", "int32_t", "power", 0, 65535),
 
            # ("actuator.roll",     "int16_t",  "force",  -32768, 32767),
            # ("actuator.pitch",    "int16_t",  "force",  -32768, 32767)
