@@ -12,8 +12,8 @@ def get_mouse_value(event,x,y,flags,param):
 
 
 if __name__ == '__main__':
-
-    cam = cv2.VideoCapture(0)
+    videoNum = int(sys.argv[1])
+    cam = cv2.VideoCapture(videoNum)
     ret, prev = cam.read()
     prevgray = cv2.cvtColor(prev, cv2.COLOR_BGR2GRAY)
     show_img = False
@@ -90,8 +90,8 @@ if __name__ == '__main__':
                 print "reset"
                 pre_x,pre_y=-1,-1
                 if(ix>0 and iy>0):
-                   ORANGE_MIN=hsv[iy][ix]-np.array([2,2,2])
-                   ORANGE_MAX=hsv[iy][ix]+np.array([2,2,2])
+                   ORANGE_MIN=hsv[iy][ix]-np.array([10,50,50])
+                   ORANGE_MAX=hsv[iy][ix]+np.array([10,50,50])
             if ch == ord('q'):
                 break
             if ch == ord('1'):
@@ -102,6 +102,12 @@ if __name__ == '__main__':
                 cv2.imwrite('hsv.jpg', hsv)
                 cv2.imwrite('img.jpg', img)
                 print '--save--'
+            if ch == ord('p'):
+                print "-----write range to file-----"
+                text_file = open("range.txt", "w")
+                text_file.write("Range_MIN: {0}".format(ORANGE_MIN))
+                text_file.write("Range_MAX: {0}".format(ORANGE_MAX))
+                text_file.close()
             if hsv_set:
                 if ix <0 or iy<0 or (ix==px and iy==py):
                     print "click"
