@@ -14,6 +14,18 @@ app.get("/" , function(req , res) {
     res.render("home");
 });
 
+app.get("/tech" , function(req , res) {
+    res.render("tech");
+});
+app.get("/demo" , function(req , res) {
+    res.render("demo");
+});
+app.get("/about-us" , function(req , res) {
+    res.render("about-us");
+});
+app.get("/ref" , function(req , res) {
+    res.render("ref");
+});
 
 app.listen( 5246  , function() {
     console.log("iAgent Server. 140.112.21.15:5246 ");
