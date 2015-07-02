@@ -362,6 +362,7 @@ static void stabilizerAltHoldUpdate(void)
   }
 }
 
+float m2_factor = 1, m3_factor = 1, m4_factor = 1;
 
 static void distributePower(const uint16_t thrust, const int16_t roll,
                             const int16_t pitch, const int16_t yaw)
@@ -370,14 +371,14 @@ static void distributePower(const uint16_t thrust, const int16_t roll,
   int16_t r = roll >> 1;
   int16_t p = pitch >> 1;
   motorPowerM1 = limitThrust(thrust - r + p + yaw);
-  motorPowerM2 = limitThrust(thrust - r - p - yaw);
-  motorPowerM3 =  limitThrust(thrust + r - p + yaw);
-  motorPowerM4 =  limitThrust(thrust + r + p - yaw);
+  motorPowerM2 = limitThrust(thrust * m2_factor - r - p - yaw);
+  motorPowerM3 =  limitThrust(thrust * m3_factor + r - p + yaw);
+  motorPowerM4 =  limitThrust(thrust * m4_factor + r + p - yaw);
 #else // QUAD_FORMATION_NORMAL
   motorPowerM1 = limitThrust(thrust + pitch + yaw);
-  motorPowerM2 = limitThrust(thrust - roll - yaw);
-  motorPowerM3 =  limitThrust(thrust - pitch + yaw);
-  motorPowerM4 =  limitThrust(thrust + roll - yaw);
+  motorPowerM2 = limitThrust(thrust * m2_factor - roll - yaw);
+  motorPowerM3 =  limitThrust(thrust * m3_factor - pitch + yaw);
+  motorPowerM4 =  limitThrust(thrust * m4_factor + roll - yaw);
 #endif
 
   motorsSetRatio(MOTOR_M1, motorPowerM1);
@@ -488,6 +489,12 @@ LOG_ADD(LOG_FLOAT, vSpeed, &vSpeed)
 LOG_ADD(LOG_FLOAT, vSpeedASL, &vSpeedASL)
 LOG_ADD(LOG_FLOAT, vSpeedAcc, &vSpeedAcc)
 LOG_GROUP_STOP(altHold)
+
+PARAM_GROUP_START(motorFactor)
+PARAM_ADD(PARAM_FLOAT, m2, &m2_factor)
+PARAM_ADD(PARAM_FLOAT, m3, &m3_factor)
+PARAM_ADD(PARAM_FLOAT, m4, &m4_factor)
+PARAM_GROUP_STOP(motorFactor)
 
 // Params for altitude hold
 PARAM_GROUP_START(altHold)
