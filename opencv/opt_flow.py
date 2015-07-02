@@ -1,6 +1,8 @@
 #encoding:utf-8
 import numpy as np
 import cv2
+import sys
+import math
 #import video #Opencv Python自带的读取
 
 help_message = '''
@@ -12,9 +14,9 @@ Keys:
 
 '''
 
-def draw_flow(img, flow, step=16):
+def draw_flow(img, flow, face_x,face_y,face_h,face_w,step=16):
     h, w = img.shape[:2]
-    y, x = np.mgrid[step/2:h:step, step/2:w:step].reshape(2,-1)#以网格的形式选取二维图像上等间隔的点，这里间隔为16，reshape成2行的array
+    y, x = np.mgrid[face_y++face_h/4:face_y+3*face_h/4:step, face_x+face_w/4:face_x+3*face_w/4:step].reshape(2,-1)#以网格的形式选取二维图像上等间隔的点，这里间隔为16，reshape成2行的array
     fx, fy = flow[y,x].T#取选定网格点坐标对应的光流位移
     lines = np.vstack([x, y, x+fx, y+fy]).T.reshape(-1, 2, 2)#将初始点和变化的点堆叠成2*2的数组
     lines = np.int32(lines + 0.5)#忽略微笑的假偏移，整数化
@@ -47,47 +49,105 @@ def warp_flow(img, flow):
 if __name__ == '__main__':
     import sys
     print help_message
-    try: i = int(sys.argv[1])
-    except: i = sys.argv[1]
+    cascPath = sys.argv[1]
+    faceCascade = cv2.CascadeClassifier(cascPath)
+    videoNum = int(sys.argv[2])
+    #video_capture = cv2.VideoCapture(videoNum)
 
-    cam = cv2.VideoCapture(i)#读取视频
+    cam = cv2.VideoCapture(videoNum)#读取视频
     ret, prev = cam.read()#读取视频第一帧作为光流输入的当前帧֡
     #prev = cv2.imread('E:\lena.jpg')
     prevgray = cv2.cvtColor(prev, cv2.COLOR_BGR2GRAY)
+    reg = False
     show_hsv = False
     show_glitch = False
     cur_glitch = prev.copy()
+    face_x=-1
+    face_y=-1
+    pre_x, pre_y, pre_h, pre_w=-1, -1,-1,-1
+    reject_Levels=[1,2,3]
+    level_Weights=[1,2,3]
     
-
+	
     while True:
         ret, img = cam.read()#读取视频的下一帧作为光流输入的当前帧
         if ret == True:#判断视频是否结束
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             if cv2.cv.WaitKey(10)==27:
                 break
-            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-            flow = cv2.calcOpticalFlowFarneback(prevgray, gray, 0.5, 3, 15, 1, 5, 1.2, 0)#Farnback光流法
-            #cv2.calcOpticalFlowFarneback(prev, next, pyr_scale, levels, winsize, iterations, poly_n, poly_sigma, flags[, flow]) 
-            prevgray = gray#计算完光流后，将当前帧存储为下一次计算的前一帧
-            
-            cv2.imshow('flow', draw_flow(gray, flow))
-            if show_hsv:
-                cv2.imshow('flow HSV', draw_hsv(flow))
-            if show_glitch:
-                cur_glitch = warp_flow(cur_glitch, flow)
-                cv2.imshow('glitch', cur_glitch)
+            #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            reg = True
+            if reg == True:
+                #cv2.CascadeClassifier.detectMultiScale(image, rejectLevels, levelWeights[, scaleFactor[, minNeighbors[, flags[, minSize[, maxSize[, outputRejectLevels]]]]]]) → objects
+                faces = faceCascade.detectMultiScale(
+                       gray,
+                       reject_Levels,
+                       level_Weights,
+                       scaleFactor=1.1,
+                       minNeighbors=5,
+                       flags=cv2.cv.CV_HAAR_SCALE_IMAGE,
+                       minSize=(30, 30),
+                       maxSize=(500, 500),
+                       outputRejectLevels=0
+                       )
+
+               
+                flow = cv2.calcOpticalFlowFarneback(prevgray, gray, 0.5, 3, 15, 1, 5, 1.2, 0)#Farnback光流法
+                #cv2.calcOpticalFlowFarneback(prev, next, pyr_scale, levels, winsize, iterations, poly_n, poly_sigma, flags[, flow]) 
+                prevgray = gray#计算完光流后，将当前帧存储为下一次计算的前一帧
+                # Draw a rectangle around the faces
+
+                count=0
+                
+                now=gray
+                for (x, y, w, h) in faces:                   
+                    print "x=",x," y= ",y, "h=",h,"pre_x=",pre_x,"pre_y=",pre_y
+                    if (pre_x<0 and pre_y<0)or(math.fabs(x-pre_x)<20 and math.fabs(y-pre_y)<20):
+                        pre_x=x
+                        pre_y=y
+                        pre_w=w
+                        pre_h=h
+
+                if (pre_x>0 and pre_y>0):
+                    now=draw_flow(gray, flow,pre_x,pre_y,pre_h,pre_w)
+                    cv2.rectangle(now, (pre_x, pre_y), (pre_x+pre_w, pre_y+pre_h), (0, 255, 0), 2)
+                cv2.imshow('flow', now)
+                if show_hsv:
+                    cv2.imshow('flow HSV', draw_hsv(flow))
     
-            ch = 0xFF & cv2.waitKey(5)
-            if ch == ord('q'):
-                break
-            if ch == ord('1'):
-                show_hsv = not show_hsv
-                print 'HSV flow visualization is', ['off', 'on'][show_hsv]
-            if ch == ord('2'):
-                show_glitch = not show_glitch
-                if show_glitch:
-                    cur_glitch = img.copy()
-                print 'glitch is', ['off', 'on'][show_glitch]
-        else:
-            break
+                ch = 0xFF & cv2.waitKey(5)
+                if ch == ord('q'):
+                    break
+                if ch == ord('1'):
+                    show_hsv = not show_hsv
+                    print 'HSV flow visualization is', ['off', 'on'][show_hsv]
+            else:
+               #print "find face"
+               faces = faceCascade.detectMultiScale(
+                       gray,
+                       rejectLevels,
+                       levelWeights,
+                       scaleFactor=1.1,
+                       minNeighbors=5,
+                       minSize=(30, 30),
+                       flags=cv2.cv.CV_HAAR_SCALE_IMAGE
+                       )
+
+               # Draw a rectangle around the faces
+               for (x, y, w, h) in faces:
+                   print len(faces)
+                   cv2.rectangle(gray, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                   print "x=",x," y=",y
+                   print "face_x=",face_x," face_y=",face_y
+                   print math.fabs(face_x-x)," ",math.fabs(face_y-y)
+
+               cv2.imshow('Video', gray)
+               if (x>0 and y>0 and face_x<0 and face_y<0):
+                  face_x = x
+                  face_y = y
+               #if (math.fabs(face_x-x)<30 and math.fabs(face_y-y)<30):
+                #  reg=True
+
+
     cv2.destroyAllWindows()             
 
