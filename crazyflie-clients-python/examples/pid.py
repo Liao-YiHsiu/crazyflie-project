@@ -60,33 +60,63 @@ class PidExample:
     Simple logging example class that logs the Stabilizer from a supplied
     link uri and disconnects after 5s.
     """
-    DATA_NUM = 400
+    DATA_NUM = 600
+    SAFE_ROLL = 15
+    SAFE_PITCH = 15
+
+    STB_ROLL  = 2
+    STB_PITCH = 2
+    STB_COUNT = 30
+
+    stable_counter = 0
+    m1_sum = 0.0
+    m2_sum = 0.0
+    m3_sum = 0.0
+    m4_sum = 0.0
 
     log_var = [
             ("stabilizer.roll",   "float",   "radius", -10,  10),
             ("stabilizer.pitch",  "float",   "radius", -10,  10),
-            ("stabilizer.yaw",    "float",   "radius", -180, 180),
+           # ("stabilizer.yaw",    "float",   "radius", -180, 180),
             ("stabilizer.thrust", "uint16_t", "force",  0, 65535),
 
            # ("baro.asl", "float", "pa",  0, 300),
            # ("baro.aslRaw", "float", "pa",  0, 300),
            # ("baro.aslLong", "float", "pa",  0, 300)]
 
-            ("actuator.roll",     "int16_t",  "force",  -32768, 32767),
-            ("actuator.pitch",    "int16_t",  "force",  -32768, 32767)]
+            ("motor.m1", "int32_t", "power", 0, 65535),
+            ("motor.m2", "int32_t", "power", 0, 65535),
+            ("motor.m3", "int32_t", "power", 0, 65535),
+            ("motor.m4", "int32_t", "power", 0, 65535),
+
+           # ("actuator.roll",     "int16_t",  "force",  -32768, 32767),
+           # ("actuator.pitch",    "int16_t",  "force",  -32768, 32767)
+            ]
+
     log_data = []
     log_plot = []
 
+    log_noplot = [
+           # ("motor.m1", "int32_t"),
+           # ("motor.m2", "int32_t"),
+           # ("motor.m3", "int32_t"),
+           # ("motor.m4", "int32_t")
+            ]
+    
     param_var = [
-            ("pid_attitude", "roll_kp"),
-            ("pid_attitude", "roll_ki"),
-            ("pid_attitude", "roll_kd"),
-            ("pid_attitude", "pitch_kp"),
-            ("pid_attitude", "pitch_ki"),
-            ("pid_attitude", "pitch_kd"),
-            ("pid_attitude", "yaw_kp"),
-            ("pid_attitude", "yaw_ki"),
-            ("pid_attitude", "yaw_kd")
+            ("pid_attitude", "roll_kp",  3.8),
+            ("pid_attitude", "roll_ki",  30),
+            ("pid_attitude", "roll_kd",  0),
+            ("pid_attitude", "pitch_kp", 3.8),
+            ("pid_attitude", "pitch_ki", 30),
+            ("pid_attitude", "pitch_kd", 0),
+            ("pid_attitude", "yaw_kp",   3.5),
+            ("pid_attitude", "yaw_ki",   5.0),
+            ("pid_attitude", "yaw_kd",   0),
+            ("flightmode", "althold",    0),
+            ("motorFactor", "m2", 1),
+            ("motorFactor", "m3", 1),
+            ("motorFactor", "m4", 1)
             ]
     param_spins = []
 
@@ -96,6 +126,9 @@ class PidExample:
 
     control_data = {}
     param_data   = {}
+
+    thrust_counter = 0
+    decay = 1
 
     def __init__(self, link_uri):
         """ Initialize and run the example with the specified link_uri """
@@ -145,6 +178,9 @@ class PidExample:
         for logname, logtype, logunit, y1, y2 in self.log_var:
             self._lg_stab.add_variable(logname, logtype)
 
+        for logname, logtype in self.log_noplot:
+            self._lg_stab.add_variable(logname, logtype)
+
         # Adding the configuration cannot be done until a Crazyflie is
         # connected, since we need to check that the variables we
         # would like to log are in the TOC.
@@ -162,10 +198,13 @@ class PidExample:
         except AttributeError:
             print "Could not add Stabilizer log config, bad configuration."
 
-        for group, name in self.param_var:
+        for group, name, value in self.param_var:
             self._cf.param.add_update_callback(group = group, name = name,
                     cb = self._init_param_callback)
-            self._cf.param.request_param_update("{0}.{1}".format(group, name))
+            #self._cf.param.request_param_update("{0}.{1}".format(group, name))
+            # initial values
+            self._cf.param.set_value("{0}.{1}".format(group, name), "{:.2f}".format(value))
+
 
         # Start a timer to disconnect in 10s
         #t = Timer(5, self._cf.close_link)
@@ -238,10 +277,70 @@ class PidExample:
     def _stab_log_data(self, timestamp, data, logconf):
         """Callback froma the log API when data arrives"""
         #print "[%d][%s]: %2.4f %2.4f %2.4f" % (timestamp, logconf.name, data["stabilizer.roll"], data["stabilizer.pitch"], data["stabilizer.yaw"])
+
+        thrust = data['stabilizer.thrust']
+        roll   = data['stabilizer.roll']
+        pitch  = data['stabilizer.pitch']
+
+        if thrust == 0:
+            self.thrust_counter += 1
+        else:
+            self.thrust_counter = 0
         
-        for i in range(len(self.log_var)):
-            self.log_data[i].append(data[self.log_var[i][0]])
-            self.log_data[i].popleft()
+        if thrust != 0 or self.thrust_counter < 100 :
+        #if True:
+            for i in range(len(self.log_var)):
+                self.log_data[i].append(data[self.log_var[i][0]])
+                self.log_data[i].popleft()
+
+        for name, datatype in self.log_noplot:
+            print "[%s]: %2.4f" % (name, data[name])
+        
+        #safe zone testing...
+        if abs(roll) > self.SAFE_ROLL or \
+                abs(pitch) > self.SAFE_PITCH :
+            #print "Danger!!! %2.4f %2.4f" % (roll, pitch)
+            self.decay = 0.98
+            #self.control_data['thrust'] = 0
+
+        if abs(roll) > 2*self.SAFE_ROLL or \
+                abs(pitch) > 2*self.SAFE_PITCH :
+            self.control_data['thrust'] = 0
+
+        if self.control_data['thrust'] <= 100:
+            self.decay = 1
+
+        self.control_data['thrust'] *= self.decay
+
+        #logging stablized flight...
+        if thrust > 30000 and abs(roll) < self.STB_ROLL and abs(pitch) < self.STB_PITCH:
+            self.stable_counter += 1;
+            self.m1_sum += data['motor.m1'] 
+            self.m2_sum += data['motor.m2'] 
+            self.m3_sum += data['motor.m3'] 
+            self.m4_sum += data['motor.m4'] 
+        else:
+            if self.stable_counter >= self.STB_COUNT:
+                print "----------------------------------------------------"
+                print time.strftime("%I:%M:%S")
+                print "stable counter: %d " % (self.stable_counter)
+                print "   with average m1 = %5.1f m2 = %5.1f " % \
+                        (self.m1_sum / self.stable_counter, \
+                        self.m2_sum / self.stable_counter)
+                print "                m3 = %5.1f m4 = %5.1f " % \
+                        (self.m3_sum / self.stable_counter, \
+                        self.m4_sum / self.stable_counter)
+                print " ratio: %1.5f %1.5f %1.5f %1.5f" % \
+                        (self.m1_sum / float(self.m1_sum), \
+                         self.m2_sum / float(self.m1_sum), \
+                         self.m3_sum / float(self.m1_sum), \
+                         self.m4_sum / float(self.m1_sum))
+            self.stable_counter = 0
+            self.m1_sum = 0
+            self.m2_sum = 0
+            self.m3_sum = 0
+            self.m4_sum = 0
+
 
     def _connection_failed(self, link_uri, msg):
         """Callback when connection initial connection fails (i.e no Crazyflie
@@ -297,9 +396,13 @@ class PidExample:
 
         for i in range(len(self.param_spins)):
             if self.param_spins[i] == sb:
-                self._cf.param.set_value("{0}.{1}".format(self.param_var[i][0], self.param_var[i][1]), "{:.2f}".format(value))
+                self._cf.param.set_value("{0}.{1}".format(self.param_var[i][0], self.param_var[i][1]), "{:.6f}".format(value))
 
         #self.thrust = value
+
+    def startClicked(self):
+        self.control_data['thrust'] = 50000
+        sleep
 
     def stopClicked(self):
         self.control_data['thrust'] = 0
@@ -328,10 +431,14 @@ class PidExample:
         btn.clicked.connect(self.stopClicked)
         layout.addWidget(btn)
 
+        btn2 = QtGui.QPushButton("Start")
+        btn2.clicked.connect(self.startClicked)
+        layout.addWidget(btn2)
+
 # params inputs.
-        for group, name in self.param_var:
+        for group, name, value in self.param_var:
             label = QtGui.QLabel("{0}.{1}".format(group, name))
-            spin  = pg.SpinBox(value = 0, bounds=[0, None], step = 0.1, minStep = 0.1)
+            spin  = pg.SpinBox(value = value, bounds=[0, None], step = 0.1, minStep = 0.1)
             layout.addWidget(label)
             layout.addWidget(spin)
             spin.sigValueChanging.connect(self.valueChanging)
