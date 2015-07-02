@@ -40,8 +40,8 @@ if __name__ == '__main__':
             if cv2.cv.WaitKey(10)==27:
                 break
             
-            thresheld = cv2.inRange(hsv, ORANGE_MIN, ORANGE_MAX)
-            cimg = cv2.cvtColor(thresheld,cv2.COLOR_GRAY2BGR)
+            threshold = cv2.inRange(hsv, ORANGE_MIN, ORANGE_MAX)
+            cimg = cv2.cvtColor(threshold,cv2.COLOR_GRAY2BGR)
             kernel = np.ones((2,2),np.uint8)
             '''
             edges = cv2.Canny(hsv,100,50)
@@ -55,9 +55,9 @@ if __name__ == '__main__':
                 mean = cv2.mean(hsv,mask = mask)
             '''
             #gradient = cv2.inRange(gradient, np.array([2,2,2]), np.array([255,255,255]))
-            erosion = cv2.dilate(thresheld,kernel,iterations = 1)
+            erosion = cv2.dilate(threshold,kernel,iterations = 1)
             contours,hierarchy = cv2.findContours(erosion, 1, 2)
-            thresheld = cv2.cvtColor(thresheld,cv2.COLOR_GRAY2BGR)
+            threshold = cv2.cvtColor(threshold,cv2.COLOR_GRAY2BGR)
             max_area=0
             max_cnt=0
             if hsv_set is False and len(contours) >0 :
@@ -78,13 +78,14 @@ if __name__ == '__main__':
                         pre_cx=cx
                         pre_cy=cy
                         pre_area=max_area
-                        cv2.circle(thresheld,(cx,cy),2,(0,0,255),3)
+                        cv2.circle(threshold,(cx,cy),2,(0,0,255),3)
                         epsilon = 0.1*cv2.arcLength(max_cnt,True)
+                        #TODO!
                         print cx,cy,epsilon,max_area,'\n'                        
 
             else:
                 pre_cx, pre_cy = -1, -1
-            cv2.imshow('thresheld', thresheld)    
+            cv2.imshow('threshold', threshold)    
             cv2.imshow('img', hsv)
 
             prevgray = gray
@@ -108,8 +109,8 @@ if __name__ == '__main__':
             if ch == ord('1'):
                 show_img = not show_img
                 print 'show colored on/offq'
-            if ch == ord('2'):
-                cv2.imwrite('erosion.jpg', erosion)
+            if ch == ord('s'):
+                cv2.imwrite('threshold.jpg', threshold)
                 cv2.imwrite('hsv.jpg', hsv)
                 cv2.imwrite('img.jpg', img)
                 print '--save--'

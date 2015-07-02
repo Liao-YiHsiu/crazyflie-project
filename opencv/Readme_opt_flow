@@ -1,0 +1,8 @@
+Readme
+
+Usage:python opt_flow.py [cascade] [Video]
+
+Example:python opt_flow.py Webcam-Face-Detect-master/haarcascade_frontalface_default.xml 0
+
+"q" to quit
+

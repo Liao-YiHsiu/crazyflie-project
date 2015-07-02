@@ -1,0 +1,15 @@
+Readme
+
+Usage:python traceball.py
+
+"q" to quit
+
+"c" to reset/set the contrain, the last double click point will be the initial value
+
+"z" to start to tune the contrain
+
+"x" to stop tuning and start to track
+
+"s" to save the current threshold, hsv and img(original color) images
+
+"1" to show original color video
