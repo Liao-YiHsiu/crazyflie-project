@@ -1,13 +1,12 @@
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="page-header">Technical Details</h2>
+        <h1 class="page-header"><strong>Technical Details</strong></h1>
     </div>
     <div class="col-md-6 center">
-        <p>The full system contains following techniques: </p>
         <ul>
-            <li><strong>CrazyFlie Nano Quadcopter 2.0</strong></li>
-            <li>Camera and Image Transmission System</li>
-            <li>OpenCV Video Tracking</li>
+            <li><h2>CrazyFlie Nano Quadcopter 2.0</h1></li>
+            <li><h2>Camera and Video Transmission System</h1></li>
+            <li><h2>OpenCV Video Tracking</h1></li>
     </div>
     <div class="col-md-6 center">
         <img class="img-responsive" src="img/gathering.jpg" alt="">
@@ -16,21 +15,20 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="right" class="page-header">CrazyFlie Nano Quadcopter</h2>
+        <h1 align="right" class="page-header"><strong>CrazyFlie Nano Quadcopter</strong></h1>
     </div>
     <div class="col-md-6 center">
         <img class="img-responsive" src="img/nakefly.jpg" alt="">
     </div>
     <div class="col-md-6 center">
-        <p>CrazyFlie Nano Quadcopter 2.0</p>
         <ul>
-            <li>3.7V 240mAh battery</li>
-            <li>PC python control client with debugging display</li>
+            <li><h2>3.7V 240mAh battery</h2></li>
+            <li><h2>PC python control client with debugging display</h2></li>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <h2  class="page-header">PID Control Recommendation</h2>
+        <h1  class="page-header"><strong>PID Control Recommendation</strong></h1>
     </div>
     <div class="col-md-6"> 
          <p>Untuned PID control would induce the quadcopter to <strong>constantly drift toward the same direction.</strong> 
@@ -53,14 +51,14 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="center" class="page-header">Camera and Image Transmission System</h2>
+        <h1 align="center" class="page-header"><strong>Camera and Video Transmission System</strong></h1>
     </div>
     <div class="col-lg-12">
         <img class="img-responsive" src="img/transmission.png" alt="">
     </div>
     <div>
         <div class="col-lg-12">
-            <h2 class="page-header"></h2>
+            <h1 class="page-header"></h1>
         </div>
     </div>
     <div class="col-md-4 center">
@@ -81,15 +79,15 @@
     <div class="col-md-4 center">
         <img class="img-responsive" src="img/camera_system_back.jpg" alt="">
     </div> 
-    
+   
 </div>
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 align="center">Transmitter</h2>
+        <h1 align="center">Transmitter</h1>
     </div>
     <div class="col-lg-6">
-        <h2 align="center">Receiver</h2>
+        <h1 align="center">Receiver</h1>
     </div>
 </div>
 
@@ -120,10 +118,10 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 align="center">Camera</h2>
+        <h1 align="center">Camera</h1>
     </div>
     <div class="col-lg-6">
-        <h2 align="center">EasyCap</h2>
+        <h1 align="center">EasyCap</h1>
     </div>
 </div>
 
@@ -154,13 +152,13 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 align="center">Voltage Regulator</h2>
+        <h1 align="center">Voltage Regulator</h1>
     </div>
     <div class="col-lg-3">
-        <h2 align="center">Battery</h2>
+        <h1 align="center">Battery</h1>
     </div>
     <div class="col-lg-3">
-        <h2 align="center">Recharger</h2>
+        <h1 align="center">Recharger</h1>
     </div>
 </div>
 
@@ -185,10 +183,10 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="center" class="page-header">Power Supply Issue</h2>
+        <h1 align="center" class="page-header"><strong>Power Supply Issue</strong></h1>
     </div>
     <div class="col-md-8 col-md-offset-2 center"> 
-        <h3> We have examined 3 types of power supply methods:</h3>
+        <h2> We have examined 3 types of power supply methods:</h2>
     </div> 
     <div class="col-md-4 center">
         <h3 align="center"> 1 Battery </h3>
@@ -202,7 +200,7 @@
         <p>We try to solder additional filter capacitor in the output to reduce the noise. The reduction takes effect but the images are still infeasible. In the end <strong>we discarded the VR</strong> because the noise highly corrupted the video and the tracking system.</p>
     </div>
     <div class="col-md-4 center">
-        <h3 align="center"><strong> 2 Batteries</strong></h3>
+        <h3 align="center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 2 Batteries</h3>
         <p>Single battery cannot afford the Camera/Tx system and Crazyflie simultaneously, so why dont we try double batteries?</p>
         <p>We separate the Crazyflie and Camera/Tx circuit, powering them by two batteries. This method is simple and intuitive, but the cost is the over-weighting of whole system. The motors almost reach their limit to afford the flight.</p>
     </div>
@@ -211,7 +209,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="page-header">OpenCV - Face Recognition and Optical Flow</h2>
+        <h1 class="page-header"><strong>OpenCV - Face Recognition and Optical Flow</strong></h1>
     </div>
     <div class="col-md-6 center">
         <p>In this part, we use <strong>OpenCV2-Python library</strong> to track human faces. 
@@ -229,7 +227,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="right" class="page-header">Simplified Tracking - Colored Ball</h2>
+        <h1 align="right" class="page-header"><strong>Simplified Tracking - Colored Ball</strong></h1>
     </div>
     <div class="col-md-6 center">
         <img class="img-responsive" src="img/track.png" alt="">
@@ -247,6 +245,6 @@
 </div>
 <div>
     <div class="col-lg-12">
-        <h2 class="page-header"></h2>
+        <h1 class="page-header"></h1>
     </div>
 </div>
