@@ -1,13 +1,12 @@
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="page-header">iAgent - Flying Surveilance System</h2>
+        <h1 class="page-header"><strong>Technical Details</strong></h1>
     </div>
     <div class="col-md-6 center">
-        <p>The full system contains following techniques: </p>
         <ul>
-            <li><strong>CrazyFlie Nano Quadcopter 2.0</strong></li>
-            <li>Camera and Image Transmission System</li>
-            <li>OpenCV Video Tracking</li>
+            <li><h2>CrazyFlie Nano Quadcopter 2.0</h1></li>
+            <li><h2>Camera and Video Transmission System</h1></li>
+            <li><h2>OpenCV Video Tracking</h1></li>
     </div>
     <div class="col-md-6 center">
         <img class="img-responsive" src="img/gathering.jpg" alt="">
@@ -16,62 +15,50 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="right" class="page-header">CrazyFlie Nano Quadcopter</h2>
+        <h1 align="right" class="page-header"><strong>CrazyFlie Nano Quadcopter</strong></h1>
     </div>
     <div class="col-md-6 center">
         <img class="img-responsive" src="img/nakefly.jpg" alt="">
     </div>
     <div class="col-md-6 center">
-        <p>CrazyFlie Nano Quadcopter 2.0</p>
-        <p> TODO: short descripion on crazyflie </p>
         <ul>
-            <li>Python Control Panel</li>
-            <li>Statistically Debugging Display</li>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6">
-        <h2 align="center">CrazyRadio</h2>
-    </div>
-    <div class="col-lg-6">
-        <h2 align="center">Control Panel</h2>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6">
-        <img class="img-responsive" src="img/Crazyflie.jpg" alt="">
-    </div>
-    <div class="col-lg-6">
-        <img class="img-responsive" src="img/Crazyflie.jpg" alt="">
+            <li><h2>3.7V 240mAh battery</h2></li>
+            <li><h2>PC python control client with debugging display</h2></li>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <h2  class="page-header">PID Control Recommendation</h2>
+        <h1  class="page-header"><strong>PID Control Recommendation</strong></h1>
     </div>
-    <div class="col-md-6">
-        <p></p>
-        <ul>
-            <li><strong>CrazyFlie Nano Quadcopter 2.0</strong></li>
-            <li>Camera and Image Transmission System</li>
-            <li>OpenCV Tracking</li>
-            <li>Appendix: Hardware</li>
+    <div class="col-md-6"> 
+         <p>Untuned PID control would induce the quadcopter to <strong>constantly drift toward the same direction.</strong> 
+           After drawing the debugging inforamtion( pitch, yaw), we found that both cannot converge in expected time. 
+           One possibility is that the convergence is far away in time axis, the other possibility that it may be divergent.</p> 
+           <p>When controlling by Kp, Ki, Kd, The I term indicates the integral control, 
+            which means the <strong>error propagation would accumulate along the flight.</strong>
+           The first tuning technique is based on <strong>raising up the Ki value ( e.g. 4 -> 80 )</strong> that can intensively balance the quadcopter. 
+              However, larger Ki introduces <strong>fluctuation during the flight</strong>, or <strong>overshooting in the control curves</strong>. 
+              The Ki should be tuned exactly on the value that can hold the roll, pitch from swinging.</p>
+        <p>Another observation is that the <strong>4 motors of the quadcopter are imbalanced</strong>. 
+           When mounted with Camera/Tx System, the center of mass should be unbiased.
+           In order to hover in the same height, the ratio of forced induced to each motor is about  M1:M2:M3:M4 = 1:0.8:1:0.8, 
+           which explains the instablity when taking off.</p>
     </div>
     <div class="col-lg-6">
-        <img class="img-responsive" src="img/Crazyflie.jpg" alt="">
+        <img class="img-responsive" src="img/pid.jpg" alt="">
     </div>
 </div>
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="center" class="page-header">Camera and Image Transmission System</h2>
+        <h1 align="center" class="page-header"><strong>Camera and Video Transmission System</strong></h1>
     </div>
     <div class="col-lg-12">
         <img class="img-responsive" src="img/transmission.png" alt="">
     </div>
     <div>
         <div class="col-lg-12">
-            <h2 class="page-header"></h2>
+            <h1 class="page-header"></h1>
         </div>
     </div>
     <div class="col-md-4 center">
@@ -92,15 +79,15 @@
     <div class="col-md-4 center">
         <img class="img-responsive" src="img/camera_system_back.jpg" alt="">
     </div> 
-    
+   
 </div>
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 align="center">Transmitter</h2>
+        <h1 align="center">Transmitter</h1>
     </div>
     <div class="col-lg-6">
-        <h2 align="center">Receiver</h2>
+        <h1 align="center">Receiver</h1>
     </div>
 </div>
 
@@ -131,10 +118,10 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 align="center">Camera</h2>
+        <h1 align="center">Camera</h1>
     </div>
     <div class="col-lg-6">
-        <h2 align="center">EasyCap</h2>
+        <h1 align="center">EasyCap</h1>
     </div>
 </div>
 
@@ -165,13 +152,13 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <h2 align="center">Voltage Regulator</h2>
+        <h1 align="center">Voltage Regulator</h1>
     </div>
     <div class="col-lg-3">
-        <h2 align="center">Battery</h2>
+        <h1 align="center">Battery</h1>
     </div>
     <div class="col-lg-3">
-        <h2 align="center">Recharger</h2>
+        <h1 align="center">Recharger</h1>
     </div>
 </div>
 
@@ -180,7 +167,11 @@
         <img class="img-responsive" src="img/U1V11F5.jpg" alt="">
     </div>
     <div class="col-lg-3">
-        <p>Voltage Regulator</p>
+        <p>Because the Crazyflie voltage output suffers from significant variation that will introduce noise in the images, Voltage Regulator is propsed to enhance the video quality.</p>
+        <p>Pololu Step-Up Voltage Regulator U1V11F5 is tested here. </p>
+        <p>However, U1V11F5 highly interferes with mounted Tx</p>
+        <p>Some thesis proposes that Pololu 5V Step-Up/Step-Down Voltage Regulator <strong>S7V7F5 can flawlessly remove the induced noise.</strong></p>
+        <p>VR is not used in the end.</p>
     </div>
     <div class="col-lg-3">
         <img class="img-responsive" src="img/battery.jpg" alt="">
@@ -192,13 +183,39 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="page-header">OpenCV - Face Recognition and Optical Flow</h2>
+        <h1 align="center" class="page-header"><strong>Power Supply Issue</strong></h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2 center"> 
+        <h2> We have examined 3 types of power supply methods:</h2>
+    </div> 
+    <div class="col-md-4 center">
+        <h3 align="center"> 1 Battery </h3>
+        <p>Default Crazyflie setting is based on 1 battery.</p>
+        <p>The Crazyflie itself induces significant load to the battery. If the Camera/Tx system directly connects to the battery, it will suffer from <strong>voltage instability</strong> and generate <strong>noise</strong> on output images. The noise remains the same even if we draw currents from the on-board Vcc or Vcom.</p>
+    </div>
+    <div class="col-md-4 center">
+        <h3 align="center"> 1 Battery + Voltage Regulator </h3>
+        <p>Due to the voltage instability, we introduce a <strong>voltage regulator</strong> aimming to reduce the noise. </p>
+        <p>When developing on bread-board, all things went well and the VR successfully provided stable voltage. However, when the Camera/Tx system is soldered on board, the EM wave introduces innegligible noise and will produce <strong>35kHz 0.165V stable noise signal.</strong></p>
+        <p>We try to solder additional filter capacitor in the output to reduce the noise. The reduction takes effect but the images are still infeasible. In the end <strong>we discarded the VR</strong> because the noise highly corrupted the video and the tracking system.</p>
+    </div>
+    <div class="col-md-4 center">
+        <h3 align="center"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 2 Batteries</h3>
+        <p>Single battery cannot afford the Camera/Tx system and Crazyflie simultaneously, so why dont we try double batteries?</p>
+        <p>We separate the Crazyflie and Camera/Tx circuit, powering them by two batteries. This method is simple and intuitive, but the cost is the over-weighting of whole system. The motors almost reach their limit to afford the flight.</p>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"><strong>OpenCV - Face Recognition and Optical Flow</strong></h1>
     </div>
     <div class="col-md-6 center">
-        <p>In this part, we use <strong>OpenCV2-Python library</strong> to track human face. 
-           We first use <strong>Haar Feature-based Cascade Classifier</strong> to detect faces and set distance and size contrain to get the only face we need. </p>
-        <p>Then, we try the <strong>optical flow</strong> to get the direction of human face movement. For safity, we do not use the whole rectangle getting from face detection, but only use the center part of it. The left figure is the result of no movement, and the right one is the result of  some horizonal movement. The arrows on the figure showing the direction and magnitude of movement.</p> 
-        <p>However, the face detection is not stable enough and the optical flow requires high computational complexity. With both system, we encountered neglectable latency ( about 2 sec ). Thus we do not integrate these systems in the end.</p>
+        <p>In this part, we use <strong>OpenCV2-Python library</strong> to track human faces. 
+           We first use <strong>Haar Feature-based Cascade Classifier</strong> to detect face and set contraints to get the only face we need. </p>
+        <p>Then, we try the <strong>optical flow</strong> to get the direction of human face movement. For safity, we use only part of rectangle obtained from face detection. The left figure is the result of no movement, and the right one is the result of  some horizonal movement. The arrows on the figure showing the direction and magnitude of movement.</p> 
+        <p>However, the face detection is not stable enough and the optical flow requires high computational complexity. With both systems, we encountered inneglectable latency ( about 2 sec ). Thus we do not integrate these systems in the end.</p>
     </div>
     <div class="col-md-3 center">
         <img class="img-responsive" src="img/face.png" alt="">
@@ -210,23 +227,24 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 align="right" class="page-header">Simplified Tracking - Colored Ball</h2>
-    </div>
-    <div class="col-md-4 center">
-        <img class="img-responsive" src="img/face.png" alt="">
-    </div>
-    <div class="col-md-2 center">
-        <img class="img-responsive" src="img/optical.png" alt="">
+        <h1 align="right" class="page-header"><strong>Simplified Tracking - Colored Ball</strong></h1>
     </div>
     <div class="col-md-6 center">
-        <p>In this part, we use <strong>OpenCV2-Python library</strong> to track human face. 
-           We first use <strong>Haar Feature-based Cascade Classifier</strong> to detect faces and set distance and size contrain to get the only face we need. </p>
-        <p>Then, we try the <strong>optical flow</strong> to get the direction of human face movement. For safity, we do not use the whole rectangle getting from face detection, but only use the center part of it. The left figure is the result of no movement, and the right one is the result of  some horizonal movement. The arrows on the figure showing the direction and magnitude of movement.</p> 
-        <p>However, the face detection is not stable enough and the optical flow requires high computational complexity. With both system, we encountered neglectable latency ( about 2 sec ). Thus we do not integrate these systems in the end.</p>
+        <img class="img-responsive" src="img/track.png" alt="">
+    </div>
+    <div class="col-md-6 center">
+        <p>Because the face tracking is currently not feasible for our system, we simplify it to a <strong>colored ball tracking problem</strong>.</p>
+        <p>First, we <strong>transform the images from RGB to HSV</strong>. 
+           Because the 3 components in RGB color model are all correlated with light, 
+           descriptions in HSV color model are often used in image analysis. 
+           By clicking the ball on the screen, the program will take the HSV value of the point into the new contraint. 
+           Therefore, we will successfully track the colored region showing in the right figure. 
+           The red point is the center of the white contour indicating the target object. 
+           Additional filters are adopted to check if the white contour is the target object or not.</p>
     </div>
 </div>
 <div>
     <div class="col-lg-12">
-        <h2 class="page-header"></h2>
+        <h1 class="page-header"></h1>
     </div>
 </div>
